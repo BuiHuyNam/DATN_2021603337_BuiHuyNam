@@ -1,0 +1,12 @@
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\bin\Debug\net8.0\NE.Application.deps.json
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\bin\Debug\net8.0\NE.Application.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\bin\Debug\net8.0\NE.Application.pdb
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\NE.Application.csproj.AssemblyReference.cache
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\NE.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\NE.Application.AssemblyInfoInputs.cache
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\NE.Application.AssemblyInfo.cs
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\NE.Application.csproj.CoreCompileInputs.cache
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\NE.Application.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\refint\NE.Application.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\NE.Application.pdb
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Application\obj\Debug\net8.0\ref\NE.Application.dll

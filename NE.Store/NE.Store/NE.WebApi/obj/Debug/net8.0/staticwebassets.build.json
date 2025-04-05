@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yhFG6KfWcM5aTKLUTjzjZYNWp3c6rdXKkXoE+XzF8ec=",
+  "Source": "NE.WebApi",
+  "BasePath": "_content/NE.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
