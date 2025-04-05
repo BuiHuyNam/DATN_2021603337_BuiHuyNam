@@ -146,3 +146,7 @@ D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\obj\Debug\net8.0\r
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\obj\Debug\net8.0\NE.WebApi.pdb
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\obj\Debug\net8.0\NE.WebApi.genruntimeconfig.cache
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\obj\Debug\net8.0\ref\NE.WebApi.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\AutoMapper.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\NE.Application.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\NE.Application.pdb
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\obj\Debug\net8.0\NE.WebApi.sourcelink.json

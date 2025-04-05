@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CU0r3+8ypqI=",
+  "dgSpecHash": "yU8Let9WVtI=",
   "success": true,
   "projectFilePath": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\NE.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\TP\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\TP\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\TP\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\TP\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

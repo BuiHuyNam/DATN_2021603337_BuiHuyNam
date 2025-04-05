@@ -3,164 +3,212 @@
   "WorkspaceRootPath": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404092013_int.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NE.Infrastructure\\Migrations\\20250404092013_int.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\imagefileconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\imagefileconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404091239_int.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NE.Infrastructure\\Migrations\\20250404091239_int.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404091124_int.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NE.Infrastructure\\Migrations\\20250404091124_int.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\roleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\colorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\colorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\categoryconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\controllers\\colorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\controllers\\colorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\context\\necontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\context\\necontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\orderdetailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\orderdetailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\colordto\\colorviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\colordto\\colorviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\productconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\colordto\\colorupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\colordto\\colorupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\colordto\\colorcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\colordto\\colorcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\implementations\\colorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\implementations\\colorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\interfaces\\icolorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\interfaces\\icolorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\unitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\couponconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\couponconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\colorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\colorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\interfaces\\icolorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\interfaces\\icolorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\cartconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\cartconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\categorydto\\categoryviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\categorydto\\categoryviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\categorydto\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\categorydto\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\productcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\productcolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\categorydto\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\categorydto\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\interfaces\\idistrictrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\interfaces\\idistrictrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\feedbackconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\feedbackconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\controllers\\wardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\controllers\\wardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\productcolorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\productcolorconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\warddto\\wardviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\warddto\\wardviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\warddto\\wardupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\warddto\\wardupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\districtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\districtconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\imagefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\imagefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\warddto\\wardcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\warddto\\wardcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\ward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\ward.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\brand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\implementations\\wardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\implementations\\wardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\interfaces\\iwardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\interfaces\\iwardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\interfaces\\idistrictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\interfaces\\idistrictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\wardconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\wardconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\wardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\wardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\provinceconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\provinceconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\interfaces\\iwardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\interfaces\\iwardrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\controllers\\districtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\districtdto\\districtviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\districtdto\\districtviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\districtdto\\districtupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\districtdto\\districtupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\districtdto\\districtcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\districtdto\\districtcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\implementations\\districtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\implementations\\districtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\interfaces\\iprovinceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\interfaces\\iprovinceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\districtrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\districtrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\provincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\provincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\interfaces\\iprovincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\interfaces\\iprovincerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\implementations\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\implementations\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\interfaces\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\interfaces\\iroleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\provincedto\\provinceviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\provincedto\\provinceviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\provincedto\\provinceupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\provincedto\\provinceupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\provincedto\\provincecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\provincedto\\provincecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\rolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\interfaces\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\roledto\\roleviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\roledto\\roleviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\roledto\\roleupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\roledto\\roleupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\roledto\\rolecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\roledto\\rolecreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\ne.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\ne.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\ne.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\ne.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -170,502 +218,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 86,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250404092013_int.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404092013_int.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Migrations\\20250404092013_int.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404092013_int.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Migrations\\20250404092013_int.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T09:20:13.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250404091239_int.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404091239_int.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Migrations\\20250404091239_int.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404091239_int.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Migrations\\20250404091239_int.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T09:12:39.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250404091124_int.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404091124_int.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Migrations\\20250404091124_int.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Migrations\\20250404091124_int.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Migrations\\20250404091124_int.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T09:11:24.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoleConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\RoleConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\RoleConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\RoleConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\RoleConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:03:39.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ImageFileConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ImageFileConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\ImageFileConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ImageFileConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\ImageFileConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:17:32.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ColorConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ColorConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\ColorConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ColorConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\ColorConfiguration.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T04:43:32.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BrandConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:33:21.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\appsettings.json",
-              "RelativeDocumentMoniker": "NE.WebApi\\appsettings.json",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\appsettings.json",
-              "RelativeToolTip": "NE.WebApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-04T06:22:26.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoryConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\CategoryConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\CategoryConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\CategoryConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\CategoryConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:30:46.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Program.cs",
-              "RelativeDocumentMoniker": "NE.WebApi\\Program.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Program.cs",
-              "RelativeToolTip": "NE.WebApi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:23:44.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OrderDetailConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\OrderDetailConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\OrderDetailConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\OrderDetailConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\OrderDetailConfiguration.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T06:08:15.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Order.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Order.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Order.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Order.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:44:35.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\OrderDetail.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\OrderDetail.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\OrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:58:34.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OrderConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\OrderConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\OrderConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\OrderConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\OrderConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:52:33.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ProductConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\ProductConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ProductConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\ProductConfiguration.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBwAAABxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:34:49.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "NEContext.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Context\\NEContext.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Context\\NEContext.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Context\\NEContext.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Context\\NEContext.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA+wDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:42:44.854Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Coupon.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Coupon.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Coupon.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Coupon.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Coupon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:41:24.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CouponConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\CouponConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\CouponConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\CouponConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\CouponConfiguration.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:45:42.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CartConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\CartConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\CartConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\CartConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\CartConfiguration.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:29:02.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Product.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Product.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Product.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Product.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBoAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:32:35.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ProductColor.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\ProductColor.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\ProductColor.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\ProductColor.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\ProductColor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:41:25.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\User.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\User.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\User.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\User.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBwAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:07:13.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\BaseEntity.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\BaseEntity.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T03:00:30.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "District.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\District.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\District.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\District.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\District.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:37:51.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Color.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Color.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Color.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Color.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Color.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:40:33.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Category.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Category.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Category.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:15:15.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FeedbackConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\FeedbackConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\FeedbackConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\FeedbackConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\FeedbackConfiguration.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:16:39.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Cart.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Cart.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Cart.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:58:09.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ProductColorConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ProductColorConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\ProductColorConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ProductColorConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\ProductColorConfiguration.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA0AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T05:09:31.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Province.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Province.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Province.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Province.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Province.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:36:10.431Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ImageFile.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\ImageFile.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\ImageFile.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\ImageFile.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\ImageFile.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T04:47:09.853Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "DistrictConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\DistrictConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\DistrictConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\DistrictConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\DistrictConfiguration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:51:42.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Ward.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Ward.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Ward.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Ward.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Ward.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:40:57.022Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\UserConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\UserConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\UserConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\UserConfiguration.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAACoAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T03:09:27.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Feedback.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Feedback.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Feedback.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Feedback.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Feedback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:56:19.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "WardConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\WardConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\WardConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\WardConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\WardConfiguration.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:59:57.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Brand.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Brand.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Brand.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Brand.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Brand.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:16:52.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "ProvinceConfiguration.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ProvinceConfiguration.cs",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\ProvinceConfiguration.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\ProvinceConfiguration.cs",
-              "RelativeToolTip": "NE.Infrastructure\\Configurations\\ProvinceConfiguration.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAB4AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T02:47:23.99Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -680,28 +234,678 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColorController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\ColorController.cs",
+              "RelativeDocumentMoniker": "NE.WebApi\\Controllers\\ColorController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\ColorController.cs",
+              "RelativeToolTip": "NE.WebApi\\Controllers\\ColorController.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:31:46.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ColorUpdateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ColorDto\\ColorUpdateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ColorDto\\ColorUpdateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ColorDto\\ColorUpdateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ColorDto\\ColorUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:29:26.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ColorCreateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ColorDto\\ColorCreateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ColorDto\\ColorCreateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ColorDto\\ColorCreateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ColorDto\\ColorCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:29:09.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ColorViewDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ColorDto\\ColorViewDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ColorDto\\ColorViewDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ColorDto\\ColorViewDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ColorDto\\ColorViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:28:47.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ColorService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ColorService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\ColorService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ColorService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Implementations\\ColorService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAD4v0YAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:20:29.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "RelativeToolTip": "NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwDAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:35:21.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:52:37.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "NE.WebApi\\Program.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Program.cs",
+              "RelativeToolTip": "NE.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:37:11.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IColorService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IColorService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Interfaces\\IColorService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IColorService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Interfaces\\IColorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:18:29.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ColorRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\ColorRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\ColorRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\ColorRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\ColorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:15:43.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IColorRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IColorRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Interfaces\\IColorRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IColorRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Interfaces\\IColorRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T16:15:03.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\UnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\UnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "NE.Infrastructure\\UnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:07:51.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "NE.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswCEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:09:19.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryCreateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\CategoryDto\\CategoryCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:57:16.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoryUpdateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\CategoryDto\\CategoryUpdateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\CategoryDto\\CategoryUpdateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\CategoryDto\\CategoryUpdateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\CategoryDto\\CategoryUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:57:50.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:47:47.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CategoryViewDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\CategoryDto\\CategoryViewDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\CategoryDto\\CategoryViewDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\CategoryDto\\CategoryViewDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\CategoryDto\\CategoryViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:58:25.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\CategoryRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\CategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:48:39.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Ward.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Ward.cs",
+              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Ward.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Ward.cs",
+              "RelativeToolTip": "NE.Domain\\Entitis\\Ward.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:30:50.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "WardCreateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\WardDto\\WardCreateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\WardDto\\WardCreateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\WardDto\\WardCreateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\WardDto\\WardCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:30:29.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WardService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\WardService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\WardService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\WardService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Implementations\\WardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:24:11.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IWardService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IWardService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Interfaces\\IWardService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IWardService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Interfaces\\IWardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:22:23.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WardUpdateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\WardDto\\WardUpdateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\WardDto\\WardUpdateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\WardDto\\WardUpdateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\WardDto\\WardUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:31:44.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WardRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\WardRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\WardRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\WardRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\WardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:18:55.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IDistrictRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IDistrictRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Interfaces\\IDistrictRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IDistrictRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Interfaces\\IDistrictRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:58:51.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "WardController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\WardController.cs",
+              "RelativeDocumentMoniker": "NE.WebApi\\Controllers\\WardController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\WardController.cs",
+              "RelativeToolTip": "NE.WebApi\\Controllers\\WardController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:34:20.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "WardViewDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\WardDto\\WardViewDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\WardDto\\WardViewDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\WardDto\\WardViewDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\WardDto\\WardViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:32:33.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IWardRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IWardRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Interfaces\\IWardRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IWardRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Interfaces\\IWardRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T15:18:18.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DistrictController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\DistrictController.cs",
+              "RelativeDocumentMoniker": "NE.WebApi\\Controllers\\DistrictController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\DistrictController.cs",
+              "RelativeToolTip": "NE.WebApi\\Controllers\\DistrictController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwD0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T14:28:10.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IDistrictService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IDistrictService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Interfaces\\IDistrictService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IDistrictService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Interfaces\\IDistrictService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T14:18:33.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DistrictUpdateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\DistrictDto\\DistrictUpdateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\DistrictDto\\DistrictUpdateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\DistrictDto\\DistrictUpdateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\DistrictDto\\DistrictUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T14:32:47.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DistrictViewDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\DistrictDto\\DistrictViewDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\DistrictDto\\DistrictViewDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\DistrictDto\\DistrictViewDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\DistrictDto\\DistrictViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T14:32:08.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DistrictCreateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\DistrictDto\\DistrictCreateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\DistrictDto\\DistrictCreateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\DistrictDto\\DistrictCreateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\DistrictDto\\DistrictCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T14:31:24.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DistrictService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\DistrictService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\DistrictService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\DistrictService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Implementations\\DistrictService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAMwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T14:20:48.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DistrictRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\DistrictRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\DistrictRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\DistrictRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\DistrictRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:59:31.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ProvinceRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\ProvinceRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\ProvinceRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\ProvinceRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\ProvinceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:57:32.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IProvinceService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IProvinceService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Interfaces\\IProvinceService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IProvinceService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Interfaces\\IProvinceService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:04:47.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IProvinceRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IProvinceRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Interfaces\\IProvinceRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IProvinceRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Interfaces\\IProvinceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:56:10.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IRoleService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IRoleService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Interfaces\\IRoleService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IRoleService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Interfaces\\IRoleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:23:51.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 39,
-              "Title": "NE.Infrastructure",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\NE.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "NE.Infrastructure\\NE.Infrastructure.csproj",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\NE.Infrastructure.csproj",
-              "RelativeToolTip": "NE.Infrastructure\\NE.Infrastructure.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-04T02:42:12.31Z",
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\RoleService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\RoleService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\RoleService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Implementations\\RoleService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:24:28.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 38,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Role.cs",
-              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\Role.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\Role.cs",
-              "RelativeToolTip": "NE.Domain\\Entitis\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA2AAAAAAAAAA==",
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "NE.WebApi\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "NE.WebApi\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T07:05:40.826Z",
+              "WhenOpened": "2025-04-05T12:40:24.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ProvinceViewDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProvinceDto\\ProvinceViewDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ProvinceDto\\ProvinceViewDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProvinceDto\\ProvinceViewDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ProvinceDto\\ProvinceViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:02:50.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ProvinceUpdateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProvinceDto\\ProvinceUpdateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ProvinceDto\\ProvinceUpdateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProvinceDto\\ProvinceUpdateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ProvinceDto\\ProvinceUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:02:06.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ProvinceCreateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProvinceDto\\ProvinceCreateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ProvinceDto\\ProvinceCreateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProvinceDto\\ProvinceCreateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ProvinceDto\\ProvinceCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T13:01:09.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "RoleRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\RoleRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\RoleRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\RoleRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\RoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:05:17.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "RoleCreateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\RoleDto\\RoleCreateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\RoleDto\\RoleCreateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\RoleDto\\RoleCreateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\RoleDto\\RoleCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:20:18.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Interfaces\\IRoleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:04:31.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "RoleUpdateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\RoleDto\\RoleUpdateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\RoleDto\\RoleUpdateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\RoleDto\\RoleUpdateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\RoleDto\\RoleUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:41:11.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "RoleViewDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\RoleDto\\RoleViewDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\RoleDto\\RoleViewDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\RoleDto\\RoleViewDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\RoleDto\\RoleViewDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T12:41:55.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "NE.Application",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\NE.Application.csproj",
+              "RelativeDocumentMoniker": "NE.Application\\NE.Application.csproj",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\NE.Application.csproj",
+              "RelativeToolTip": "NE.Application\\NE.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T12:18:22.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\GenericRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAhwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T11:58:15.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "NE.Infrastructure",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\NE.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\NE.Infrastructure.csproj",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\NE.Infrastructure.csproj",
+              "RelativeToolTip": "NE.Infrastructure\\NE.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-05T11:54:59.904Z",
               "EditorCaption": ""
             }
           ]

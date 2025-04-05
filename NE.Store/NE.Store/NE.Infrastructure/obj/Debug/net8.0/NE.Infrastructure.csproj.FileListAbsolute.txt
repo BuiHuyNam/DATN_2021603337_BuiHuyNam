@@ -15,3 +15,4 @@ D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Infrastructure\obj\Debug\
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Infrastructure\obj\Debug\net8.0\NE.Infrastructure.pdb
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Infrastructure\obj\Debug\net8.0\NE.Infrastructure.genruntimeconfig.cache
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Infrastructure\obj\Debug\net8.0\ref\NE.Infrastructure.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Infrastructure\obj\Debug\net8.0\NE.Infrastructure.sourcelink.json
