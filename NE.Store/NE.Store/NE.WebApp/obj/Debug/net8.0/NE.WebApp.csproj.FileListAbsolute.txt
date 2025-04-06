@@ -142,3 +142,4 @@ D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\r
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\NE.WebApp.pdb
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\NE.WebApp.genruntimeconfig.cache
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\ref\NE.WebApp.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\NE.WebApp.sourcelink.json

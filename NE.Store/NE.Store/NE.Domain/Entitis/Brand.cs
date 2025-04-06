@@ -9,7 +9,7 @@ namespace NE.Domain.Entitis
     public class Brand: BaseEntity
     {
         public  string BrandName { get; set; }
-        public bool IsActive { get; set; }
+        public bool? IsActive { get; set; }
 
         //Thuộc tính liên kết với Product (1:N)
         public List<Product> Products { get; set; } = new();

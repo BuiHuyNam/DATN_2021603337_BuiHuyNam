@@ -10,3 +10,4 @@ D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Domain\obj\Debug\net8.0\N
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Domain\obj\Debug\net8.0\refint\NE.Domain.dll
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Domain\obj\Debug\net8.0\NE.Domain.pdb
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Domain\obj\Debug\net8.0\ref\NE.Domain.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.Domain\obj\Debug\net8.0\NE.Domain.sourcelink.json

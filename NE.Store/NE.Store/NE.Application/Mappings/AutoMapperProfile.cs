@@ -1,9 +1,16 @@
 ﻿using AutoMapper;
+using NE.Application.Dtos.BrandDto;
+using NE.Application.Dtos.CartDto;
 using NE.Application.Dtos.CategoryDto;
 using NE.Application.Dtos.ColorDto;
+using NE.Application.Dtos.CouponDto;
 using NE.Application.Dtos.DistrictDto;
+using NE.Application.Dtos.ImageFileDto;
+using NE.Application.Dtos.ProductColorDto;
+using NE.Application.Dtos.ProductDto;
 using NE.Application.Dtos.ProvinceDto;
 using NE.Application.Dtos.RoleDto;
+using NE.Application.Dtos.UserDto;
 using NE.Application.Dtos.WardDto;
 using NE.Domain.Entitis;
 using System;
@@ -47,6 +54,38 @@ namespace NE.Application.Mappings
             CreateMap<Color, ColorUpdateDto>().ReverseMap();
             CreateMap<Color, ColorCreateDto>().ReverseMap();
             CreateMap<Color, ColorViewDto>().ReverseMap();
+
+            //Brand 
+            CreateMap<Brand, BrandCreateDto>().ReverseMap();
+            CreateMap<Brand, BrandUpdateDto>().ReverseMap();
+            CreateMap<Brand, BrandViewDto>().ReverseMap();
+
+            //Product
+            CreateMap<Product, ProductCreateDto>().ReverseMap();
+
+            //ProductColor
+            CreateMap<ProductColor, ProductColorCreateDto>().ReverseMap();
+            CreateMap<ProductColor, ProductColorUpdateDto>().ReverseMap();
+            CreateMap<ProductColor, ProductColorViewDto>().ReverseMap();
+
+            //ImageFile
+            CreateMap<ImageFile, ImageFileDto>().ReverseMap();
+
+            //Coupon
+            CreateMap<Coupon, CouponCreateDto>().ReverseMap();
+            CreateMap<Coupon, CouponViewDto>().ReverseMap();
+            CreateMap<Coupon, CouponUpdateDto>().ReverseMap();
+
+            //User
+            CreateMap<User, UserCreateDto>().ReverseMap();
+
+            //Cart
+            CreateMap<Cart, CartUpdateDto>().ReverseMap();
+            CreateMap<Cart, CartCreateDto>().ReverseMap();
+            CreateMap<Cart, CartViewDto>().ReverseMap();
+
+
+
 
 
 

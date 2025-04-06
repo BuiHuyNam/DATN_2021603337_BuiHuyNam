@@ -20,6 +20,22 @@ namespace NE.Infrastructure.UnitOfWork
         //Danh mục, mau sac, thuong hieu
         ICategoryRepository Categories { get; }
         IColorRepository Colors { get; }
+        IBrandRepository Brands { get; }
+
+        //San pham
+        IProductRepository Products { get; }
+        IProductColorRepository ProductColors { get; }
+        IImageFileRepository ImageFiles { get; }
+
+        //Giam gia
+        ICouponRepository Coupons { get; }
+
+        //Nguoi dung
+        IUserRepository Users { get; }
+
+        //Gio hang , don hang
+        ICartRepository Carts { get; }
+
 
 
 

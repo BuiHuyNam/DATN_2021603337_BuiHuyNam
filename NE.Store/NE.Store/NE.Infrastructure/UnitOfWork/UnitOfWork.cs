@@ -18,6 +18,13 @@ namespace NE.Infrastructure.UnitOfWork
         public IWardRepository Wards { get; }
         public ICategoryRepository Categories { get; }
         public IColorRepository Colors { get; }
+        public IBrandRepository Brands { get; }
+        public IProductRepository Products { get; }
+        public IProductColorRepository ProductColors { get; }
+        public IImageFileRepository ImageFiles { get; }
+        public ICouponRepository Coupons { get; }
+        public IUserRepository Users { get; }
+        public ICartRepository Carts { get; }
        
 
 
@@ -30,6 +37,13 @@ namespace NE.Infrastructure.UnitOfWork
             Wards = new WardRepository(_context);
             Categories = new CategoryRepository(_context);
             Colors = new ColorRepository(_context);
+            Brands = new BrandRepository(_context);
+            Products = new ProductRepository(_context);
+            ProductColors = new ProductColorRepository(_context);
+            ImageFiles = new ImageFileRepository(_context);
+            Coupons = new CouponRepository(_context);
+            Users = new UserRepository(_context);
+            Carts = new CartRepository(_context);
 
         }
 

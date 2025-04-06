@@ -32,7 +32,7 @@ namespace NE.Infrastructure.Configurations
             builder.HasOne<Role>(x => x.Role).WithMany(x => x.Users).HasForeignKey(x => x.RoleId);
 
             //Thiết lập quan hệ với Ward(N:1)
-            builder.HasOne<Ward>(x => x.Ward).WithMany(x => x.Users).HasForeignKey(x => x.WardId);
+            builder.HasOne<Ward>(x => x.Ward).WithMany(x => x.Users).HasForeignKey(x => x.WardId).IsRequired(false); // Cho phép null;
 
             builder.Property(e => e.CreatedDate)
                .HasColumnType("datetime2")
