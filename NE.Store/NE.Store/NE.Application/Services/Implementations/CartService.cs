@@ -61,6 +61,8 @@ namespace NE.Application.Services.Implementations
             {
                 throw new Exception("Cart does not exist!");
             }
+            cart.ProductId = cartUpdate.ProductId;
+            cart.UserId = cartUpdate.UserId;
             await _unitOfWork.Carts.Update(cart);
             await _unitOfWork.SaveChangesAsync();
         }

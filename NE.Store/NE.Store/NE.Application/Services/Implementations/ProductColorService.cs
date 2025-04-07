@@ -57,12 +57,14 @@ namespace NE.Application.Services.Implementations
 
         public async Task UpdateProductColorAsync(ProductColor productColor)
         {
-            var productColorUpdate = await _unitOfWork.ProductColors.FindAsync(c => c.Id == productColor.Id);
+            var productColorUpdate = await _unitOfWork.ProductColors.GetByIdAsync(productColor.Id);
 
-            if (!productColorUpdate.Any())
+            if (productColorUpdate==null)
             {
                 throw new Exception("ProductColor does not exist!");
             }
+            productColor.ProductId = productColorUpdate.ProductId;
+            productColor.ColorId = productColorUpdate.ColorId;
 
             await _unitOfWork.ProductColors.Update(productColor);
             await _unitOfWork.SaveChangesAsync();

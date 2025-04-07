@@ -10,7 +10,7 @@ namespace NE.Domain.Entitis
     {
         public string Content { get; set; }
         public int Star { get; set; }
-        public string Image { get; set; }
+        public string? Image { get; set; }
 
         public int UserId { get; set; }
         public User User { get; set; }

@@ -36,6 +36,14 @@ namespace NE.Infrastructure.UnitOfWork
         //Gio hang , don hang
         ICartRepository Carts { get; }
 
+        //Feedback
+        IFeedbackRepository Feedbacks { get; }
+
+        //Đơn hàng, đơn hàng chi tiết
+        IOrderRepository Orders { get; }
+        IOrderDetailRepository OrderDetails { get; }
+
+
 
 
 

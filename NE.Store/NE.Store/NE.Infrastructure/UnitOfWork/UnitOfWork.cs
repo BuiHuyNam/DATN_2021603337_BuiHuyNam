@@ -25,6 +25,9 @@ namespace NE.Infrastructure.UnitOfWork
         public ICouponRepository Coupons { get; }
         public IUserRepository Users { get; }
         public ICartRepository Carts { get; }
+        public IFeedbackRepository Feedbacks { get; }
+        public IOrderRepository Orders { get; }
+        public IOrderDetailRepository OrderDetails { get; }
        
 
 
@@ -44,6 +47,9 @@ namespace NE.Infrastructure.UnitOfWork
             Coupons = new CouponRepository(_context);
             Users = new UserRepository(_context);
             Carts = new CartRepository(_context);
+            Feedbacks = new FeedbackRepository(_context);
+            Orders = new OrderRepository(_context);
+            OrderDetails = new OrderDetailRepository(_context);
 
         }
 

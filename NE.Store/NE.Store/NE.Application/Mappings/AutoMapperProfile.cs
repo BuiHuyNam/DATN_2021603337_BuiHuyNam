@@ -5,7 +5,10 @@ using NE.Application.Dtos.CategoryDto;
 using NE.Application.Dtos.ColorDto;
 using NE.Application.Dtos.CouponDto;
 using NE.Application.Dtos.DistrictDto;
+using NE.Application.Dtos.Feedback;
 using NE.Application.Dtos.ImageFileDto;
+using NE.Application.Dtos.OrderDetailDto;
+using NE.Application.Dtos.OrderDto;
 using NE.Application.Dtos.ProductColorDto;
 using NE.Application.Dtos.ProductDto;
 using NE.Application.Dtos.ProvinceDto;
@@ -83,6 +86,22 @@ namespace NE.Application.Mappings
             CreateMap<Cart, CartUpdateDto>().ReverseMap();
             CreateMap<Cart, CartCreateDto>().ReverseMap();
             CreateMap<Cart, CartViewDto>().ReverseMap();
+
+            //Feedback
+            CreateMap<Feedback, FeedbackCreateDto>().ReverseMap();
+            CreateMap<Feedback, FeedbackUpdateDto>().ReverseMap();
+            CreateMap<Feedback, FeedbackViewDto>().ReverseMap();
+
+            //Order
+            CreateMap<Order, OrderCreateDto>().ReverseMap();
+            CreateMap<Order, OrderUpdateDto>().ReverseMap();
+            CreateMap<Order, OrderViewDto>().ReverseMap();
+
+            CreateMap<OrderDetail, OrderDetailCreateDto>().ReverseMap();
+            CreateMap<OrderDetail, OrderDetailUpdateDto>().ReverseMap();
+            CreateMap<OrderDetail, OrderDetailViewDto>().ReverseMap();
+
+
 
 
 

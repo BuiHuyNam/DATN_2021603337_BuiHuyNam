@@ -24,6 +24,9 @@ builder.Services.AddTransient<IImageFileService, ImageFileService>();
 builder.Services.AddTransient<ICouponService, CouponService>();
 builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddTransient<ICartService, CartService>();
+builder.Services.AddTransient<IFeedbackService, FeedbackService>();
+builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddTransient<IOrderDetailService, OrderDetailService>();
 
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
