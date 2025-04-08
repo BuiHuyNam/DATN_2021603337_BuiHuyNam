@@ -1,0 +1,9 @@
+Key phần appseting.json của api
+
+,
+  "JwtSettings": {
+    "Key": "1UqpnhuAAwMp5Hb/9+dpJtfCXmyDx0yszB7FJKk5vHU=",
+    "Issuer": "YourIssuer",
+    "Audience": "YourAudience"
+
+  }
