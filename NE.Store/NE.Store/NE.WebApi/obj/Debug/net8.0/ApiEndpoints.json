@@ -90,6 +90,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NE.WebApi.Controllers.BrandController",
+    "Method": "IsActiveBrand",
+    "RelativePath": "api/Brand/IsActiveBrand",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isActiveBrandDto",
+        "Type": "NE.Application.Dtos.BrandDto.IsActiveBrandDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NE.WebApi.Controllers.CartController",
     "Method": "AddCart",
     "RelativePath": "api/Cart",

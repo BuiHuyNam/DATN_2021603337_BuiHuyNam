@@ -62,6 +62,7 @@ namespace NE.Application.Mappings
             CreateMap<Brand, BrandCreateDto>().ReverseMap();
             CreateMap<Brand, BrandUpdateDto>().ReverseMap();
             CreateMap<Brand, BrandViewDto>().ReverseMap();
+            CreateMap<Brand, IsActiveBrandDto>().ReverseMap();
 
             //Product
             CreateMap<Product, ProductCreateDto>().ReverseMap();

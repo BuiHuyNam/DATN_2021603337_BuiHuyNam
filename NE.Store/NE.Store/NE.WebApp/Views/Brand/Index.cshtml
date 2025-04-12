@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; // layout admin riêng
+    ViewData["Title"] = "Trang quản trị thương hiệu";
+}
+
+<style>
+    .dataTables_filter {
+        margin: 10px;
+    }
+</style>
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Quản lý thương hiệu</h2>
+
+    <!-- Nút thêm thương hiệu-->
+    <div class="d-flex justify-content-end mb-3">
+        <a href="@Url.Action("AddBrand", "Brand")" class="btn btn-primary btn-sm me-2">
+            <i class="bi bi-plus-circle"></i> Thêm thương hiệu
+        </a>
+    </div>
+
+    <!-- Bảng danh mục -->
+    <div class="table-responsive shadow-lg p-3 mb-5 bg-white rounded">
+        <table id="brandTable" class="table table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Thương hiệu</th>
+                    <th>Trạng thái</th>
+
+                    <th class="text-center">Chức năng</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        var urlApi = "https://localhost:7099/api/brand";
+
+        $("#brandTable").DataTable({
+            ajax:{
+                url: urlApi,
+                type: "GET",
+                dataSrc: "",
+            }  ,
+            columns: [
+                {data: "id"},
+                {data: "brandName"},
+                {
+                        data: "isActive",
+                        className: "text-center",
+                        render: function (data, type, row) {
+                            const buttonText = data ? "Hoạt động" : "Không hoạt động";
+                            const buttonClass = data ? "btn-success" : "btn-danger";
+
+                            return `
+                                <form method="post" action="/Admin/IsActiveBrand" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn thay đổi trạng thái không?');" >
+                                    <input type="hidden" name="Id" value="${row.id}" />
+                                    <button type="submit" class="btn ${buttonClass} btn-sm">
+                                        ${buttonText}
+                                    </button>
+                                </form>
+                            `;
+                        }
+
+                },
+                {
+                    data: null,
+                    className: "text-center",
+                    render: function (data, type, row) {
+                        return `
+                            <a href="/Admin/EditBrand/${row.id}"  class="btn btn-warning btn-sm me-2">Sửa</a>
+                            <form class="d-inline-block" method="post" action="/Admin/DeleteBrand/${row.id}"
+                                      class="btn btn-danger btn-sm" onsubmit="return confirm('Bạn có chắc chắn muốn xóa không?');">
+                                    <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                            </form>
+
+                        `;
+                    }
+                }
+            ]   ,
+            language: {
+                search: "Tìm kiếm:",
+                lengthMenu: "Hiển thị _MENU_ dòng",
+                info: "Hiển thị _START_ đến _END_ của _TOTAL_ dòng",
+                infoEmpty: "Không có dữ liệu",
+                paginate: {
+                    first: "Đầu",
+                    last: "Cuối",
+                    next: "Tiếp",
+                    previous: "Trước"
+        }
+    }
+        });
+    });
+</script>

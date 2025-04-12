@@ -59,5 +59,13 @@ namespace NE.WebApi.Controllers
             await _brandService.DeleteBrandAsync(id);
             return Ok();
         }
+
+        [HttpPut("IsActiveBrand")]
+        public async Task<IActionResult> IsActiveBrand(IsActiveBrandDto isActiveBrandDto)
+        {
+            var brandUpdate = _mapper.Map<Brand>(isActiveBrandDto);
+            await _brandService.IsActiveBrand(brandUpdate);
+            return Ok();
+        }
     }
 }

@@ -11,6 +11,18 @@ using NE.Infrastructure.UnitOfWork;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("https://localhost:7290")
+                          .AllowAnyMethod()
+                          .AllowAnyHeader()
+                          .AllowCredentials();
+                      });
+});
 
 // Add services to the container.
 builder.Services.AddDbContext<NEContext>(ops => ops.UseSqlServer(builder.Configuration.GetConnectionString("DATNConnection")));
@@ -107,6 +119,8 @@ builder.Services.AddSwaggerGen(ops =>
 });
 
 var app = builder.Build();
+app.UseCors(MyAllowSpecificOrigins);
+
 app.UseAuthentication();
 app.UseAuthorization();
 

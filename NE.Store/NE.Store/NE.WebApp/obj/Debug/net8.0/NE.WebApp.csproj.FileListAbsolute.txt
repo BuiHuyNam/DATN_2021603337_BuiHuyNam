@@ -144,3 +144,15 @@ D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\N
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\ref\NE.WebApp.dll
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\obj\Debug\net8.0\NE.WebApp.sourcelink.json
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\Microsoft.AspNet.Identity.Core.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\AutoMapper.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\NE.Application.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\NE.Domain.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\NE.Infrastructure.dll
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\NE.Application.pdb
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\NE.Domain.pdb
+D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApp\bin\Debug\net8.0\NE.Infrastructure.pdb

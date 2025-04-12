@@ -1,0 +1,24 @@
+﻿@model NE.Application.Dtos.BrandDto.BrandCreateDto
+
+@{
+    ViewData["Title"] = "AddBrand";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Thêm thương hiệu/h4>
+        </div>
+        <div class="card-body">
+            <form id="roleForm" method="post">
+                <div class="mb-3">
+                    <label for="brandName" class="form-label">Tên thương hiệu: </label>
+                    <input asp-for="BrandName" type="text" class="form-control" id="brandName" placeholder="Nhập tên thương hiệu.." required>
+                </div>
+                <button type="submit" class="btn btn-success">Thêm</button>
+                @Html.ActionLink("Hủy", "Index", "Brand", null, new { @class = "btn btn-secondary" })
+
+            </form>
+        </div>
+    </div>
+</div>

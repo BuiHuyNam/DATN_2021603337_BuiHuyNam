@@ -1,0 +1,24 @@
+﻿  @model NE.Application.Dtos.CategoryDto.CategoryUpdateDto
+
+@{
+    ViewData["Title"] = "EditCategory";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Chỉnh sửa danh mục</h4>
+        </div>
+        <div class="card-body">
+            <form id="roleForm" method="post">
+                <div class="mb-3">
+                    <label for="categoryName" class="form-label">Tên danh mục: </label>
+                    <input asp-for="CategoryName" type="text" class="form-control" id="categoryName" placeholder="Nhập tên danh mục..." required>
+                </div>
+                <button type="submit" class="btn btn-success">Sửa</button>
+                @Html.ActionLink("Hủy", "Index", "Category", null, new { @class = "btn btn-secondary" })
+
+            </form>
+        </div>
+    </div>
+</div>

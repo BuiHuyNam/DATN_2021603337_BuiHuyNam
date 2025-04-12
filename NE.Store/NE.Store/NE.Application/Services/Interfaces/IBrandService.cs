@@ -12,7 +12,8 @@ namespace NE.Application.Services.Interfaces
         Task<IEnumerable<Brand>> GetAllBrandAsync();
         Task<Brand> GetBrandByIdAsync(int id);
         Task AddBrandAsync(Brand brand);
-        Task DeleteBrandAsync(int id);
+        Task DeleteBrandAsync(int id);                   
         Task UpdateBrandAsync(Brand brand);
+        Task IsActiveBrand(Brand brand);
     }
 }

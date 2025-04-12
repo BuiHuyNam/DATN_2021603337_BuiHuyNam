@@ -1,0 +1,24 @@
+﻿  @model NE.Application.Dtos.ColorDto.ColorUpdateDto
+
+@{
+    ViewData["Title"] = "EditColor";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Chỉnh sửa màu sắc</h4>
+        </div>
+        <div class="card-body">
+            <form id="roleForm" method="post">
+                <div class="mb-3">
+                    <label for="colorName" class="form-label">Tên màu sắc: </label>
+                    <input asp-for="ColorName" type="text" class="form-control" id="colorName" placeholder="Nhập tên danh mục..." required>
+                </div>
+                <button type="submit" class="btn btn-success">Sửa</button>
+                @Html.ActionLink("Hủy", "Index", "Color", null, new { @class = "btn btn-secondary" })
+
+            </form>
+        </div>
+    </div>
+</div>

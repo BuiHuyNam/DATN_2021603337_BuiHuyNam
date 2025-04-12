@@ -58,14 +58,41 @@ namespace NE.Application.Services.Implementations
             return brand;
         }
 
-        public async Task UpdateBrandAsync(Brand brand)
+        public async Task IsActiveBrand(Brand brand)
         {
-            var brandUpdate = await _unitOfWork.Brands.FindAsync(c => c.Id == brand.Id);
+            var brandUpdate = await _unitOfWork.Brands.GetByIdAsync(brand.Id);
 
-            if (!brandUpdate.Any())
+            if (brandUpdate == null)
             {
                 throw new Exception("Brand does not exist!");
             }
+
+            if(brandUpdate.IsActive == true)
+            {
+                brandUpdate.IsActive = false;
+            }
+            else
+            {
+                brandUpdate.IsActive = true;
+            }
+            
+            await _unitOfWork.Brands.Update(brandUpdate);
+            await _unitOfWork.SaveChangesAsync();
+        }
+
+        public async Task UpdateBrandAsync(Brand brand)
+        {
+            //var brandUpdate = await _unitOfWork.Brands.FindAsync(c => c.Id == brand.Id);
+            var brandUpdate = await _unitOfWork.Brands.GetByIdAsync(brand.Id);
+
+
+
+            if (brandUpdate == null)
+            {
+                throw new Exception("Brand does not exist!");
+            }
+
+            brand.IsActive = brandUpdate.IsActive;
 
             await _unitOfWork.Brands.Update(brand);
             await _unitOfWork.SaveChangesAsync();
