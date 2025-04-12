@@ -66,6 +66,8 @@ namespace NE.Application.Mappings
 
             //Product
             CreateMap<Product, ProductCreateDto>().ReverseMap();
+            CreateMap<Product, ProductViewDto>().ReverseMap();
+
 
             //ProductColor
             CreateMap<ProductColor, ProductColorCreateDto>().ReverseMap();

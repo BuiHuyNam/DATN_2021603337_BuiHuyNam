@@ -13,6 +13,8 @@ namespace NE.Domain.Entitis
         public string Description { get; set; }
         public float Discount { get; set; }
         public int View { get; set; }
+        public bool? IsActive { get; set; }
+
 
         public int CategoryId { get; set; }
         public Category Category { get; set; }

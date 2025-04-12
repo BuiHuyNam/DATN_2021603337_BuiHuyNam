@@ -1,0 +1,9 @@
+﻿@model IEnumerable<NE.Application.Dtos.BrandDto.BrandViewDto>
+
+@* <select name="BrandId" class="form-select"> *@
+    <option value="">-- Chọn thương hiệu --</option>
+    @foreach (var brand in Model)
+    {
+        <option value="@brand.Id">@brand.BrandName</option>
+    }
+@* </select> *@

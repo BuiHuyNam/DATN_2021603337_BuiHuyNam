@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; // layout admin riêng
+    ViewData["Title"] = "Trang quản trị sản phẩm";
+}
+
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Quản lý sản phâm</h2>
+
+    <!-- Nút thêm sản phẩm -->
+    <div class="d-flex justify-content-end mb-3">
+        <a href="@Url.Action("AddProduct", "Product")" class="btn btn-primary btn-sm me-2">
+            <i class="bi bi-plus-circle"></i> Thêm sản phẩm
+        </a>
+    </div>
+
+  
+</div>

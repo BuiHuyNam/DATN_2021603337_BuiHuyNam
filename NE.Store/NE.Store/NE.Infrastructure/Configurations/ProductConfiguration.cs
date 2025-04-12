@@ -24,6 +24,8 @@ namespace NE.Infrastructure.Configurations
             builder.Property(x => x.Description).IsRequired();
             builder.Property(x => x.Discount).HasDefaultValue(0);
             builder.Property(x => x.View).HasDefaultValue(0);
+            //Thiết lập isActive mặc định false
+            builder.Property(x => x.IsActive).HasDefaultValue(false);
 
 
             builder.HasOne<Category>(x => x.Category).WithMany(x => x.Products).HasForeignKey(x => x.CategoryId);

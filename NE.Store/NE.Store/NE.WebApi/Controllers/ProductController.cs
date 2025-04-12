@@ -29,5 +29,13 @@ namespace NE.WebApi.Controllers
             await _productService.AddProductAsync(product);
             return Ok();
         }
+
+        [HttpGet()]
+        public async Task<ActionResult> GetAllProduct()
+        {
+            var products = await _productService.GetAllProductAsync();
+            var productDto =  _mapper.Map<IEnumerable<ProductViewDto>>(products);
+            return Ok(productDto);
+        }
     }
 }

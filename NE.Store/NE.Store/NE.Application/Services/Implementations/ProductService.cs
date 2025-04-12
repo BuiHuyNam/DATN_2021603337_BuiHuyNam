@@ -35,9 +35,10 @@ namespace NE.Application.Services.Implementations
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<Product>> GetAllProductAsync()
+        public async Task<IEnumerable<Product>> GetAllProductAsync()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.Products.GetAllAsync();
+
         }
 
         public Task<Product> GetProductByIdAsync(int id)

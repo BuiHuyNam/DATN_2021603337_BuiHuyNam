@@ -1,0 +1,9 @@
+﻿@model IEnumerable<NE.Application.Dtos.CategoryDto.CategoryViewDto>
+
+@* <select name="CategoryId" class="form-select"> *@
+    <option value="">-- Chọn danh mục --</option>
+    @foreach (var category in Model)
+    {
+        <option value="@category.Id">@category.CategoryName</option>
+    }
+@* </select> *@

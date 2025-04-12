@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NE.Application.Dtos.ColorDto;
+using NE.Application.Dtos.ImageFileDto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +14,10 @@ namespace NE.Application.Dtos.ProductColorDto
         public int Quantity { get; set; }
         public int ColorId { get; set; }
         public int ProductId { get; set; }
+        public ColorViewDto Color { get; set; }
+        public List<ImageFileDto.ImageFileDto> ImageFiles { get; set; } = new();
+
+
+
     }
 }

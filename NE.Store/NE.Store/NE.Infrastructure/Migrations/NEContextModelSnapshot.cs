@@ -486,6 +486,11 @@ namespace NE.Infrastructure.Migrations
                         .HasColumnType("real")
                         .HasDefaultValue(0f);
 
+                    b.Property<bool?>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(false);
+
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
