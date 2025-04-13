@@ -1,0 +1,9 @@
+﻿@model IEnumerable<NE.Application.Dtos.ProductDto.ProductViewDto>
+
+@* <select name="ProductId" class="form-select"> *@
+<option value="">-- Chọn sản phẩm --</option>
+@foreach (var product in Model)
+{
+    <option value="@product.Id">@product.ProductName</option>
+}
+@* </select> *@

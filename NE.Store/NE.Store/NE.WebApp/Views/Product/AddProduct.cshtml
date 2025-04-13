@@ -43,24 +43,25 @@
 
                 </div>
 
-                @* <div class="mb-3"> *@
-                @*     <label asp-for="CategoryId" class="form-label">Danh mục</label> *@
-                @*     <select asp-for="CategoryId" asp-items="ViewBag.CategoryList" class="form-select" required> *@
-                @*         <option value="">-- Chọn danh mục --</option> *@
-                @*     </select> *@
-                @* </div> *@
+                <div class="mb-3">
+                    <label asp-for="Quantity" class="form-label">Số lượng</label>
+                    <input asp-for="Quantity" type="number" step="1" class="form-control" placeholder="Nhập số lượng" required />
+                </div>
 
-                @* <div class="mb-3"> *@
-                @*     <label asp-for="ColorId" class="form-label">Màu sắc</label> *@
-                @*     <select asp-for="ColorId" asp-items="ViewBag.ColorList" class="form-select"> *@
-                @*         <option value="">-- Chọn màu sắc --</option> *@
-                @*     </select> *@
-                @* </div> *@
+             
 
-                @* <div class="mb-3"> *@
-                @*     <label asp-for="ImageFile" class="form-label">Ảnh sản phẩm</label> *@
-                @*     <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" /> *@
-                @* </div> *@
+                 <div class="mb-3"> 
+                     <label asp-for="ColorId" class="form-label">Màu sắc</label> 
+                     <select asp-for="ColorId" asp-items="ViewBag.ColorList" class="form-select">
+                        @await Component.InvokeAsync("Color")
+
+                     </select> 
+                 </div> 
+
+                 @* <div class="mb-3">  *@
+                 @*     <label asp-for="ImageFile" class="form-label">Ảnh sản phẩm</label>  *@
+                 @*     <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />  *@
+                 @* </div>  *@
 
                 <button type="submit" class="btn btn-success">Thêm</button>
                 @Html.ActionLink("Hủy", "Index", "Product", null, new { @class = "btn btn-secondary ms-2" })

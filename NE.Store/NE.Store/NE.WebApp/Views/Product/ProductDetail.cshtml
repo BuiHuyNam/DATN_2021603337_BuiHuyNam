@@ -1,0 +1,152 @@
+﻿ @model NE.Application.Dtos.ProductDto.ProductViewDto
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Chi tiết sản phẩm";
+}
+
+ <div class="container mt-5"> 
+     <div class="row justify-content-center"> 
+        <div class="col-md-8"> 
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>Thông Tin chi tiết sản phẩm</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tên sản phẩm:</label>
+                        <span id="productName">@Model.ProductName</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tên danh mục:</label>
+                        <span id="category">@Model.Category.CategoryName</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tên thương hiệu:</label>
+                        <span id="brand">@Model.Brand.BrandName</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Giá bán:</label>
+                        <span id="price">@Model.Price</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Lượt xem:</label>
+                        <span id="view">@Model.View</span>
+                    </div>
+                     
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Biến thể sản phẩm:</label>
+                        <table class="table table-bordered">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Ảnh sản phẩm</th>
+                                    <th>Màu sắc</th>
+                                    <th>Số lượng</th>
+                                    <th>Giảm giá (%)</th>
+                                    <th>Chức năng</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var variant in Model.ProductColors) // Giả sử Model.Variants chứa danh sách biến thể theo màu sắc
+                                {
+                                    <tr>
+                                        <td>
+                                            @if (variant.ImageFiles != null && variant.ImageFiles.Count > 0)
+                                            {
+                                                <img src="https://localhost:7099/api/ImageFile/Download?id=@variant.ImageFiles.First().Id" width="60" height="60" />
+                                            }
+                                            else
+                                            {
+                                                <span class="text-muted">Không có ảnh</span>
+                                            }
+                                        </td>
+                                        <td>@variant.Color.ColorName</td>
+                                        <td>@variant.Quantity</td>
+                                        <td>@Model.Discount</td>
+                                        <td>
+                                            @* <a href="@Url.Action("EditVariant", "Product", new { id = variant.Id })" class="btn btn-sm btn-warning">Cập nhật số lượng</a> *@
+                                            <a href="javascript:void(0);"
+                                               class="btn btn-sm btn-warning"
+                                               data-bs-toggle="modal"
+                                               data-bs-target="#updateQuantityModal"
+                                               data-id="@variant.Id"
+                                               data-color="@variant.Color.ColorName"
+                                               data-quantity="@variant.Quantity">
+                                                Cập nhật số lượng
+                                            </a>
+
+                                            @* <a href="@Url.Action("DeleteVariant", "Product", new { id = variant.Id })" class="btn btn-sm btn-danger">Xóa</a> *@
+                                            <form class="d-inline-block" method="post" action="@Url.Action("DeleteProductColor", "Product", new { id = variant.Id })"
+                                                  class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa không?')">
+                                                <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="d-flex justify-content-between">
+                       
+                        <button type="button" class="btn btn-secondary" onclick="window.location='@Url.Action("Index", "Product")'">Quay Lại</button>
+                    </div>
+                </div>
+            </div> 
+        </div>       
+     </div>
+ </div>
+
+@{
+    TempData["ProductId"] = Model.Id; // lưu lại productId khi vào trang
+}
+
+
+
+<!-- Modal cập nhật số lượng -->
+<div class="modal fade" id="updateQuantityModal" tabindex="-1" aria-labelledby="updateQuantityModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form method="post" action="@Url.Action("UpdateQuantity","Product")">
+            <!-- Cập nhật đường dẫn action nếu cần -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateQuantityModalLabel">Cập nhật số lượng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="productColorId" name="Id" />
+
+                    <div class="mb-3">
+                        <label class="form-label">Màu sắc</label>
+                        <input type="text" id="colorName" class="form-control" disabled />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Số lượng mới</label>
+                        <input type="number" name="Quantity" id="quantity" class="form-control" required min="0" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var updateModal = document.getElementById('updateQuantityModal');
+        updateModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            var id = button.getAttribute('data-id');
+            var color = button.getAttribute('data-color');
+            var quantity = button.getAttribute('data-quantity');
+
+            document.getElementById('productColorId').value = id;
+            document.getElementById('colorName').value = color;
+            document.getElementById('quantity').value = quantity;
+        });
+    </script>
+}

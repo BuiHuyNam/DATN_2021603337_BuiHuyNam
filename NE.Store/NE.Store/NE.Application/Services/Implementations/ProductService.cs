@@ -41,9 +41,36 @@ namespace NE.Application.Services.Implementations
 
         }
 
-        public Task<Product> GetProductByIdAsync(int id)
+        public async Task<Product> GetProductByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var product = await _unitOfWork.Products.GetByIdAsync(id);
+            if (product == null)
+            {
+                throw new Exception("San pham khong ton tai");
+            }
+            return product;
+        }
+
+        public async Task IsActiveProduct(Product product)
+        {
+            var productUpdate = await _unitOfWork.Products.GetByIdAsync(product.Id);
+
+            if (productUpdate == null)
+            {
+                throw new Exception("Product does not exist!");
+            }
+
+            if (productUpdate.IsActive == true)
+            {
+                productUpdate.IsActive = false;
+            }
+            else
+            {
+                productUpdate.IsActive = true;
+            }
+
+            await _unitOfWork.Products.Update(productUpdate);
+            await _unitOfWork.SaveChangesAsync();
         }
 
         public Task UpdateProductAsync(Product product)

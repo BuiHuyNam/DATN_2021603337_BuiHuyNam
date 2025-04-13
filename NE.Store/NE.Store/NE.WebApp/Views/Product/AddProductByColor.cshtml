@@ -1,0 +1,49 @@
+﻿@model NE.Application.Dtos.ProductColorDto.ProductColorCreateDto
+
+
+@{
+    ViewData["Title"] = "AddProductByColor";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Thêm sản phẩm theo màu</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="AddProductByColor" asp-controller="Product" method="post" enctype="multipart/form-data">
+
+                <div class="mb-3">
+                    <label asp-for="ProductId" class="form-label">Tên sản phẩm</label>
+                    <select asp-for="ProductId" asp-items="ViewBag.ProductList" class="form-select">
+                        @await Component.InvokeAsync("Product")
+
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="ColorId" class="form-label">Màu sắc</label>
+                    <select asp-for="ColorId" asp-items="ViewBag.ColorList" class="form-select">
+                        @await Component.InvokeAsync("Color")
+
+                    </select>
+                </div>
+
+
+                <div class="mb-3">
+                    <label asp-for="Quantity" class="form-label">Số lượng</label>
+                    <input asp-for="Quantity" type="number" step="1" class="form-control" placeholder="Nhập số lượng" required />
+                </div>
+
+             
+
+
+
+                <button type="submit" class="btn btn-success">Thêm</button>
+                @Html.ActionLink("Hủy", "Index", "Product", null, new { @class = "btn btn-secondary ms-2" })
+            </form>
+        </div>
+    </div>
+</div>

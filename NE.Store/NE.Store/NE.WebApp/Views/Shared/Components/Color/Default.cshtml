@@ -1,0 +1,9 @@
+﻿@model IEnumerable<NE.Application.Dtos.ColorDto.ColorViewDto>
+
+@* <select name="ColorId" class="form-select"> *@
+<option value="">-- Chọn màu sắc --</option>
+@foreach (var color in Model)
+{
+    <option value="@color.Id">@color.ColorName</option>
+}
+@* </select> *@

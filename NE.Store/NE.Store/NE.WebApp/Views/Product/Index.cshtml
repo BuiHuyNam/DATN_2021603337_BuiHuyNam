@@ -3,17 +3,156 @@
     ViewData["Title"] = "Trang quản trị sản phẩm";
 }
 
-
+<style>
+    .dataTables_filter {
+        margin: 10px;
+    }
+</style>
 
 <div class="container mt-4">
-    <h2 class="text-center mb-4">Quản lý sản phâm</h2>
+    <h2 class="text-center mb-4">Quản lý sản phẩm</h2>
 
     <!-- Nút thêm sản phẩm -->
     <div class="d-flex justify-content-end mb-3">
         <a href="@Url.Action("AddProduct", "Product")" class="btn btn-primary btn-sm me-2">
-            <i class="bi bi-plus-circle"></i> Thêm sản phẩm
+            <i class="bi bi-plus-circle"></i> Thêm sản phẩm mới
         </a>
+        <a href="@Url.Action("AddProductByColor", "Product")" class="btn btn-primary btn-sm me-2">
+            <i class="bi bi-plus-circle"></i> Thêm sản phẩm theo màu
+        </a>
+    </div>
+
+    <div class="table-responsive shadow-lg p-3 mb-5 bg-white rounded">
+        <table id="productTable" class="table table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Tên danh mục</th>
+                    <th>Tên thương hiệu</th>
+                    <th>Màu sắc</th>
+                    <th>Giá bán</th>
+                    <th>Số lượng</th>
+                    <th>Trạng thái</th>
+                    <th class="text-center">Chức năng</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
 
   
 </div>
+
+<script>
+    $(document).ready(function () {
+        var urlApi = "https://localhost:7099/api/product";
+        var urlApiImage = "https://localhost:7099/api/ImageFile/Download";
+
+        $.get(urlApi, function (products) {
+            let flatData = [];
+
+            products.forEach(product => {
+                // Gộp tất cả màu
+                const colorNames = product.productColors.map(c => c.color?.colorName).join(", ");
+                const totalQuantity = product.productColors.reduce((sum, c) => sum + c.quantity, 0);
+
+                         // Tìm ảnh đầu tiên từ bất kỳ productColor nào
+                let imageUrl = null;
+                for (let pc of product.productColors) {
+                    if (pc.imageFiles && pc.imageFiles.length > 0) {
+                        imageUrl = `${urlApiImage}?id=${pc.imageFiles[0].id}`;
+                        break;
+                    }
+                }   
+
+                flatData.push({
+                    id: product.id,
+                    productName: product.productName,
+                    price: product.price,
+                    isActive: product.isActive,
+                    imageUrl: imageUrl, // nếu có API trả ảnh thì thay ở đây
+                    categoryName: product.category?.categoryName,
+                    brandName: product.brand?.brandName,
+                    colorName: colorNames,
+                    quantity: totalQuantity,
+                });
+            });
+
+            $('#productTable').DataTable({
+                data: flatData,
+                columns: [
+                    { data: 'id' },
+                    {
+                        data: 'imageUrl',
+                        render: function (data) {
+                            if (data) {
+                                return `<img src="${data}" width="60" height="60"/>`;
+                            } else {
+                                return `<span class="text-muted">Không có</span>`;
+                            }
+                        }
+                    },
+                    { data: 'productName' },
+                    { data: 'categoryName' },
+                    { data: 'brandName' },
+                    { data: 'colorName' },
+                    {
+                        data: 'price',
+                        render: function (data) {
+                            return `<div style="text-align: right;">${Number(data).toLocaleString('vi-VN')}&nbsp;VNĐ</div>`;
+                        }
+                    },
+
+
+                    {
+                        data: 'quantity',
+                        className: "text-center"
+                    },
+                    {
+                        data: "isActive",
+                        className: "text-center",
+                        render: function (data, type, row) {
+                            const buttonText = data ? "Đang bán" : "Dừng bán";
+                            const buttonClass = data ? "btn-success" : "btn-danger";
+
+                            return `
+                                <form method="post" action="/Admin/IsActiveProduct" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn thay đổi trạng thái không?');" >
+                                    <input type="hidden" name="Id" value="${row.id}" />
+                                    <button type="submit" class="btn ${buttonClass} btn-sm">
+                                        ${buttonText}
+                                    </button>
+                                </form>
+                            `;
+                        }
+                    },
+                    {
+                        data: null,
+                        render: function (data, type, row) {
+                            return `
+                                <a href="/ProductDetail/${row.id}" class="btn btn-warning btn-sm me-2">Chi tiết</a>
+                              `;
+                        },
+                        className: "text-center"
+                    }
+                ],
+                language: {
+                    search: "Tìm kiếm:",
+                    lengthMenu: "Hiển thị _MENU_ dòng",
+                    info: "Hiển thị _START_ đến _END_ của _TOTAL_ dòng",
+                    infoEmpty: "Không có dữ liệu",
+                    paginate: {
+                        first: "Đầu",
+                        last: "Cuối",
+                        next: "Tiếp",
+                        previous: "Trước"
+                    }
+                }
+            });
+        });
+    });
+</script>
+

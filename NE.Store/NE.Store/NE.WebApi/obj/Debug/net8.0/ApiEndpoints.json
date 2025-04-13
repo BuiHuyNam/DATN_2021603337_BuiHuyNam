@@ -781,6 +781,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NE.WebApi.Controllers.ProductController",
+    "Method": "GetProductByIdAsync",
+    "RelativePath": "api/Product/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NE.WebApi.Controllers.ProductController",
+    "Method": "IsActiveProduct",
+    "RelativePath": "api/Product/IsActiveProduct",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isActiveProductDto",
+        "Type": "NE.Application.Dtos.ProductDto.IsActiveProductDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NE.WebApi.Controllers.ProductColorController",
     "Method": "AddProductColor",
     "RelativePath": "api/ProductColor",

@@ -14,5 +14,7 @@ namespace NE.Application.Services.Interfaces
         Task AddProductAsync(Product product);
         Task DeleteProductAsync(int id);
         Task UpdateProductAsync(Product product);
+        Task IsActiveProduct(Product product);
+
     }
 }

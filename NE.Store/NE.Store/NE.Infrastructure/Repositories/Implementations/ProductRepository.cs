@@ -28,5 +28,17 @@ namespace NE.Infrastructure.Repositories.Implementations
                     .ThenInclude(pc => pc.ImageFiles)
                 .ToListAsync();
         }
+
+        public async override Task<Product> GetByIdAsync(int id)
+        {
+            return await _context.Set<Product>()
+                .Include(c => c.Category)
+                .Include(b => b.Brand)
+                .Include(pc => pc.ProductColors)
+                    .ThenInclude(c => c.Color)
+                .Include(p => p.ProductColors)
+                    .ThenInclude(pc => pc.ImageFiles)
+                .FirstOrDefaultAsync(bp => bp.Id == id);
+        }
     }
 }

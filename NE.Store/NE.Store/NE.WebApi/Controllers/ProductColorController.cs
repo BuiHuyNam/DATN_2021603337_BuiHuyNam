@@ -28,7 +28,7 @@ namespace NE.WebApi.Controllers
         {
             var productColor = _mapper.Map<ProductColor>(productColorCreateDto);
             await _productColorService.AddProductColorAsync(productColor);
-            return Ok();
+            return Ok(new {id = productColor.Id} );
         }
         [HttpGet()]
         public async Task<ActionResult> GetAllProductColor()

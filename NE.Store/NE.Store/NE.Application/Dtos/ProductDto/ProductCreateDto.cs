@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +14,9 @@ namespace NE.Application.Dtos.ProductDto
         public string Description { get; set; }
         public int BrandId { get; set; }
         public int CategoryId { get; set; }
+
+        public int ColorId { get; set; }
+        public int Quantity { get; set; }
+
     }
 }

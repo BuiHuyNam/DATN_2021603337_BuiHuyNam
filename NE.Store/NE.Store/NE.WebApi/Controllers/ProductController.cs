@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.BrandDto;
 using NE.Application.Dtos.ProductDto;
+using NE.Application.Dtos.ProvinceDto;
 using NE.Application.Services.Implementations;
 using NE.Application.Services.Interfaces;
 using NE.Domain.Entitis;
@@ -23,11 +24,11 @@ namespace NE.WebApi.Controllers
         }
 
         [HttpPost()]
-        public async Task<ActionResult> AddProduct(ProductCreateDto productCreateDto)
+        public async Task<ActionResult> AddProduct( ProductCreateDto productCreateDto)
         {
             var product = _mapper.Map<Product>(productCreateDto);
             await _productService.AddProductAsync(product);
-            return Ok();
+            return Ok(new {id = product.Id});
         }
 
         [HttpGet()]
@@ -35,6 +36,22 @@ namespace NE.WebApi.Controllers
         {
             var products = await _productService.GetAllProductAsync();
             var productDto =  _mapper.Map<IEnumerable<ProductViewDto>>(products);
+            return Ok(productDto);
+        }
+
+        [HttpPut("IsActiveProduct")]
+        public async Task<IActionResult> IsActiveProduct(IsActiveProductDto isActiveProductDto)
+        {
+            var productUpdate = _mapper.Map<Product>(isActiveProductDto);
+            await _productService.IsActiveProduct(productUpdate);
+            return Ok();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult> GetProductByIdAsync(int id)
+        {
+            var product = await _productService.GetProductByIdAsync(id);
+            var productDto = _mapper.Map<ProductViewDto>(product);
             return Ok(productDto);
         }
     }
