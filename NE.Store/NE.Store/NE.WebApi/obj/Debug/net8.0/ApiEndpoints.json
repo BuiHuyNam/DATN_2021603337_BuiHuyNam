@@ -782,6 +782,22 @@
   },
   {
     "ContainingType": "NE.WebApi.Controllers.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "api/Product",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productUpdateDto",
+        "Type": "NE.Application.Dtos.ProductDto.ProductUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NE.WebApi.Controllers.ProductController",
     "Method": "GetProductByIdAsync",
     "RelativePath": "api/Product/{id}",
     "HttpMethod": "GET",

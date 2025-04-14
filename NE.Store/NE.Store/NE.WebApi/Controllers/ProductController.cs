@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.BrandDto;
 using NE.Application.Dtos.ProductDto;
 using NE.Application.Dtos.ProvinceDto;
+using NE.Application.Dtos.RoleDto;
 using NE.Application.Services.Implementations;
 using NE.Application.Services.Interfaces;
 using NE.Domain.Entitis;
@@ -54,5 +55,15 @@ namespace NE.WebApi.Controllers
             var productDto = _mapper.Map<ProductViewDto>(product);
             return Ok(productDto);
         }
+
+        [HttpPut]
+        public async Task<ActionResult> UpdateProduct(ProductUpdateDto productUpdateDto)
+        {
+            var productUpdate = _mapper.Map<Product>(productUpdateDto);
+            await _productService.UpdateProductAsync(productUpdate);
+            return Ok();
+
+        }
+
     }
 }

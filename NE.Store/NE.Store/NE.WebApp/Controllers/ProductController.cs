@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.BrandDto;
+using NE.Application.Dtos.CategoryDto;
 using NE.Application.Dtos.ProductColorDto;
 using NE.Application.Dtos.ProductDto;
+using NE.Application.Dtos.RoleDto;
 
 namespace NE.WebApp.Controllers
 {
@@ -11,6 +13,10 @@ namespace NE.WebApp.Controllers
         private const string ApiUrl = "https://localhost:7099/api/product";
         private const string ApiUrlProductColor = "https://localhost:7099/api/productColor";
         private const string ApiUrlUpload = "https://localhost:7099/api/ImageFile/Upload";
+        private const string ApiUrlCategory = "https://localhost:7099/api/category";
+        private const string ApiUrlBrand = "https://localhost:7099/api/brand";
+
+
 
 
 
@@ -148,6 +154,54 @@ namespace NE.WebApp.Controllers
           
             int productId = Convert.ToInt32(TempData["ProductId"]);
             return RedirectToAction("ProductDetail", new { id = productId });
+        }
+
+        [HttpGet("admin/EditProduct/{id}")]
+        public async Task<IActionResult> EditProduct(int id)
+        {
+            var response = await _httpClient.GetFromJsonAsync<ProductUpdateDto>($"{ApiUrl}/{id}");
+
+            if (response == null)
+            {
+                return NotFound();
+            }
+
+            // Lấy danh sách danh mục
+            var categoryViewDto = await _httpClient.GetFromJsonAsync<IEnumerable<CategoryViewDto>>(ApiUrlCategory);
+            if (categoryViewDto == null)
+            {
+                return View(response); // Trả về view với dữ liệu sản phẩm nếu không lấy được danh mục
+            }
+
+            // Truyền danh sách thương hiệu vào ViewBag
+            ViewBag.Category = categoryViewDto.Select(x => new { x.Id, x.CategoryName }).ToList();
+
+            // Lấy danh sách danh mục
+            var brandViewDto = await _httpClient.GetFromJsonAsync<IEnumerable<BrandViewDto>>(ApiUrlBrand);
+            if (brandViewDto == null)
+            {
+                return View(response); // Trả về view với dữ liệu sản phẩm nếu không lấy được thương hiệu
+            }
+
+            // Truyền danh sách thương hiệu vào ViewBag
+            ViewBag.Brand = brandViewDto.Select(x => new { x.Id, x.BrandName }).ToList();
+
+            return View(response);
+        }
+
+        [HttpPost("admin/EditProduct/{id}")]
+        public async Task<IActionResult> EditProduct(ProductUpdateDto productUpdateDto)
+        {
+            var response = await _httpClient.PutAsJsonAsync(ApiUrl, productUpdateDto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Sua that bai!";
+            }
+            else
+            {
+                TempData["Success"] = "Sua thanh cong!";
+            }
+            return RedirectToAction("Index", "Product");
         }
 
 

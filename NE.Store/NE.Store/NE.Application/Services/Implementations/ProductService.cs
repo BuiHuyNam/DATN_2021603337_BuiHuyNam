@@ -73,9 +73,22 @@ namespace NE.Application.Services.Implementations
             await _unitOfWork.SaveChangesAsync();
         }
 
-        public Task UpdateProductAsync(Product product)
+        public async Task UpdateProductAsync(Product product)
         {
-            throw new NotImplementedException();
+            var productUpdate = await _unitOfWork.Products.GetByIdAsync(product.Id);
+            if (productUpdate == null)
+            {
+                throw new Exception("Product khonng ton tai");
+            }
+            product.IsActive = productUpdate.IsActive;
+            product.View = productUpdate.View;
+            product.CreatedDate = productUpdate.CreatedDate;
+            product.UpdatedDate = DateTime.Now;
+
+            await _unitOfWork.Products.Update(product);
+            await _unitOfWork.SaveChangesAsync();
+
+
         }
     }
 }
