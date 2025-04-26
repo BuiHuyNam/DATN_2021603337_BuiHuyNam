@@ -41,6 +41,10 @@ namespace NE.Infrastructure.Configurations
             builder.Property(e => e.UpdatedDate)
                 .HasColumnType("datetime2")
                 .HasDefaultValueSql("GETUTCDATE()");
+
+            // Thiết lập IsActive mặc định là true
+            builder.Property(x => x.IsActive)
+                .HasDefaultValue(true);
         }
     }
 }

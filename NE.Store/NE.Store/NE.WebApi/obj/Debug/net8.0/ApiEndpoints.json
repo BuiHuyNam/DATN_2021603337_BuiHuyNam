@@ -1067,6 +1067,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NE.WebApi.Controllers.UserController",
+    "Method": "GetAllUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NE.WebApi.Controllers.WardController",
     "Method": "AddWard",
     "RelativePath": "api/Ward",

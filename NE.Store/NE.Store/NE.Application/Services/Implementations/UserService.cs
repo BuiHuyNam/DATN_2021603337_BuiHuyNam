@@ -47,9 +47,10 @@ namespace NE.Application.Services.Implementations
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<User>> GetAllUserAsyns()
+        public async Task<IEnumerable<User>> GetAllUserAsyns()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.Users.GetAllAsync();
+
         }
 
         public Task<User> GetUserByIdAsync(int id)

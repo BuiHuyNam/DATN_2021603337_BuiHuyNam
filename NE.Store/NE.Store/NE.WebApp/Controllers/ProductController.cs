@@ -20,6 +20,7 @@ namespace NE.WebApp.Controllers
 
 
 
+
         public ProductController(HttpClient httpClient)
         {
             _httpClient = httpClient;
@@ -203,6 +204,31 @@ namespace NE.WebApp.Controllers
             }
             return RedirectToAction("Index", "Product");
         }
+
+        [HttpGet("admin/ImageProduct")]
+        public IActionResult ImageProduct()
+        {
+            return View();
+        }
+
+        [HttpGet("admin/AddImageProduct")]
+        public IActionResult AddImageProduct(int productColorId, int productId, int colorId)
+        {
+            ViewBag.ProductColorId = productColorId;
+            ViewBag.ProductId = productId;
+            ViewBag.ColorId = colorId;
+            return View();
+        }
+
+        [HttpGet("ImageProductDetail/{id}")]
+        public async Task<IActionResult> ImageProductDetail(int id)
+        {
+            var result = await _httpClient.GetFromJsonAsync<ProductViewDto>($"{ApiUrl}/{id}");
+            return View(result);
+        }
+
+
+
 
 
 

@@ -3,32 +3,116 @@
   "WorkspaceRootPath": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\components\\category\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\components\\category\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\coupon\\addcoupon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\coupon\\addcoupon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\userdto\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\userdto\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\userdto\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\userdto\\userviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\repositories\\implementations\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\repositories\\implementations\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.domain\\entitis\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08A51C25-2F7C-4107-BD9A-AF57E0591442}|NE.Domain\\NE.Domain.csproj|solutionrelative:ne.domain\\entitis\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.infrastructure\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22FFF99B-B19B-4B0E-854B-E28CFCD63121}|NE.Infrastructure\\NE.Infrastructure.csproj|solutionrelative:ne.infrastructure\\configurations\\brandconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\implementations\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\dtos\\productdto\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\productdto\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\mappings\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\imageproductdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\imageproductdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\addimageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\addimageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\imageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\imageproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\implementations\\imagefileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\services\\implementations\\imagefileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\editproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\coupon\\editcoupon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\coupon\\editcoupon.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\brand\\editbrand.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\brand\\editbrand.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 86,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,92 +138,366 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\Components\\Category\\Default.cshtml",
-              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\Components\\Category\\Default.cshtml",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\Components\\Category\\Default.cshtml",
-              "RelativeToolTip": "NE.WebApp\\Views\\Shared\\Components\\Category\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T08:39:28.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RoleController.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\RoleController.cs",
-              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\RoleController.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\RoleController.cs",
-              "RelativeToolTip": "NE.WebApp\\Controllers\\RoleController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwCwAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T08:28:18.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditProduct.cshtml",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\EditProduct.cshtml",
-              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\EditProduct.cshtml",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\EditProduct.cshtml",
-              "RelativeToolTip": "NE.WebApp\\Views\\Product\\EditProduct.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwB8AAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T08:28:12.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "NE.WebApp\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwMMAAAAuAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T09:08:36.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserConfiguration.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\UserConfiguration.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\UserConfiguration.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Configurations\\UserConfiguration.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAkwCwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T08:27:01.187Z",
+              "WhenOpened": "2025-04-26T08:48:54.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "NE.WebApi\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "NE.WebApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA3wCYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:42:33.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ProductService.cs",
-              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\ProductService.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ProductService.cs",
-              "RelativeToolTip": "NE.Application\\Services\\Implementations\\ProductService.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAswFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T06:59:01.945Z",
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAADIAAAAAAAAAAAAAAEAAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T04:35:34.024Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProductUpdateDto.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProductDto\\ProductUpdateDto.cs",
-              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ProductDto\\ProductUpdateDto.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProductDto\\ProductUpdateDto.cs",
-              "RelativeToolTip": "NE.Application\\Dtos\\ProductDto\\ProductUpdateDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserViewDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\UserDto\\UserViewDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\UserDto\\UserViewDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\UserDto\\UserViewDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\UserDto\\UserViewDto.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T06:59:23.454Z"
+              "WhenOpened": "2025-04-26T08:32:16.005Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
+              "Title": "AddCoupon.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Coupon\\AddCoupon.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Coupon\\AddCoupon.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Coupon\\AddCoupon.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Coupon\\AddCoupon.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAqwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:13:48.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\Index.cshtml",
               "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "NE.WebApp\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAABsAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAIMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-14T06:56:44.02Z",
+              "WhenOpened": "2025-04-26T07:53:34.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BrandConfiguration.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Configurations\\BrandConfiguration.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:50:56.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\UserDto\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\UserDto\\UserCreateDto.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\UserDto\\UserCreateDto.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\UserDto\\UserCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T09:02:53.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T09:06:25.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\UserRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:55:53.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\BrandController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\BrandController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\BrandController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\BrandController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T04:59:04.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BrandRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\BrandRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\BrandRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\BrandRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\BrandRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T09:01:02.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Implementations\\ProductRepository.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Implementations\\ProductRepository.cs",
+              "RelativeToolTip": "NE.Infrastructure\\Repositories\\Implementations\\ProductRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T09:01:05.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:41:16.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ProductService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\ProductService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ProductService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Implementations\\ProductService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:41:25.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "RelativeToolTip": "NE.Application\\Mappings\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwFoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:40:28.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\User.cs",
+              "RelativeDocumentMoniker": "NE.Domain\\Entitis\\User.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Domain\\Entitis\\User.cs",
+              "RelativeToolTip": "NE.Domain\\Entitis\\User.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:32:27.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RoleController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\RoleController.cs",
+              "RelativeDocumentMoniker": "NE.WebApi\\Controllers\\RoleController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\RoleController.cs",
+              "RelativeToolTip": "NE.WebApi\\Controllers\\RoleController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T08:43:40.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ImageProductDetail.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\ImageProductDetail.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\ImageProductDetail.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\ImageProductDetail.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Product\\ImageProductDetail.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEYAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T08:15:04.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ImageFileService.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ImageFileService.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Services\\Implementations\\ImageFileService.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Implementations\\ImageFileService.cs",
+              "RelativeToolTip": "NE.Application\\Services\\Implementations\\ImageFileService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T07:37:15.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AddImageProduct.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\AddImageProduct.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\AddImageProduct.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\AddImageProduct.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Product\\AddImageProduct.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T07:35:33.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ImageProduct.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\ImageProduct.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\ImageProduct.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\ImageProduct.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Product\\ImageProduct.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAFYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T07:07:58.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAAAN8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T07:06:35.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EditBrand.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Brand\\EditBrand.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Brand\\EditBrand.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Brand\\EditBrand.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Brand\\EditBrand.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:45:53.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditCoupon.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Coupon\\EditCoupon.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Coupon\\EditCoupon.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Coupon\\EditCoupon.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Coupon\\EditCoupon.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T06:45:37.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "EditProduct.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\EditProduct.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\EditProduct.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\EditProduct.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Product\\EditProduct.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T07:08:13.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CouponController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\CouponController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\CouponController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\CouponController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\CouponController.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAkwFoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T04:55:11.688Z",
               "EditorCaption": ""
             }
           ]

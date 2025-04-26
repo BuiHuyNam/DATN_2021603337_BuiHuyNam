@@ -1,0 +1,109 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; // layout admin riêng
+    ViewData["Title"] = "Trang quản trị hình ảnh sản phẩm";
+}
+
+<style>
+    .dataTables_filter {
+        margin: 10px;
+    }
+</style>
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Quản lý hình ảnh trưng bày</h2>
+
+
+
+    <div class="table-responsive shadow-lg p-3 mb-5 bg-white rounded">
+        <table id="productTable" class="table table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Màu sắc</th>
+                    <th>Hình ảnh</th>
+                    <th class="text-center">Chức năng</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+
+</div>
+<script>
+    $(document).ready(function () {
+        var urlApi = "https://localhost:7099/api/product";
+        var urlApiImage = "https://localhost:7099/api/ImageFile/Download";
+
+        $.get(urlApi, function (products) {
+            let flatData = [];
+
+            products.forEach(product => {
+                product.productColors.forEach(colorItem => {
+                    // Lấy tối đa 3 ảnh
+                    let imageUrls = [];
+                    if (colorItem.imageFiles && colorItem.imageFiles.length > 0) {
+                        imageUrls = colorItem.imageFiles.slice(0, 3).map(img =>
+                            `<img src="${urlApiImage}?id=${img.id}" width="60" height="60" class="me-1 mb-1" />`
+                        );
+                    }
+
+                    flatData.push({
+                        id: product.id,
+                        productName: product.productName,
+                        price: product.price,
+                        isActive: product.isActive,
+                        imageHtml: imageUrls.length > 0 ? imageUrls.join("") : `<span class="text-muted">Không có</span>`,
+                        categoryName: product.category?.categoryName,
+                        brandName: product.brand?.brandName,
+                        colorName: colorItem.color?.colorName,
+                        quantity: colorItem.quantity,
+                        productId: product.id,
+                        productColorId: colorItem.id,
+                        colorId: colorItem.colorId
+                        
+
+                    });
+                });
+            });
+
+            $('#productTable').DataTable({
+                data: flatData,
+                columns: [
+                    { data: 'productName' },
+                    { data: 'colorName' },
+                    {
+                        data: 'imageHtml',
+                        orderable: false,
+                        searchable: false
+                    },
+                    {
+                        data: 'id',
+                        className: "text-center",
+                        render: function (data, type, row) {
+                            return `
+                                <a href="/ImageProductDetail/${row.id}" class="btn btn-warning btn-sm me-2">Chi tiết</a>
+                                <a href="/Admin/AddImageProduct?productColorId=${row.productColorId}&colorId=${row.colorId}&productId=${row.productId}" class="btn btn-primary btn-sm me-2">Thêm ảnh</a>
+                            `;
+                        }
+                    }
+                ],
+                language: {
+                    search: "Tìm kiếm:",
+                    lengthMenu: "Hiển thị _MENU_ dòng",
+                    info: "Hiển thị _START_ đến _END_ của _TOTAL_ dòng",
+                    infoEmpty: "Không có dữ liệu",
+                    paginate: {
+                        first: "Đầu",
+                        last: "Cuối",
+                        next: "Tiếp",
+                        previous: "Trước"
+                    }
+                }
+            });
+        });
+    });
+</script>
+

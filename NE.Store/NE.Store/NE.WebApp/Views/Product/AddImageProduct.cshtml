@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "AddImageProduct";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+
+    var productColorId = Context.Request.Query["productColorId"];
+    var colorId = Context.Request.Query["colorId"];
+    var productId = Context.Request.Query["productId"];
+}
+
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4>Thêm hình ảnh trưng bày</h4>
+        </div>
+        <div class="card-body">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="hidden" id="productColorId" name="productColorId" value="@ViewBag.ProductColorId" />
+                <input type="hidden" id="productId" name="productId" value="@ViewBag.ProductId" />
+                <input type="hidden" id="colorId" name="colorId" value="@ViewBag.ColorId" />
+
+                <div class="mb-3">
+                    <label class="form-label">Ảnh sản phẩm</label>
+                    <input type="file" id="imageFile" class="form-control" accept="image/*" required />
+                </div>
+
+                <button type="submit" class="btn btn-success">Thêm</button>
+                @Html.ActionLink("Hủy", "ImageProduct", "Product", null, new { @class = "btn btn-secondary ms-2" })
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#uploadForm").submit(function (e) {
+            e.preventDefault(); // Ngăn submit form truyền thống
+
+            var formData = new FormData();
+            formData.append("file", $("#imageFile")[0].files[0]);
+            formData.append("productColorId", $("#productColorId").val());
+            formData.append("productId", $("#productId").val());
+            formData.append("colorId", $("#colorId").val());
+
+            // Đảm bảo rằng bạn lấy đúng giá trị từ URL query string (thông qua ViewBag đã truyền)
+            var productColorId = $("#productColorId").val();
+            var productId = $("#productId").val();
+            var colorId = $("#colorId").val();
+
+            // Kiểm tra nếu các giá trị có hợp lệ
+            if (productColorId && productId && colorId) {
+                var uploadUrl = `https://localhost:7099/api/ImageFile/Upload?productColorId=${productColorId}&productId=${productId}&colorId=${colorId}`;
+
+                $.ajax({
+                    url: uploadUrl,
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function () {
+                        alert("Tải ảnh thành công!");
+                        window.location.href = "/Admin/ImageProduct"; // Redirect sau khi thành công (hoặc đổi link theo ý bạn)
+                    },
+                    error: function () {
+                        alert("Có lỗi xảy ra khi tải ảnh.");
+                    }
+                });
+            } else {
+                alert("Thiếu thông tin cần thiết.");
+            }
+        });
+    });
+</script>
+

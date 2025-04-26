@@ -1,0 +1,105 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; // layout admin riêng
+    ViewData["Title"] = "Trang quản người dùng";
+}
+
+<style>
+    .dataTables_filter {
+        margin: 10px;
+    }
+</style>
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Quản lý người dùng</h2>
+
+
+
+    <div class="table-responsive shadow-lg p-3 mb-5 bg-white rounded">
+        <table id="brandTable" class="table table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Họ và tên</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Vài trò</th>
+                    <th>Trạng thái tài khoản</th>
+
+                    <th class="text-center">Chức năng</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        var urlApi = "https://localhost:7099/api/user";
+
+        $("#brandTable").DataTable({
+            ajax:{
+                url: urlApi,
+                type: "GET",
+                dataSrc: "",
+            }  ,
+            columns: [
+                {data: "id"},
+                {data: "fullName"},
+                {data: "email"},
+                {data: "phoneNumber"},
+                {data: "role.roleName"},
+
+
+
+
+
+                {
+                        data: "isActive",
+                        className: "text-center",
+                        render: function (data, type, row) {
+                            const buttonText = data ? "Hoạt động" : "Đã khóa";
+                            const buttonClass = data ? "btn-success" : "btn-danger";
+
+                            return `
+                                <form method="post" action="/Admin/IsActiveBrand" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn thay đổi trạng thái không?');" >
+                                    <input type="hidden" name="Id" value="${row.id}" />
+                                    <button type="submit" class="btn ${buttonClass} btn-sm">
+                                        ${buttonText}
+                                    </button>
+                                </form>
+                            `;
+                        }
+
+                },
+                {
+                    data: null,
+                    className: "text-center",
+                    render: function (data, type, row) {
+                        return `
+                            <a href="/UserDetail/${row.id}" class="btn btn-warning btn-sm me-2">Chi tiết</a>
+                            <a href="/Admin/EditUser/${row.id}" class="btn btn-primary btn-sm me-2">Sửa</a>
+                          
+
+                        `;
+                    }
+                }
+            ]   ,
+            language: {
+                search: "Tìm kiếm:",
+                lengthMenu: "Hiển thị _MENU_ dòng",
+                info: "Hiển thị _START_ đến _END_ của _TOTAL_ dòng",
+                infoEmpty: "Không có dữ liệu",
+                paginate: {
+                    first: "Đầu",
+                    last: "Cuối",
+                    next: "Tiếp",
+                    previous: "Trước"
+        }
+    }
+        });
+    });
+</script>

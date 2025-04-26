@@ -1,4 +1,5 @@
-﻿using NE.Domain.Entitis;
+﻿using Microsoft.EntityFrameworkCore;
+using NE.Domain.Entitis;
 using NE.Infrastructure.Context;
 using NE.Infrastructure.Repositories.Interfaces;
 using System;
@@ -13,6 +14,14 @@ namespace NE.Infrastructure.Repositories.Implementations
     {
         public UserRepository(NEContext context) : base(context)
         {
+        }
+
+        public override async Task<IEnumerable<User>> GetAllAsync()
+        {
+            return await _context.Set<User>()
+                .Include(r=>r.Role)
+                .Include(w=>w.Ward)
+                .ToListAsync();
         }
     }
 }

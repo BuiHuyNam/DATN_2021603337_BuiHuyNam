@@ -1,0 +1,131 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; // layout admin riêng
+    ViewData["Title"] = "Trang quản trị giảm giá";
+}
+
+<style>
+    .dataTables_filter {
+        margin: 10px;
+    }
+</style>
+
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Quản lý mã giảm giá</h2>
+
+    <!-- Nút thêm mã giảm giá-->
+    <div class="d-flex justify-content-end mb-3">
+        <a href="@Url.Action("AddCoupon", "Coupon")" class="btn btn-primary btn-sm me-2">
+            <i class="bi bi-plus-circle"></i> Thêm mã giảm giá
+        </a>
+    </div>
+
+    <!-- Bảng mã giảm giá -->
+    <div class="table-responsive shadow-lg p-3 mb-5 bg-white rounded">
+        <table id="couponTable" class="table table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Mã giảm giá</th>
+                    <th>Giảm giá (%)</th>
+                    <th>Ngày áp dụng</th>
+                    <th>Ngày hết hạn</th>
+                    <th>Số lượng</th>
+                    <th>Trạng thái</th>
+
+                    <th class="text-center">Chức năng</th>
+
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function formatDate(dateString) {
+        if (!dateString) return "";
+        const date = new Date(dateString);
+        const day = String(date.getDate()).padStart(2, "0");
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    }
+
+    $(document).ready(function(){
+        var urlApi = "https://localhost:7099/api/coupon";
+
+        $("#couponTable").DataTable({
+            ajax:{
+                url: urlApi,
+                type: "GET",
+                dataSrc: "",
+            },
+            columns: [
+                {data: "id"},
+                {data: "code"},
+                {data: "discount"},
+                {
+                    data: "useDate",
+                    render: function(data) {
+                        return formatDate(data);
+                    }
+                },
+                {
+                    data: "expiryDate",
+                    render: function(data) {
+                        return formatDate(data);
+                    }
+                },
+                {data: "quantity"},
+                {
+                    data: null,
+                    render: function(data, type, row) {
+                        const now = new Date();
+                        const useDate = new Date(row.useDate);
+                        const expiryDate = new Date(row.expiryDate);
+
+                        if (!row.useDate || !row.expiryDate) {
+                            return '<span class="text-muted">Không xác định</span>';
+                        }
+
+                        if (useDate > now) {
+                            return '<span class="text-warning fw-bold">Chưa áp dụng</span>';
+                        } else if (expiryDate < now) {
+                            return '<span class="text-danger fw-bold">Hết hạn</span>';
+                        } else {
+                            return '<span class="text-success fw-bold">Áp dụng</span>';
+                        }
+                    }
+                } ,
+
+                {
+                    data: null,
+                    className: "text-center",
+                    render: function (data, type, row) {
+                        return `
+                            <a href="/Admin/EditCoupon/${row.id}" class="btn btn-warning btn-sm me-2">Sửa</a>
+                            <form class="d-inline-block" method="post" action="/Admin/DeleteCoupon/${row.id}"
+                                  onsubmit="return confirm('Bạn có chắc chắn muốn xóa không?');">
+                                <button type="submit" class="btn btn-danger btn-sm">Xóa</button>
+                            </form>
+                        `;
+                    }
+                } 
+            ],
+            language: {
+                search: "Tìm kiếm:",
+                lengthMenu: "Hiển thị _MENU_ dòng",
+                info: "Hiển thị _START_ đến _END_ của _TOTAL_ dòng",
+                infoEmpty: "Không có dữ liệu",
+                paginate: {
+                    first: "Đầu",
+                    last: "Cuối",
+                    next: "Tiếp",
+                    previous: "Trước"
+                }
+            }
+        });
+    });
+</script>

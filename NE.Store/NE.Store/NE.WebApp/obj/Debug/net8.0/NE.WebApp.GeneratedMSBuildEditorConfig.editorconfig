@@ -58,12 +58,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sb3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Coupon/AddCoupon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cG9uXEFkZENvdXBvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Coupon/EditCoupon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cG9uXEVkaXRDb3Vwb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Coupon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cG9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Product/AddImageProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRJbWFnZVByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Product/AddProduct.cshtml]
@@ -76,6 +92,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Product/EditProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Product/ImageProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbWFnZVByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Product/ImageProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbWFnZVByb2R1Y3REZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Product/Index.cshtml]
@@ -124,6 +148,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/_ViewImports.cshtml]

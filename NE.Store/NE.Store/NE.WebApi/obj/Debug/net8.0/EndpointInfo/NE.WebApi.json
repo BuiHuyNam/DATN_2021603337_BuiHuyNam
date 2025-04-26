@@ -1681,6 +1681,16 @@
             "description": "OK"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Ward": {
