@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NE.Application.Dtos.UserDto;
 
 namespace NE.WebApp.Controllers
 {
@@ -17,6 +18,15 @@ namespace NE.WebApp.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost("admin/IsActiveUser")]
+        public async Task<IActionResult> IsActiveUser(IsActiveUserDto isActiveUserDto)
+        {
+            var response = await _httpClient.PutAsJsonAsync(ApiUrl + "/IsActiveUser", isActiveUserDto);
+            return RedirectToAction("Index", "User");
+
+
         }
     }
 }

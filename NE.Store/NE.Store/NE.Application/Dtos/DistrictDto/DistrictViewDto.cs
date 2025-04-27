@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NE.Application.Dtos.ProvinceDto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,6 @@ namespace NE.Application.Dtos.DistrictDto
         public int Id { get; set; }
         public string DistrictName { get; set; }
         public int ProvinceId { get; set; }
+        public ProvinceViewDto Province { get; set; }
     }
 }

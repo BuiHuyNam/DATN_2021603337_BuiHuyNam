@@ -1,4 +1,6 @@
-﻿using NE.Domain.Entitis;
+﻿using NE.Application.Dtos.OrderDetailDto;
+using NE.Application.Dtos.UserDto;
+using NE.Domain.Entitis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +17,17 @@ namespace NE.Application.Dtos.OrderDto
         public double TotalMoney { get; set; }
 
         public int UserId { get; set; }
+
         public int? CouponId { get; set; }
-      
+        public DateTime CreatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
+        public UserViewDto User { get; set; }
+
+        public List<OrderDetailViewDto> OrderDetails { get; set; } = new();
+       
+
+       
+
+
     }
 }

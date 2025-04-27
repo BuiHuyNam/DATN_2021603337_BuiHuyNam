@@ -1,4 +1,5 @@
-﻿using NE.Domain.Entitis;
+﻿using Microsoft.EntityFrameworkCore;
+using NE.Domain.Entitis;
 using NE.Infrastructure.Context;
 using NE.Infrastructure.Repositories.Interfaces;
 using System;
@@ -13,6 +14,13 @@ namespace NE.Infrastructure.Repositories.Implementations
     {
         public WardRepository(NEContext context) : base(context)
         {
+        }
+        public override async Task<IEnumerable<Ward>> GetAllAsync()
+        {
+            return await _context.Set<Ward>()
+                .Include(d=>d.District)
+                    .ThenInclude(p=>p.Province)
+                .ToListAsync();
         }
     }
 }

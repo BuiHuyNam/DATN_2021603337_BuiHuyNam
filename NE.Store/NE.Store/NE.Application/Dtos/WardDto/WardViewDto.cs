@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NE.Application.Dtos.DistrictDto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,6 @@ namespace NE.Application.Dtos.WardDto
         public int Id { get; set; }
         public string WardName { get; set; }
         public int DistrictId { get; set; }
+        public DistrictViewDto District { get; set; }
     }
 }

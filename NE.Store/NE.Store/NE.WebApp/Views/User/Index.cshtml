@@ -65,7 +65,7 @@
                             const buttonClass = data ? "btn-success" : "btn-danger";
 
                             return `
-                                <form method="post" action="/Admin/IsActiveBrand" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn thay đổi trạng thái không?');" >
+                                <form method="post" action="/Admin/IsActiveUser" style="display:inline;" onsubmit="return confirm('Bạn có chắc chắn thay đổi trạng thái không?');" >
                                     <input type="hidden" name="Id" value="${row.id}" />
                                     <button type="submit" class="btn ${buttonClass} btn-sm">
                                         ${buttonText}

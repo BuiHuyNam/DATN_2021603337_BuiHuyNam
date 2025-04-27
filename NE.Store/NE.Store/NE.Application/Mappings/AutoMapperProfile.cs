@@ -89,6 +89,8 @@ namespace NE.Application.Mappings
             //User
             CreateMap<User, UserCreateDto>().ReverseMap();
             CreateMap<User, UserViewDto>().ReverseMap();
+            CreateMap<User, IsActiveUserDto>().ReverseMap();
+
 
 
             //Cart
@@ -105,6 +107,7 @@ namespace NE.Application.Mappings
             CreateMap<Order, OrderCreateDto>().ReverseMap();
             CreateMap<Order, OrderUpdateDto>().ReverseMap();
             CreateMap<Order, OrderViewDto>().ReverseMap();
+            CreateMap<Order, UpdateOrderStatusDto>().ReverseMap();
 
             CreateMap<OrderDetail, OrderDetailCreateDto>().ReverseMap();
             CreateMap<OrderDetail, OrderDetailUpdateDto>().ReverseMap();

@@ -23,5 +23,14 @@ namespace NE.Infrastructure.Repositories.Implementations
                 .Include(w=>w.Ward)
                 .ToListAsync();
         }
+
+        public override async Task<User> GetByIdAsync(int id)
+        {
+            return await _context.Set<User>()
+                .Include(r => r.Role)
+                .Include(w => w.Ward)
+                .Where(u => u.Id == id)
+                .FirstOrDefaultAsync();
+        }
     }
 }

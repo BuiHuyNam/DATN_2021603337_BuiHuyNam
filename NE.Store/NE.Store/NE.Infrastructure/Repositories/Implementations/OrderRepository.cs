@@ -1,4 +1,5 @@
-﻿using NE.Domain.Entitis;
+﻿using Microsoft.EntityFrameworkCore;
+using NE.Domain.Entitis;
 using NE.Infrastructure.Context;
 using NE.Infrastructure.Repositories.Interfaces;
 using System;
@@ -13,6 +14,15 @@ namespace NE.Infrastructure.Repositories.Implementations
     {
         public OrderRepository(NEContext context) : base(context)
         {
+        }
+
+        public override async Task<IEnumerable<Order>> GetAllAsync()
+        {
+            return await _context.Set<Order>()
+                .Include(od => od.OrderDetails)
+                    .ThenInclude(p=>p.Product)
+                .Include(u=>u.User)
+                .ToListAsync();
         }
     }
 }

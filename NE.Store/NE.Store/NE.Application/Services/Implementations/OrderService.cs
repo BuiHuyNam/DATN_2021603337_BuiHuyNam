@@ -66,5 +66,19 @@ namespace NE.Application.Services.Implementations
             await _unitOfWork.Orders.Update(order);
             await _unitOfWork.SaveChangesAsync();
         }
+
+        public async Task UpdateOrderStatus(Order order)
+        {
+            var orderUpdate = await _unitOfWork.Orders.GetByIdAsync(order.Id);
+            if(orderUpdate == null)
+            {
+                throw new Exception("Order does not exist");
+            }
+
+            orderUpdate.Status = order.Status;
+            await _unitOfWork.Orders.Update(orderUpdate);
+            await _unitOfWork.SaveChangesAsync();
+
+        }
     }
 }

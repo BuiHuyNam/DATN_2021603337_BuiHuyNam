@@ -14,5 +14,8 @@ namespace NE.Application.Services.Interfaces
         Task AddOrderAsync(Order order);
         Task DeleteOrderAsync(int id);
         Task UpdateOrderAsync(Order order);
+        Task UpdateOrderStatus(Order order);
+       
+
     }
 }

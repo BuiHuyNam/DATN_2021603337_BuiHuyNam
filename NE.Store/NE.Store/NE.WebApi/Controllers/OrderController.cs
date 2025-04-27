@@ -60,5 +60,13 @@ namespace NE.WebApi.Controllers
             await _orderService.DeleteOrderAsync(id);
             return Ok();
         }
+
+        [HttpPut("UpdateOrderStatus")]
+        public async Task<ActionResult> UpdateOrderStatus(UpdateOrderStatusDto updateOrderStatusDto)
+        {
+            var orderUpdate = _mapper.Map<Order>(updateOrderStatusDto);
+            await _orderService.UpdateOrderStatus(orderUpdate);
+            return Ok();
+        }
     }
 }

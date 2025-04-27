@@ -1,0 +1,197 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; // layout admin riêng
+    ViewData["Title"] = "Trang quản trị đơn hàng";
+}
+
+<style>
+    .dataTables_filter {
+        margin: 10px;
+    }
+</style>
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Quản lý đơn hàng</h2>
+
+    <!-- Nút thêm đơn hàng (nếu cần) -->
+    @* <div class="d-flex justify-content-end mb-3"> *@
+    @*     <a href="@Url.Action("AddOrder", "Order")" class="btn btn-primary btn-sm me-2"> *@
+    @*         <i class="bi bi-plus-circle"></i> Thêm đơn hàng *@
+    @*     </a> *@
+    @* </div> *@
+
+    <!-- Bảng đơn hàng -->
+    <div class="table-responsive shadow-lg p-3 mb-5 bg-white rounded">
+        <table id="orderTable" class="table table-hover table-striped align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Họ và tên</th>
+                    <th>Số điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Sản phẩm</th>
+                    <th>Tổng tiền</th>
+                    <th>Ghi chú</th>
+                    <th>Trạng thái</th>
+                    <th class="text-center">Chức năng</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(){
+        var urlApi = "https://localhost:7099/api/order";
+
+        $("#orderTable").DataTable({
+            ajax:{
+                url: urlApi,
+                type: "GET",
+                dataSrc: ""
+            },
+            columns: [
+                { data: "id" },
+                {
+                    data: "user.fullName",
+                    render: function (data, type, row) {
+                        return data ?? "(Chưa cập nhật)";
+                    }
+                },
+                {
+                    data: "user.phoneNumber",
+                    render: function (data, type, row) {
+                        return data ?? "(Chưa cập nhật)";
+                    }
+                },
+                {
+                    data: "user.addressDetail",
+                    render: function (data, type, row) {
+                        return data ?? "(Chưa cập nhật)";
+                    }
+                },
+                {
+                    data: "orderDetails",
+                    render: function (data, type, row) {
+                        if (data && data.length > 0) {
+                            let products = data.map(x => x.product.productName).join(", ");
+                            return products;
+                        }
+                        return "(Không có sản phẩm)";
+                    }
+                },
+                {
+                    data: "totalMoney",
+                    render: function (data, type, row) {
+                        return data.toLocaleString('vi-VN') + " đ";
+                    }
+                },
+                {
+                    data: "note",
+                    render: function (data, type, row) {
+                        return data ?? "";
+                    }
+                },
+                {
+                    data: "status",
+                    render: function (data, type, row) {
+                        switch(data){
+                            case 1: return '<span class="badge bg-warning text-dark">Chờ xác nhận</span>';
+                            case 2: return '<span class="badge bg-info">Đã xác nhận</span>';
+                            case 3: return '<span class="badge bg-primary">Đã thanh toán</span>';
+                            case 4: return '<span class="badge bg-secondary">Đang giao hàng</span>';
+                            case 5: return '<span class="badge bg-success">Đã giao</span>';
+                            case 6: return '<span class="badge bg-danger">Đã hủy</span>';
+                            case 7: return '<span class="badge bg-dark">Yêu cầu trả hàng</span>';
+                            default: return '<span class="badge bg-light text-dark">Không xác định</span>';
+                        }
+                    }
+                },
+
+                {
+                    data: null,
+                    className: "text-center",
+                    render: function (data, type, row) {
+                        return `
+                            <a href="/Admin/EditOrder/${row.id}" class="btn btn-warning btn-sm me-2">Chi tiết</a>
+                                <button type="button" class="btn btn-danger btn-sm"
+                                    data-id="${row.id}"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#updateStatusModal">
+                                    Trạng Thái
+                                </button>
+
+                        `;
+                    }
+                }
+            ],
+            language: {
+                search: "Tìm kiếm:",
+                lengthMenu: "Hiển thị _MENU_ dòng",
+                info: "Hiển thị _START_ đến _END_ của _TOTAL_ dòng",
+                infoEmpty: "Không có dữ liệu",
+                paginate: {
+                    first: "Đầu",
+                    last: "Cuối",
+                    next: "Tiếp",
+                    previous: "Trước"
+                }
+            }
+        });
+    });
+</script>
+
+
+<!-- Modal cập nhật trạng thái -->
+<div class="modal fade" id="updateStatusModal" tabindex="-1" aria-labelledby="updateStatusModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateStatusModalLabel">Cập nhật trạng thái đơn hàng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+            <div class="modal-body">
+                <form id="updateStatusForm" action="@Url.Action("UpdateOrderStatus","Order")" method="post">
+                    <input type="hidden" id="orderId" name="Id" />
+                    <div class="mb-3">
+                        <label for="statusSelect" class="form-label">Chọn trạng thái mới</label>
+                        <select class="form-select" id="statusSelect" name="Status" required>
+                            <option value="">-- Chọn trạng thái --</option>
+                            <option value="1">Chờ xác nhận</option>
+                            <option value="2">Đã xác nhận</option>
+                            <option value="3">Đã thanh toán</option>
+                            <option value="4">Đang giao hàng</option>
+                            <option value="5">Đã giao</option>
+                            <option value="6">Đã hủy</option>
+                            <option value="7">Yêu cầu trả hàng</option>
+                        </select>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary">Xác nhận</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        var updateStatusModal = document.getElementById('updateStatusModal');
+
+        // Lắng nghe sự kiện khi modal hiển thị
+        updateStatusModal.addEventListener('show.bs.modal', function (event) {
+            // Lấy nút bấm đang kích hoạt modal
+            var button = event.relatedTarget;
+            // Lấy giá trị của data-id từ nút
+            var orderId = button.getAttribute('data-id');
+
+            // Gán giá trị vào input ẩn trong form
+            document.getElementById('orderId').value = orderId;
+        });
+    });
+</script>
+

@@ -53,14 +53,42 @@ namespace NE.Application.Services.Implementations
 
         }
 
-        public Task<User> GetUserByIdAsync(int id)
+        public async Task<User> GetUserByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            var user = await _unitOfWork.Users.GetByIdAsync(id);
+            if (user == null)
+            {
+                throw new Exception("User does not exist!");
+            }
+            return user;
         }
 
         public Task UpdateUserAsync(User user)
         {
             throw new NotImplementedException();
         }
+
+        public async Task IsActiveUser(User user)
+        {
+            var userUpdate = await _unitOfWork.Users.GetByIdAsync(user.Id);
+
+            if (userUpdate == null)
+            {
+                throw new Exception("user does not exist!");
+            }
+
+            if (userUpdate.IsActive == true)
+            {
+                userUpdate.IsActive = false;
+            }
+            else
+            {
+                userUpdate.IsActive = true;
+            }
+
+            await _unitOfWork.Users.Update(userUpdate);
+            await _unitOfWork.SaveChangesAsync();
+        }
+
     }
 }
