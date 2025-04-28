@@ -50,11 +50,10 @@
                                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
                             </div>
                             <div class="header__top__right__language">
-                                <img src="~/NEStore/img/language.png" alt="">
-                                <div>English</div>
+                                <img src="~/NEStore/img/languagevn.png" style="width: 24px; height: 14px;" alt="">
+                                <div>Việt Nam</div>
                                 <span class="arrow_carrot-down"></span>
                                 <ul>
-                                    <li><a href="#">Spanis</a></li>
                                     <li><a href="#">English</a></li>
                                 </ul>
                             </div>
@@ -118,20 +117,24 @@
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
                             <span>Danh mục</span>
+                            
                         </div>
-                        <ul>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
-                        </ul>
+                        <div class="item__category"></div>
+                       
+                        @* <ul> *@
+                        @*     <li><a href="#">Fresh Meat</a></li> *@
+                        @*     <li><a href="#">Vegetables</a></li> *@
+                        @*     <li><a href="#">Fruit & Nut Gifts</a></li> *@
+                        @*     <li><a href="#">Fresh Berries</a></li> *@
+                        @*     <li><a href="#">Ocean Foods</a></li> *@
+                        @*     <li><a href="#">Butter & Eggs</a></li> *@
+                        @*     <li><a href="#">Fastfood</a></li> *@
+                        @*     <li><a href="#">Fresh Onion</a></li> *@
+                        @*     <li><a href="#">Papayaya & Crisps</a></li> *@
+                        @*     <li><a href="#">Oatmeal</a></li> *@
+                        @*     <li><a href="#">Fresh Bananas</a></li> *@
+                        @* </ul> *@
+                       
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -258,3 +261,28 @@
 </body>
 
 </html>
+<script>
+    $(document).ready(function() {
+        // Gọi API để lấy danh mục
+        $.ajax({
+            url: 'https://localhost:7099/api/category',  // URL API lấy danh mục
+            method: 'GET',
+            success: function(data) {
+                var categories = data; // Lấy dữ liệu danh mục từ API
+                var dropdown = '<ul>';  // Khởi tạo danh sách danh mục
+
+                // Lặp qua các danh mục và thêm vào dropdown
+                categories.forEach(function(category) {
+                    dropdown += '<li><b><a href="/products?categoryId=' + category.id + '">' + category.categoryName + '</a></b></li>';
+                });
+                dropdown += '</ul>';  // Đóng danh sách
+
+                // Chèn danh mục vào vị trí trên giao diện
+                $('.item__category').html(dropdown);
+            },
+            error: function(error) {
+                console.log('Có lỗi xảy ra:', error);
+            }
+        });
+    });
+</script>

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace NE.WebApp.Controllers
 {
-    [Route("admin")]
+    
     public class CategoryController : Controller
     {
         private readonly HttpClient _httpClient;
@@ -16,19 +16,19 @@ namespace NE.WebApp.Controllers
             _httpClient = httpClient;
         }
 
-        [HttpGet("category")]
+        [HttpGet("admin/category")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpGet("addCategory")]
+        [HttpGet("admin/addCategory")]
         public IActionResult AddCategory()
         {
             return View();
         }
 
-        [HttpPost("addCategory")]
+        [HttpPost("admin/addCategory")]
         public async Task<IActionResult> AddCategory(CategoryCreateDto categoryCreateDto)
         {
             var response = await _httpClient.PostAsJsonAsync(ApiUrl, categoryCreateDto);
@@ -43,7 +43,7 @@ namespace NE.WebApp.Controllers
             return RedirectToAction("Index", "Category");
         }
 
-        [HttpGet("editCategory/{id}")]
+        [HttpGet("admin/editCategory/{id}")]
         public async Task<IActionResult> EditCategory(int id)
         {
             var response = await _httpClient.GetFromJsonAsync<CategoryUpdateDto>($"{ApiUrl}/{id}");
@@ -54,7 +54,7 @@ namespace NE.WebApp.Controllers
             return View(response);
         }
 
-        [HttpPost("editCategory/{id}")]
+        [HttpPost("admin/editCategory/{id}")]
         public async Task<IActionResult> EditCategory(CategoryUpdateDto categoryUpdateDto)
         {
             var response = await _httpClient.PutAsJsonAsync(ApiUrl, categoryUpdateDto);
@@ -69,7 +69,7 @@ namespace NE.WebApp.Controllers
             return RedirectToAction("Index", "Category");
         }
 
-        [HttpPost("DeleteCategory/{id}")]
+        [HttpPost("admin/DeleteCategory/{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             var response = await _httpClient.DeleteAsync($"{ApiUrl}/{id}");
@@ -82,6 +82,14 @@ namespace NE.WebApp.Controllers
                 TempData["Success"] = "Xoa thanh cong!";
             }
             return RedirectToAction("Index", "Category");
+        }
+
+        [HttpGet("getCategory")]
+        public async Task<IActionResult> GetAllCategory()
+        {
+            var categories = await _httpClient.GetFromJsonAsync<CategoryViewDto>(ApiUrl);
+            ViewBag.Categories = categories; // Gửi qua ViewBag
+            return View();
         }
     }
 }

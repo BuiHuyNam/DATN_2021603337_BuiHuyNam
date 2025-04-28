@@ -18,5 +18,8 @@ namespace NE.WebApp.ViewComponents
             var result = await _httpClient.GetFromJsonAsync<IEnumerable<CategoryViewDto>>(ApiUrl);
             return View(result);
         }
+
+     
     }
+
 }

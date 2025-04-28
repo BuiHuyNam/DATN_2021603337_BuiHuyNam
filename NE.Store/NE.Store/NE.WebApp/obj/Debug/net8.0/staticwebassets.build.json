@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FWb+pCun6ntCVtlnKThQjJp4M+rk0iH3YpeuiJxWMSg=",
+  "Hash": "focCW8WtyCC5gjic5zyk0Z+/r3jg+5i7QbQ/qYSDVHc=",
   "Source": "NE.WebApp",
   "BasePath": "_content/NE.WebApp",
   "Mode": "Default",
@@ -2352,6 +2352,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\NEStore\\img\\language.png"
+    },
+    {
+      "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\languagevn.png",
+      "SourceId": "NE.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\",
+      "BasePath": "_content/NE.WebApp",
+      "RelativePath": "NEStore/img/languagevn.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NEStore\\img\\languagevn.png"
     },
     {
       "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\latest-product\\lp-1.jpg",

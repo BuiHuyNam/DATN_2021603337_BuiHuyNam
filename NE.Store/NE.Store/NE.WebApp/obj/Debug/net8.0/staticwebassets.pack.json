@@ -249,6 +249,10 @@
       "PackagePath": "staticwebassets\\NEStore\\img\\language.png"
     },
     {
+      "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\languagevn.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\languagevn.png"
+    },
+    {
       "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\latest-product\\lp-1.jpg",
       "PackagePath": "staticwebassets\\NEStore\\img\\latest-product\\lp-1.jpg"
     },
