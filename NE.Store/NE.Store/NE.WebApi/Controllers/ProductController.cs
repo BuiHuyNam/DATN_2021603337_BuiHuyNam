@@ -65,5 +65,21 @@ namespace NE.WebApi.Controllers
 
         }
 
+        [HttpGet("ProductPages")]
+        public async Task<ActionResult> GetAllBlogPage([FromQuery] int page = 1, [FromQuery] int pageSize = 8)
+        {
+            var products = await _productService.GetAllProductPage(page, pageSize);
+            return Ok(products);
+        }
+
+        [HttpGet("Top5NewProduct")]
+        public async Task<ActionResult> GetTop5NewProduct()
+        {
+            var products = await _productService.Top5NewProduct();
+            var productsDto = _mapper.Map<List<ProductViewDto>>(products);
+            return Ok(productsDto);
+            
+        }
+
     }
 }

@@ -19,6 +19,8 @@ namespace NE.Application.Dtos.ProductDto
         public float Discount { get; set; }
         public int View { get; set; }
         public bool? IsActive { get; set; }
+        public DateTime CreatedDate { get; set; }
+
 
 
         public int CategoryId { get; set; }

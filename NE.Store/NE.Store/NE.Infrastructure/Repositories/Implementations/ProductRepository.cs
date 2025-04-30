@@ -40,5 +40,32 @@ namespace NE.Infrastructure.Repositories.Implementations
                     .ThenInclude(pc => pc.ImageFiles)
                 .FirstOrDefaultAsync(bp => bp.Id == id);
         }
+
+            public IQueryable<Product> GetAllForPaging()
+            {
+                return _context.Set<Product>()
+                  
+                    .Include(c => c.Category)
+                    .Include(b => b.Brand)
+                    .Include(pc => pc.ProductColors)
+                        .ThenInclude(c => c.Color)
+                    .Include(p => p.ProductColors)
+                        .ThenInclude(pc => pc.ImageFiles);
+            }
+
+        public Task<List<Product>> Top5NewProduct()
+        {
+            return _context.Set<Product>()
+                .Where(p => p.IsActive == true)
+                 .Include(c => c.Category)
+                .Include(b => b.Brand)
+                .Include(pc => pc.ProductColors)
+                    .ThenInclude(c => c.Color)
+                .Include(p => p.ProductColors)
+                    .ThenInclude(pc => pc.ImageFiles)
+                .OrderByDescending(p => p.CreatedDate)
+                .Take(5)
+                .ToListAsync();
+        }
     }
 }

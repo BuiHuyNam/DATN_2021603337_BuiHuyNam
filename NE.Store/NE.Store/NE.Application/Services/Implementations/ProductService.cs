@@ -1,10 +1,15 @@
-﻿using NE.Application.Services.Interfaces;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using NE.Application.Dtos.BaseDto;
+using NE.Application.Dtos.ProductDto;
+using NE.Application.Services.Interfaces;
 using NE.Domain.Entitis;
 using NE.Infrastructure.Repositories.Interfaces;
 using NE.Infrastructure.UnitOfWork;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,10 +18,13 @@ namespace NE.Application.Services.Implementations
     public class ProductService : IProductService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public ProductService(IUnitOfWork unitOfWork)
+
+        public ProductService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
         public async Task AddProductAsync(Product product)
@@ -33,6 +41,25 @@ namespace NE.Application.Services.Implementations
         public Task DeleteProductAsync(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<PageResultDto<ProductViewDto>> GetAllProductPage(int page, int pageSize)
+        {
+            var query = _unitOfWork.Products.GetAllForPaging().Where(p=>p.IsActive == true);
+            int totalItem = await query.CountAsync();
+
+            var products = await query.Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return new PageResultDto<ProductViewDto>
+            {
+                Page = page,
+                PageSize = pageSize,
+                TotalItem = totalItem,
+                Items = _mapper.Map<List<ProductViewDto>>(products)
+            };
+
         }
 
         public async Task<IEnumerable<Product>> GetAllProductAsync()
@@ -90,5 +117,12 @@ namespace NE.Application.Services.Implementations
 
 
         }
+
+        public async Task<List<Product>> Top5NewProduct()
+        {
+           
+            return await _unitOfWork.Products.Top5NewProduct();
+        }
+    
     }
 }

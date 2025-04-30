@@ -33,6 +33,11 @@
 
 </div>
 <script>
+
+        function truncateString(str, num) {
+        return str.length > num ? str.slice(0, num) + '...' : str;
+    }
+
     $(document).ready(function () {
         var urlApi = "https://localhost:7099/api/product";
         var urlApiImage = "https://localhost:7099/api/ImageFile/Download";
@@ -72,7 +77,12 @@
             $('#productTable').DataTable({
                 data: flatData,
                 columns: [
-                    { data: 'productName' },
+                    {
+                        data: 'productName',
+                        render: function(data) {
+                            return truncateString(data, 20);
+                        }
+                    },
                     { data: 'colorName' },
                     {
                         data: 'imageHtml',

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NE.Application.Dtos.BaseDto;
 using NE.Application.Dtos.BrandDto;
 using NE.Application.Dtos.CategoryDto;
 using NE.Application.Dtos.ProductColorDto;
@@ -237,7 +238,52 @@ namespace NE.WebApp.Controllers
         }
 
 
-        
+        [HttpGet()]
+        public async Task<IActionResult> GetAllProductPages(int page = 1, int pageSize = 8, string searchItem = "", int? categoryId = null)
+        {
+            var response = await _httpClient.GetFromJsonAsync<PageResultDto<ProductViewDto>>($"{ApiUrl}/Productpages?page=1&pageSize=20");
+            if (response == null || response.Items == null)
+            {
+                return View(new List<ProductViewDto>());
+            }
+
+
+
+            // Lọc dữ liệu trên frontend
+            var filteredProducts = response.Items;
+            if (!string.IsNullOrEmpty(searchItem))
+            {
+                filteredProducts = filteredProducts
+                    .Where(b => b.ProductName.Contains(searchItem, StringComparison.OrdinalIgnoreCase) ||
+                                b.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            // Lọc theo danh mục nếu có categoryId
+            if (categoryId.HasValue)
+            {
+                filteredProducts = filteredProducts
+                    .Where(p => p.CategoryId == categoryId.Value)
+                    .ToList();
+            }
+
+            // Phân trang sau khi lọc
+            int totalItems = filteredProducts.Count;
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+            ViewBag.CurrentPage = page;
+            ViewBag.SearchItem = searchItem;
+
+            var paginatedProducts = filteredProducts
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return View(paginatedProducts);
+
+        }
+
+
+
 
 
 
