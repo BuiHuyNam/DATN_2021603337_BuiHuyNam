@@ -4,6 +4,7 @@ using NE.Application.Dtos.CategoryDto;
 using NE.Application.Dtos.ProductColorDto;
 using NE.Application.Dtos.ProductDto;
 using NE.Application.Dtos.RoleDto;
+using NE.Domain.Entitis;
 
 namespace NE.WebApp.Controllers
 {
@@ -226,6 +227,17 @@ namespace NE.WebApp.Controllers
             var result = await _httpClient.GetFromJsonAsync<ProductViewDto>($"{ApiUrl}/{id}");
             return View(result);
         }
+
+        [HttpGet("GetAllProduct")]
+        public async Task<IActionResult> GetAllProduct()
+        {
+            var product = await _httpClient.GetFromJsonAsync<List<Product>>(ApiUrl);
+            ViewBag.Products = product;
+            return View();
+        }
+
+
+        
 
 
 

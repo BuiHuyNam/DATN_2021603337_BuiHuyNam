@@ -1,0 +1,53 @@
+﻿@model IEnumerable<NE.Application.Dtos.ProductDto.ProductViewDto>
+
+@foreach (var item in Model)
+{
+    if (item.IsActive == true)
+    {
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+            <a href="/Product/Detail/@item.Id" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-lg border border-3 rounded-4 hover-shadow">
+                    <div class="position-relative">
+                        @if (item.ProductColors != null && item.ProductColors.Any() && item.ProductColors.First().ImageFiles != null && item.ProductColors.First().ImageFiles.Any())
+                        {
+                            <!-- Label giảm giá -->
+                            @if (item.Discount > 0)
+                            {
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-2" style="font-size: 1.1rem; padding: 0.4rem 0.9rem;">
+                                    -@item.Discount%
+                                </span>
+                            }
+
+                            <img src="https://localhost:7099/api/ImageFile/Download?id=@item.ProductColors.First().ImageFiles.First().Id"
+                                 class="card-img-top" style="height:250px; object-fit:contain;" alt="@item.ProductName" />
+                        }
+                        else
+                        {
+                            <span>Không có hình ảnh</span>
+                        }
+                    </div>
+
+
+                    <div class="card-body text-end">
+                        <h6 class="card-title fw-bold">
+                            @(item.ProductName.Length > 50 ? item.ProductName.Substring(0, 50) + "..." : item.ProductName)
+                        </h6>
+
+                        <div class="d-flex justify-content-between align-items-center mt-2">
+                            <span class="text-danger fs-5 fw-bold">
+                                @((item.Price - (item.Price * (item.Discount / 100))).ToString("N0")) đ
+                            </span>
+                            <span class="text-muted" style="text-decoration: line-through;">
+                                @item.Price.ToString("N0") đ
+                            </span>
+                        </div>
+
+                        <div class="mt-2 text-center"></div>
+                        <span class="text-muted">Lượt xem: @item.View</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    }
+}
