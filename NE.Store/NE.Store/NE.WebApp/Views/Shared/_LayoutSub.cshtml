@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="~/NEStore/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="~/NEStore/css/style.css" type="text/css">
 </head>
+<style>
+    .hero__categories ul {
+        display: none;
+    }
+
+</style>
 
 <body>
-  
+
     <!-- Humberger End -->
     <!-- Header Section Begin -->
     <header class="header">
@@ -58,9 +64,9 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>  
+                                <a href="#"><i class="fa fa-user"></i> Đăng nhập</a>
                             </div>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -69,14 +75,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 d-flex justify-content-center align-items-center">
-                    <a href ="@Url.Action("GetAllProductPages", "Product")"  class="logo-img">
-                        <img src="~/NEStore/img/logo5.png" alt="Logo" class="img-fluid" style="max-height: 70px;" >
-                    </a>    
+                    <a href="@Url.Action("GetAllProductPages", "Product")" class="logo-img">
+                        <img src="~/NEStore/img/logo5.png" alt="Logo" class="img-fluid" style="max-height: 70px;">
+                    </a>
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul id="mainMenu">
-                            <li ><a href="@Url.Action("GetAllProductPages", "Product")">Trang chủ</a></li>
+                            <li><a href="@Url.Action("GetAllProductPages", "Product")">Trang chủ</a></li>
                             <li><a href="@Url.Action("About", "ViewStatic")">Giới thiệu</a></li>
                             <li><a href="@Url.Action("Blog", "ViewStatic")">Tin tức</a></li>
                             <li><a href="@Url.Action("Contact", "ViewStatic")">Liên hệ</a></li>
@@ -100,7 +106,7 @@
     </header>
     <!-- Header Section End -->
     <!-- Hero Section Begin -->
-    <section class="hero">
+    <section>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
@@ -108,11 +114,11 @@
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
                             <span>Danh mục</span>
-                            
+
                         </div>
                         <div class="item__category"></div>
-                     
-                       
+
+
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -137,21 +143,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="/NEStore/img/hero/banner3.png">
-                       
-                    </div>
+                   
                 </div>
             </div>
         </div>
     </section>
-    <!-- Hero Section End -->
-    @* @await Component.InvokeAsync("ListAllProduct") *@
-    @await Component.InvokeAsync("Top5NewProduct")
-
-
-    <!-- Categories Section Begin -->
+    <!-- Humberger End -->
     @RenderBody()
 
+    <!-- Related Product Section End -->
     <!-- Footer Section Begin -->
     <footer class="footer spad">
         <div class="container">
@@ -159,7 +159,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="~/NEStore/img/logo5.png" alt="" style="max-height: 120px; width: 120px" ></a>
+                            <a href="./index.html"><img src="~/NEStore/img/logo5.png" alt="" style="max-height: 120px; width: 120px"></a>
                         </div>
                         <ul>
                             <li>Địa chỉ: Phong Hải , Quảng Yên, Quảng Ninh, Việt Nam</li>

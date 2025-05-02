@@ -126,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0RGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Product/UserProductDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVc2VyUHJvZHVjdERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Role/AddRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGRSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -166,12 +170,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Shared/_LayoutSub.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTdWIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/ViewStatic/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld1N0YXRpY1xBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/ViewStatic/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld1N0YXRpY1xCbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/ViewStatic/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlld1N0YXRpY1xDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/_ViewImports.cshtml]

@@ -237,7 +237,6 @@ namespace NE.WebApp.Controllers
             return View();
         }
 
-
         [HttpGet()]
         public async Task<IActionResult> GetAllProductPages(int page = 1, int pageSize = 8, string searchItem = "", int? categoryId = null)
         {
@@ -281,6 +280,15 @@ namespace NE.WebApp.Controllers
             return View(paginatedProducts);
 
         }
+
+
+        [HttpGet("Product/Detail/{id}")]
+        public async Task<IActionResult> UserProductDetail(int id)
+        {
+            var result = await _httpClient.GetFromJsonAsync<ProductViewDto>($"{ApiUrl}/{id}");
+            return View(result);
+        }
+
 
 
 
