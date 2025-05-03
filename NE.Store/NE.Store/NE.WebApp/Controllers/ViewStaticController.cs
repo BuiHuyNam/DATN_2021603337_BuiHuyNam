@@ -16,10 +16,6 @@ namespace NE.WebApp.Controllers
             return View();
         }
 
-        [HttpGet("About")]
-        public IActionResult About()
-        {
-            return View();
-        }
+      
     }
 }

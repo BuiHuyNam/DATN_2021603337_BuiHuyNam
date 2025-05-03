@@ -289,6 +289,77 @@ namespace NE.WebApp.Controllers
             return View(result);
         }
 
+        [HttpGet("shop")]
+        public async Task<IActionResult> Shop(int page = 1, int pageSize = 6, string searchItem = "", int? categoryId = null, int? brandId = null, int? minPrice = null,
+                                                int? maxPrice = null)
+        {
+            var response = await _httpClient.GetFromJsonAsync<PageResultDto<ProductViewDto>>($"{ApiUrl}/Productpages?page=1&pageSize=20");
+            if (response == null || response.Items == null)
+            {
+                return View(new List<ProductViewDto>());
+            }
+
+
+
+            // Lọc dữ liệu trên frontend
+            var filteredProducts = response.Items;
+            if (!string.IsNullOrEmpty(searchItem))
+            {
+                filteredProducts = filteredProducts
+                    .Where(b => b.ProductName.Contains(searchItem, StringComparison.OrdinalIgnoreCase) ||
+                                b.Description.Contains(searchItem, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            // Lọc theo danh mục nếu có categoryId
+            if (categoryId.HasValue)
+            {
+                filteredProducts = filteredProducts
+                    .Where(p => p.CategoryId == categoryId.Value)
+                    .ToList();
+            }
+
+            // Lọc theo thương hiệu nếu có brandId
+            if (brandId.HasValue)
+            {
+                filteredProducts = filteredProducts
+                    .Where(p => p.BrandId == brandId.Value)
+                    .ToList();
+            }
+
+            ViewBag.MinPrice = minPrice ?? 0;
+            ViewBag.MaxPrice = maxPrice ?? 50000000;
+
+            // 👇 Lọc theo khoảng giá
+            if (minPrice.HasValue)
+            {
+                filteredProducts = filteredProducts
+                    .Where(p => p.Price >= minPrice.Value)
+                    .ToList();
+            }
+
+            if (maxPrice.HasValue)
+            {
+                filteredProducts = filteredProducts
+                    .Where(p => p.Price <= maxPrice.Value)
+                    .ToList();
+            }
+
+            // Phân trang sau khi lọc
+            int totalItems = filteredProducts.Count;
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+            ViewBag.CurrentPage = page;
+            ViewBag.SearchItem = searchItem;
+
+            var paginatedProducts = filteredProducts
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return View(paginatedProducts);
+
+        }
+
 
 
 

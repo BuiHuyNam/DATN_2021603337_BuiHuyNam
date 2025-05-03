@@ -3,60 +3,64 @@
   "WorkspaceRootPath": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\viewstatic\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\viewstatic\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\viewstatic\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\viewstatic\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\viewstaticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\viewstaticcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\viewstatic\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\viewstatic\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layoutsub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layoutsub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\userproductdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\userproductdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\getallproductpages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\getallproductpages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\components\\brand\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\components\\brand\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layoutshop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layoutshop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layoutsub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layoutsub.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\getallproductpages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\getallproductpages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\shop.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\viewstatic\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\viewstatic\\blog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\viewstatic\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\viewstatic\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\userproductdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\userproductdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\product\\productdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.webapp\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\datn_2021603337_buihuynam\\ne.store\\ne.store\\ne.application\\services\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 132,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,85 +106,137 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\ViewStatic\\About.cshtml",
-              "RelativeDocumentMoniker": "NE.WebApp\\Views\\ViewStatic\\About.cshtml",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\ViewStatic\\About.cshtml",
-              "RelativeToolTip": "NE.WebApp\\Views\\ViewStatic\\About.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T15:36:17.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Blog.cshtml",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\ViewStatic\\Blog.cshtml",
-              "RelativeDocumentMoniker": "NE.WebApp\\Views\\ViewStatic\\Blog.cshtml",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\ViewStatic\\Blog.cshtml*",
-              "RelativeToolTip": "NE.WebApp\\Views\\ViewStatic\\Blog.cshtml*",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAwIoAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T15:33:30.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "_LayoutShop.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_LayoutShop.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\_LayoutShop.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_LayoutShop.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Shared\\_LayoutShop.cshtml",
+              "ViewState": "AgIAAJcBAAAAAAAAAAAAAKIBAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T15:33:06.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-28T16:34:40.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAEEBAAAAAAAAAAAAAEoBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T04:28:13.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "NE.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAOAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAE8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-28T15:21:20.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GetAllProductPages.cshtml",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
-              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
-              "RelativeToolTip": "NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-30T12:06:59.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "NE.WebApi\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApi\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "NE.WebApi\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAswEQAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T11:24:53.769Z",
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T15:08:58.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "ViewStaticController.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ViewStaticController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\ViewStaticController.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ViewStaticController.cs*",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\ViewStaticController.cs*",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T14:56:30.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "_LayoutSub.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_LayoutSub.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\_LayoutSub.cshtml",
               "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_LayoutSub.cshtml",
               "RelativeToolTip": "NE.WebApp\\Views\\Shared\\_LayoutSub.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFcAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAcwFUAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-30T15:06:35.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "GetAllProductPages.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Product\\GetAllProductPages.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-30T12:06:59.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Program.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Program.cs",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Program.cs",
+              "RelativeToolTip": "NE.WebApp\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T15:24:41.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Shop.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Shop.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\Shop.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Shop.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\Product\\Shop.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-03T15:23:31.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\ViewStatic\\Contact.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\ViewStatic\\Contact.cshtml",
@@ -188,25 +244,24 @@
               "RelativeToolTip": "NE.WebApp\\Views\\ViewStatic\\Contact.cshtml",
               "ViewState": "AgIAACkAAAAAAAAAAAAAwEYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-02T14:57:44.194Z",
+              "WhenOpened": "2025-05-02T14:57:44.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Blog.cshtml",
+              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\ViewStatic\\Blog.cshtml",
+              "RelativeDocumentMoniker": "NE.WebApp\\Views\\ViewStatic\\Blog.cshtml",
+              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\ViewStatic\\Blog.cshtml",
+              "RelativeToolTip": "NE.WebApp\\Views\\ViewStatic\\Blog.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAwIoAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T15:33:30.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ViewStaticController.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ViewStaticController.cs",
-              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\ViewStaticController.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ViewStaticController.cs",
-              "RelativeToolTip": "NE.WebApp\\Controllers\\ViewStaticController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-02T14:56:30.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "UserProductDetail.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\UserProductDetail.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\UserProductDetail.cshtml",
@@ -214,25 +269,11 @@
               "RelativeToolTip": "NE.WebApp\\Views\\Product\\UserProductDetail.cshtml",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-30T15:05:16.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-30T15:05:16.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "NE.WebApp\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAP4AAAAAAAAAAAAuwO4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T04:28:13.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\_LayoutAdmin.cshtml",
@@ -244,19 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
-              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
-              "RelativeToolTip": "NE.WebApp\\Views\\Shared\\Components\\Brand\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-30T15:08:58.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ProductDetail.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\ProductDetail.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\ProductDetail.cshtml",
@@ -268,19 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "NE.WebApp\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-28T16:34:40.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Infrastructure\\Repositories\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "NE.Infrastructure\\Repositories\\Interfaces\\IProductRepository.cs",
@@ -292,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IProductService.cs",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Services\\Interfaces\\IProductService.cs",
               "RelativeDocumentMoniker": "NE.Application\\Services\\Interfaces\\IProductService.cs",
@@ -304,7 +321,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ProductViewDto.cs",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\ProductDto\\ProductViewDto.cs",
               "RelativeDocumentMoniker": "NE.Application\\Dtos\\ProductDto\\ProductViewDto.cs",
@@ -316,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PageResultDto.cs",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.Application\\Dtos\\BaseDto\\PageResultDto.cs",
               "RelativeDocumentMoniker": "NE.Application\\Dtos\\BaseDto\\PageResultDto.cs",
@@ -328,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ImageProductDetail.cshtml",
               "DocumentMoniker": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\Views\\Product\\ImageProductDetail.cshtml",
               "RelativeDocumentMoniker": "NE.WebApp\\Views\\Product\\ImageProductDetail.cshtml",
