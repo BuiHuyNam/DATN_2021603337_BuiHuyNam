@@ -2527,6 +2527,14 @@
           "password": {
             "type": "string",
             "nullable": true
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

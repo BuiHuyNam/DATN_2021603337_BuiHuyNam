@@ -1,4 +1,5 @@
-﻿@{
+﻿@model NE.Application.Dtos.UserDto.UserCreateDto
+@{
     Layout = "~/Views/Shared/_LayoutAuth.cshtml"; // layout admin riêng
     ViewData["Title"] = "Đăng Ký";
 }
@@ -7,26 +8,26 @@
     @* <a href="@Url.Action("GetAllProductPages", "Product")"><img src="~/NEStore/img/logo5.png" alt="Logo" class="d-block mx-auto mb-3" style="max-width: 150px; height: auto;"> </a> *@
 
     <h3 class="mb-4 text-center">Đăng ký</h3>
-    <form>
+    <form method="post" asp-action ="Register" asp-controller="Auth">
         <div class="mb-3">
             <label for="fullname" class="form-label">Họ và tên</label>
-            <input type="text" class="form-control" id="fullname" placeholder="Nhập họ và tên">
+            <input asp-for="FullName" type="text" class="form-control" id="fullname" placeholder="Nhập họ và tên">
         </div>
         <div class="mb-3">
             <label for="username" class="form-label">Tên người dùng</label>
-            <input type="text" class="form-control" id="username" placeholder="Nhập tên người dùng">
+            <input asp-for="UserName" type="text" class="form-control" id="username" placeholder="Nhập tên người dùng">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            <input asp-for="Email" type="email" class="form-control" id="email" placeholder="Nhập email">
         </div>
         <div class="mb-3">
             <label for="phone" class="form-label">Số điện thoại</label>
-            <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại">
+            <input asp-for="PhoneNumber" type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại">
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Mật khẩu</label>
-            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+            <input asp-for="Password" type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
         </div>
         <button type="submit" class="btn w-100" style="background-color: #7fad39; color: white">Đăng ký</button>
     </form>

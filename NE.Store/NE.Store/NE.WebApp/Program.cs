@@ -13,6 +13,15 @@ builder.Services.AddCors(options =>
                       });
 });
 
+// Thêm d?ch v? Session vào DI container
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Th?i gian h?t h?n session
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+
 
 
 // Add services to the container.
@@ -37,7 +46,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseCors(MyAllowSpecificOrigins);
-
+app.UseSession();
 
 app.UseAuthorization();
 

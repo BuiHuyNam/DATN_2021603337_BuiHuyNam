@@ -1,4 +1,36 @@
-﻿<!DOCTYPE html>
+﻿@using System.IdentityModel.Tokens.Jwt
+@using System.Security.Claims
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var token = HttpContextAccessor.HttpContext.Session.GetString("JwtToken");
+    var isLoggedIn = !string.IsNullOrEmpty(token);
+    string email = "";
+    int id = 0;
+    string role = "";
+    if (isLoggedIn)
+    {
+        var handler = new JwtSecurityTokenHandler();
+        var jwtToken = handler.ReadJwtToken(token);
+        var claim = jwtToken.Claims.FirstOrDefault(cx => cx.Type == "email");
+        var idClaim = jwtToken.Claims.FirstOrDefault(cx => cx.Type == "nameid");
+        var roleClaim = jwtToken.Claims.FirstOrDefault(cx => cx.Type == "role");
+        if (claim != null) // Kiểm tra null trước khi truy cập .Value
+        {
+            email = claim.Value;
+        }
+        if (idClaim != null && int.TryParse(idClaim.Value, out int userId))
+        {
+            id = userId; // Chỉ gán nếu chuyển đổi thành công
+        }
+        if (roleClaim != null)
+        {
+            role = roleClaim.Value;
+        }
+    }
+
+}
+
+<!DOCTYPE html>
 <html lang="zxx">
 
 <head>
@@ -12,6 +44,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  
 
 
     <!-- Css Styles -->
@@ -24,9 +57,59 @@
     <link rel="stylesheet" href="~/NEStore/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="~/NEStore/css/style.css" type="text/css">
 </head>
+<style>
+    .user-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+
+
+    .user-dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        min-width: 200px;
+        z-index: 1000;
+        overflow: hidden;
+        padding: 8px 0;
+    }
+
+        .user-dropdown-menu a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+            .user-dropdown-menu a i {
+                width: 18px;
+                text-align: center;
+                color: #666;
+            }
+
+            .user-dropdown-menu a:hover {
+                background-color: #f0f0f0;
+            }
+
+    .user-dropdown:hover .user-dropdown-menu {
+        display: block;
+    }
+</style>
+
+
 
 <body>
-  
+
     <!-- Humberger End -->
     <!-- Header Section Begin -->
     <header class="header">
@@ -58,7 +141,28 @@
                                 </ul>
                             </div>
                             <div class="header__top__right__auth">
-                                <a href="@Url.Action("Login", "Auth")"><i class="fa fa-user"></i> Đăng nhập</a>
+                                @if (isLoggedIn)
+                                {
+
+                                    <div class="user-dropdown">
+                                        <div class="user-dropdown-toggle">
+                                            Xin chào: abc123@gmail.com <i class="fa fa-caret-down"></i>
+                                        </div>
+                                        <div class="user-dropdown-menu">
+                                            <a href="@Url.Action("Profile", "User")">
+                                                <i class="fa fa-user"></i> Thông tin cá nhân
+                                            </a>
+                                            <a href="@Url.Action("Logout", "Auth")">
+                                                <i class="fa fa-sign-out-alt"></i> Đăng xuất
+                                            </a>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <a href="@Url.Action("Login", "Auth")"><i class="fa fa-user"></i> Đăng nhập</a>
+                                }
+                               
                             </div>
                           
                         </div>

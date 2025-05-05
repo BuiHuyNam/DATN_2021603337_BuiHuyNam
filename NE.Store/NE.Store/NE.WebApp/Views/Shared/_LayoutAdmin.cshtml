@@ -1,4 +1,35 @@
-﻿<!DOCTYPE html>
+﻿@using System.IdentityModel.Tokens.Jwt
+@using System.Security.Claims
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var token = HttpContextAccessor.HttpContext.Session.GetString("JwtToken");
+    var isLoggedIn = !string.IsNullOrEmpty(token);
+    string email = "";
+    int id = 0;
+    string role = "";
+    if (isLoggedIn)
+    {
+        var handler = new JwtSecurityTokenHandler();
+        var jwtToken = handler.ReadJwtToken(token);
+        var claim = jwtToken.Claims.FirstOrDefault(cx => cx.Type == "email");
+        var idClaim = jwtToken.Claims.FirstOrDefault(cx => cx.Type == "nameid");
+        var roleClaim = jwtToken.Claims.FirstOrDefault(cx => cx.Type == "role");
+        if (claim != null) // Kiểm tra null trước khi truy cập .Value
+        {
+            email = claim.Value;
+        }
+        if (idClaim != null && int.TryParse(idClaim.Value, out int userId))
+        {
+            id = userId; // Chỉ gán nếu chuyển đổi thành công
+        }
+        if (roleClaim != null)
+        {
+            role = roleClaim.Value;
+        }
+    }
+
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -32,13 +63,22 @@
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                @if (isLoggedIn)
+                {
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user fa-fw"></i> Xin chào: @email</a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Settings</a></li>
-                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    @* <li><a class="dropdown-item" href="#!">Segs</a></li> *@
+                    @* <li><a class="dropdown-item" href="#!">Activity Log</a></li> *@
+                    @* <li><hr class="dropdown-divider" /></li> *@
+                    <li><a href="@Url.Action("Logout", "Auth")" class="dropdown-item" >Đăng xuất</a></li>
                 </ul>
+                }
+                else
+                {
+                    <a href="@Url.Action("Login", "Auth")" class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user fa-fw"></i> Đăng nhập</a>
+                }
+
+                
             </li>
         </ul>
     </nav>

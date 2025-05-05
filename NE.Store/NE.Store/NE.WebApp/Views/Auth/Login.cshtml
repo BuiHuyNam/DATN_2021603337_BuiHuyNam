@@ -1,7 +1,9 @@
-﻿@{
+﻿@model NE.Application.Dtos.AuthDto.LoginDto
+@{
     Layout = "~/Views/Shared/_LayoutAuth.cshtml"; // layout admin riêng
     ViewData["Title"] = "Đăng nhập";
 }
+
 
 <div class="w-75 text-center">
     <!-- Logo nằm trên -->
@@ -9,19 +11,22 @@
 
     <!-- Form đăng nhập -->
     <h3 class="mb-4">Đăng nhập</h3>
-    <form>
+    <form method="post" asp-action="Login" asp-controller="Auth">
         <div class="mb-3 text-start">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Nhập email">
+            <input asp-for="Email" type="email" class="form-control" id="email" placeholder="Nhập email">
+            <span asp-validation-for="Email" class="text-danger"></span>
         </div>
         <div class="mb-3 text-start">
             <label for="password" class="form-label">Mật khẩu</label>
-            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+            <input asp-for="Password" type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+            <span asp-validation-for="Password" class="text-danger"></span>
         </div>
         <div class="mb-3 form-check text-start">
             <input type="checkbox" class="form-check-input" id="remember">
             <label class="form-check-label" for="remember">Nhớ mật khẩu</label>
         </div>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <button type="submit" class="btn w-100" style="background-color: #7fad39; color: white">Đăng nhập</button>
     </form>
 
