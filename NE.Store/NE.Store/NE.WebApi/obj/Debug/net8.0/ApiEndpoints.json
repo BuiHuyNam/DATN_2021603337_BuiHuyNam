@@ -180,6 +180,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NE.WebApi.Controllers.CartController",
+    "Method": "GetCartByUserId",
+    "RelativePath": "api/Cart/GetCartByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NE.WebApi.Controllers.CategoryController",
     "Method": "AddCategory",
     "RelativePath": "api/Category",

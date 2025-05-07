@@ -30,6 +30,7 @@
 
 }
 
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -44,7 +45,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  
+
 
 
     <!-- Css Styles -->
@@ -59,50 +60,50 @@
 </head>
 <style>
     .user-dropdown {
-        position: relative;
-        display: inline-block;
+    position: relative;
+    display: inline-block;
     }
 
 
 
     .user-dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
-        min-width: 200px;
-        z-index: 1000;
-        overflow: hidden;
-        padding: 8px 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    min-width: 200px;
+    z-index: 1000;
+    overflow: hidden;
+    padding: 8px 0;
     }
 
-        .user-dropdown-menu a {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 16px;
-            text-decoration: none;
-            color: #333;
-            font-size: 14px;
-            transition: background-color 0.2s ease;
-        }
+    .user-dropdown-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+    }
 
-            .user-dropdown-menu a i {
-                width: 18px;
-                text-align: center;
-                color: #666;
-            }
+    .user-dropdown-menu a i {
+    width: 18px;
+    text-align: center;
+    color: #666;
+    }
 
-            .user-dropdown-menu a:hover {
-                background-color: #f0f0f0;
-            }
+    .user-dropdown-menu a:hover {
+    background-color: #f0f0f0;
+    }
 
     .user-dropdown:hover .user-dropdown-menu {
-        display: block;
+    display: block;
     }
 </style>
 
@@ -162,9 +163,11 @@
                                 {
                                     <a href="@Url.Action("Login", "Auth")"><i class="fa fa-user"></i> Đăng nhập</a>
                                 }
-                               
+
+
+
                             </div>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -189,11 +192,14 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="header__cart">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="@Url.Action("Index", "Cart")"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
-                        </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                 
+                            <ul>
+                                <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
+                                <li><a href="@Url.Action("Index", "Cart")"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
+                            </ul>
+                            <div class="header__cart__price">Tiền giỏ hàng: <span>0 đ</span></div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -312,6 +318,7 @@
             </div>
         </div>
     </footer>
+
     <!-- Footer Section End -->
     <!-- Js Plugins -->
     <script src="~/NEStore/js/jquery-3.3.1.min.js"></script>
@@ -364,4 +371,13 @@
     });
 
 
+
+
+
+
+
+
+
+
 </script>
+

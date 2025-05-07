@@ -54,6 +54,16 @@ namespace NE.Application.Services.Implementations
             return cart;
         }
 
+        public async Task<List<Cart>> GetCartByUserIdAsync(int userId)
+        {
+            var cart = await _unitOfWork.Carts.GetCartByUserIdAsync(userId);
+            if (cart == null)
+            {
+                throw new Exception("Cart does not exist!");
+            }
+            return cart;
+        }
+
         public async Task UpdateCartAsync(Cart cart)
         {
             var cartUpdate = await _unitOfWork.Carts.GetByIdAsync(cart.Id);

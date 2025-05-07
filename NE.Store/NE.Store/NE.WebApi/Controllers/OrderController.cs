@@ -26,7 +26,7 @@ namespace NE.WebApi.Controllers
         {
             var order = _mapper.Map<Order>(orderCreateDto);
             await _orderService.AddOrderAsync(order);
-            return Ok();
+            return Ok(new { id = order.Id }); // Trả về JSON chứa id
         }
 
         [HttpGet()]

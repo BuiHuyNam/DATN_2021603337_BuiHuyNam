@@ -14,5 +14,7 @@ namespace NE.Application.Services.Interfaces
         Task AddCartAsync(Cart cart);
         Task DeleteCartAsync(int id);
         Task UpdateCartAsync(Cart cart);
+        Task<List<Cart>> GetCartByUserIdAsync(int userId);
+
     }
 }

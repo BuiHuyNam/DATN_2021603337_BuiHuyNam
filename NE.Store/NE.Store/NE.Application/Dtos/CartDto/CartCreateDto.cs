@@ -12,5 +12,6 @@ namespace NE.Application.Dtos.CartDto
         public int Quatity { get; set; }
         public int UserId { get; set; }
         public int ProductId { get; set; }
+        public int ColorId { get; set; }
     }
 }

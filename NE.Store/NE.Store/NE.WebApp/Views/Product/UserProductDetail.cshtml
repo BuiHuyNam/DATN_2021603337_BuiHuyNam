@@ -84,16 +84,7 @@
         <div class="col-md-6">
             <h2>@Model.ProductName</h2>
 
-            @* <!-- Đánh giá --> *@
-            @* <div class="mb-2"> *@
-            @*     <i class="fas fa-star text-warning"></i> *@
-            @*     <i class="fas fa-star text-warning"></i> *@
-            @*     <i class="fas fa-star text-warning"></i> *@
-            @*     <i class="fas fa-star-half-alt text-warning"></i> *@
-            @*     <i class="far fa-star text-muted"></i> *@
-            @*     <span class="ms-2">(25 đánh giá)</span> *@
-            @* </div> *@
-            <!-- Đánh giá -->
+    
             <div class="mb-2 d-flex align-items-center" id="productRating">
                 <span id="starIcons" class="me-2"></span>
                 <span id="ratingCount">(0 đánh giá)</span>
@@ -162,10 +153,32 @@
 
             <!-- Nút hành động -->
             <div class="mt-4 d-flex gap-4">
-                <button class="btn px-4 text-white btn-custom">Mua ngay</button>
-                <form id="addToCartForm" method="post" action="/Cart/AddToCart">
+                <form id="orderForm" asp-action="CreateOrderSingleProduct" asp-controller="Order" method="post">
+                    <!-- OrderCreateDto -->
+                    @* <input type="hidden" name="UserId" value="10" /> *@
+                    <input type="hidden" name="Status" value="1" />
+                    <input type="hidden" name="Note" value="Mua ngay từ trang chủ" />
+                    <input type="hidden" name="TotalMoney" id="orderTotalMoney"   />
+                    <input type="hidden" name="CouponId"  />
+
+                    <!-- OrderDetailCreateDto -->
+                    <input type="hidden" name="ProductId" value="@Model.Id" />
+                    <input type="hidden" name="Price" value="@(Model.Price * (1 - Model.Discount / 100))" />
+                    <input type="hidden" name="Quantity" id="orderQuantity" />
+                    <input type="hidden" name="TotalMoney" id="orderDetailTotalMoney" />
+
+                    <input type="hidden" id="productPrice" value="@Model.Price" />
+                    <input type="hidden" id="productDiscount" value="@Model.Discount" />
+
+
+                    <button type="submit" class="btn px-4 text-white btn-custom">Mua ngay</button>
+                </form>
+
+                <form id="addToCartForm" method="post" asp-action="AddCart" asp-controller="Cart">
                     <input type="hidden" name="productId" value="@Model.Id" />
-                    <input type="hidden" name="quantity" />
+                    <input type="hidden" name="quatity" id="quantityHiddenInput" />
+                    <input type="hidden" name="colorId" id="hiddenColorId" />
+
                     <button type="button" id="addToCartBtn" class="btn btn-outline-success px-4 custom-hover-green ml-4">
                         <i class="fas fa-cart-plus"></i> Thêm vào giỏ
                     </button>
@@ -324,9 +337,54 @@
   
     <script>
 
+              document.getElementById("orderForm").addEventListener("submit", function (e) {
+            const quantity = parseInt(document.getElementById("quantityInput").value) || 1;
+
+            const price = parseFloat(document.getElementById("productPrice").value) || 0;
+            const discount = parseFloat(document.getElementById("productDiscount").value) || 0;
+
+            const discountedPrice = price * (1 - discount / 100);
+            const total = quantity * discountedPrice;
+               // Làm tròn lên đến số nguyên gần nhất
+        document.querySelector('input[name="Price"]').value = Math.ceil(discountedPrice);
+        document.getElementById("orderQuantity").value = quantity;
+        document.getElementById("orderTotalMoney").value = Math.ceil(total);  // Làm tròn lên tổng tiền
+        document.getElementById("orderDetailTotalMoney").value = Math.ceil(total);  // Làm tròn lên tổng tiền
+        });
+
+
+
+
+
+            document.getElementById("addToCartBtn").addEventListener("click", function () {
+            // Lấy số lượng từ input hiển thị
+            const quantity = document.getElementById("quantityInput").value;
+
+            // Gán vào input ẩn trong form
+            document.getElementById("quantityHiddenInput").value = quantity;
+
+            // Submit form
+            document.getElementById("addToCartForm").submit();
+        });
+
+
+
+
+         
+        //Xử lý modal đánh giá
             $('#writeReviewBtn').click(function () {
             $('#reviewModal').modal('show');
         });
+
+
+
+                window.addEventListener("DOMContentLoaded", function () {
+            const firstColor = document.querySelector(".color-option");
+            if (firstColor) {
+                firstColor.click(); // Kích hoạt sẵn để tránh null color
+            }
+        });
+
 
 
             document.querySelectorAll(".color-option").forEach(btn => {
@@ -348,12 +406,17 @@
                 document.querySelector("#quantityAvailable").textContent = `${quantity} sản phẩm có sẵn`;
                 document.querySelector("#quantityInput").value = 1;
 
-                // Cập nhật ảnh chính theo màu
-                const colorId = this.getAttribute("data-color-id");
-                const firstImage = document.querySelector(`#productColorImages .color-images[data-color-id="${colorId}"] img`);
-                if (firstImage) {
-                    document.getElementById("mainImage").src = firstImage.src;
-                }
+                 // Lấy colorId từ data-color-id
+        const colorId = this.getAttribute("data-color-id");
+
+        // Cập nhật ảnh chính theo màu
+        const firstImage = document.querySelector(`#productColorImages .color-images[data-color-id="${colorId}"] img`);
+        if (firstImage) {
+            document.getElementById("mainImage").src = firstImage.src;
+        }
+
+        // Cập nhật colorId vào input ẩn để gửi lên server
+        document.getElementById("hiddenColorId").value = colorId;
             });
         });
 

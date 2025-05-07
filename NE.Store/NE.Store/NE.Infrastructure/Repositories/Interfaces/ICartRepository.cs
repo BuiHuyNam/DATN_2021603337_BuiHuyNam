@@ -9,5 +9,7 @@ namespace NE.Infrastructure.Repositories.Interfaces
 {
     public interface ICartRepository : IGenericRepository<Cart>
     {
+        Task<List<Cart>> GetCartByUserIdAsync(int userId);
+
     }
 }

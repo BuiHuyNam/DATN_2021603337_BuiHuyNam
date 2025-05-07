@@ -194,10 +194,11 @@
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                            <li><a href="@Url.Action("Index", "Cart")"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
+                            <li><a href="@Url.Action("Index", "Cart")"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
                         </ul>
-                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                        <div class="header__cart__price">Tiền giỏ hàng: <span>0 đ</span></div>
+
                     </div>
                 </div>
             </div>
@@ -416,4 +417,24 @@
 </script>
 
 @RenderSection("Scripts", required: false)
+
+
+
+<!-- SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    window.onload = function () {
+        var successMessage = '@TempData["Success"]';
+        var errorMessage = '@TempData["Error"]';
+
+        if (successMessage && successMessage !== "null") {
+            Swal.fire({ title: "Thành công!", text: successMessage, icon: "success", confirmButtonColor: "#3085d6", confirmButtonText: "OK" });
+        }
+
+        if (errorMessage && errorMessage !== "null") {
+            Swal.fire({ title: "Lỗi!", text: errorMessage, icon: "error", confirmButtonColor: "#d33", confirmButtonText: "OK" });
+        }
+    };
+</script>
+
 

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.CartDto;
@@ -23,6 +24,7 @@ namespace NE.WebApi.Controllers
         }
 
         [HttpPost()]
+        [Authorize]
         public async Task<ActionResult> AddCart(CartCreateDto cartCreateDto)
         {
             var cart = _mapper.Map<Cart>(cartCreateDto);
@@ -59,6 +61,16 @@ namespace NE.WebApi.Controllers
         {
             await _cartService.DeleteCartAsync(id);
             return Ok();
+        }
+
+
+        [HttpGet("GetCartByUserId/{userId}")]
+        [Authorize]
+        public async Task<ActionResult> GetCartByUserId(int userId)
+        {
+            var cart = await _cartService.GetCartByUserIdAsync(userId);
+            var cartDto = _mapper.Map<List<CartViewDto>>(cart);
+            return Ok(cartDto);
         }
     }
 }
