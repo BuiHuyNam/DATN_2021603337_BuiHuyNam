@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.BrandDto;
@@ -6,6 +7,7 @@ using NE.Application.Dtos.Feedback;
 using NE.Application.Services.Implementations;
 using NE.Application.Services.Interfaces;
 using NE.Domain.Entitis;
+using System.Security.Claims;
 
 namespace NE.WebApi.Controllers
 {
@@ -22,9 +24,19 @@ namespace NE.WebApi.Controllers
             _mapper = mapper;
         }
 
+
         [HttpPost()]
+        //[Authorize]
         public async Task<ActionResult> AddFeedback(FeedbackCreateDto feedbackCreateDto)
         {
+
+            //var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
+            //if (!int.TryParse(userIdStr, out var userId))
+            //    return Unauthorized("User ID không hợp lệ");
+            //feedbackCreateDto.UserId = userId;
+
             var feedback = _mapper.Map<Feedback>(feedbackCreateDto);
             await _feedbackService.AddFeedbackAsync(feedback);
             return Ok();
@@ -59,6 +71,14 @@ namespace NE.WebApi.Controllers
         {
             await _feedbackService.DeleteFeedbackAsync(id);
             return Ok();
+        }
+
+        [HttpGet("GetByIdProduct/{idProduct}")]
+        public async Task<ActionResult> GetByIdProduct(int idProduct)
+        {
+            var feedback = await _feedbackService.GetByIdProductAsync(idProduct);
+            var feedbackDto = _mapper.Map<List<FeedbackViewDto>>(feedback);
+            return Ok(feedbackDto);
         }
     }
 }

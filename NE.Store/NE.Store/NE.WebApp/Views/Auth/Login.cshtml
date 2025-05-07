@@ -11,7 +11,7 @@
 
     <!-- Form đăng nhập -->
     <h3 class="mb-4">Đăng nhập</h3>
-    <form method="post" asp-action="Login" asp-controller="Auth">
+    <form id="loginForm" method="post" asp-action="Login" asp-controller="Auth">
         <div class="mb-3 text-start">
             <label for="email" class="form-label">Email</label>
             <input asp-for="Email" type="email" class="form-control" id="email" placeholder="Nhập email">

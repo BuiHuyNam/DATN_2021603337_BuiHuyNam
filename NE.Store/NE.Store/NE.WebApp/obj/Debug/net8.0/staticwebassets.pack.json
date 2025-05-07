@@ -117,12 +117,8 @@
       "PackagePath": "staticwebassets\\NEStore\\img\\banner\\auth2.webp"
     },
     {
-      "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\banner-1.jpg",
-      "PackagePath": "staticwebassets\\NEStore\\img\\banner\\banner-1.jpg"
-    },
-    {
-      "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\banner-2.jpg",
-      "PackagePath": "staticwebassets\\NEStore\\img\\banner\\banner-2.jpg"
+      "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\avatar.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\banner\\avatar.jpg"
     },
     {
       "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\blog-7.jpg",
@@ -223,6 +219,10 @@
     {
       "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-8.jpg",
       "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-8.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\feedback\\avatar.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\feedback\\avatar.jpg"
     },
     {
       "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\hero\\banner.jpg",

@@ -157,4 +157,3 @@ D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\M
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-D:\DATN\DATN_2021603337_BuiHuyNam\NE.Store\NE.Store\NE.WebApi\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll

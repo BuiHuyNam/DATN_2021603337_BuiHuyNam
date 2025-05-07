@@ -14,5 +14,8 @@ namespace NE.Application.Services.Interfaces
         Task AddFeedbackAsync(Feedback feedback);
         Task DeleteFeedbackAsync(int id);
         Task UpdateFeedbackAsync(Feedback feedback);
+        Task<List<Feedback>> GetByIdProductAsync(int idProduct);
+
+
     }
 }

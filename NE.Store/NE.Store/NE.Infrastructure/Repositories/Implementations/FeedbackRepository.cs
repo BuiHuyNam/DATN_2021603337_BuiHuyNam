@@ -1,4 +1,5 @@
-﻿using NE.Domain.Entitis;
+﻿using Microsoft.EntityFrameworkCore;
+using NE.Domain.Entitis;
 using NE.Infrastructure.Context;
 using NE.Infrastructure.Repositories.Interfaces;
 using System;
@@ -13,6 +14,15 @@ namespace NE.Infrastructure.Repositories.Implementations
     {
         public FeedbackRepository(NEContext context) : base(context)
         {
+        }
+
+        public async Task<List<Feedback>> GetByIdProductAsync(int idProduct)
+        {
+            return await _context.Set<Feedback>()
+                .Where(f => f.ProductId == idProduct)
+                .OrderByDescending(f=>f.CreatedDate)
+                .Include(f=>f.User)
+                .ToListAsync();
         }
     }
 }

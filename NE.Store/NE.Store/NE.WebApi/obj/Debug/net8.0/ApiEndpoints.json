@@ -550,6 +550,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NE.WebApi.Controllers.FeedbackController",
+    "Method": "GetByIdProduct",
+    "RelativePath": "api/Feedback/GetByIdProduct/{idProduct}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProduct",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NE.WebApi.Controllers.ImageFileController",
     "Method": "GetListFile",
     "RelativePath": "api/ImageFile",

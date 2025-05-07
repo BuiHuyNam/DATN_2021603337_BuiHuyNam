@@ -9,6 +9,7 @@ namespace NE.Infrastructure.Repositories.Interfaces
 {
     public interface IFeedbackRepository : IGenericRepository<Feedback>
     {
+        Task<List<Feedback>> GetByIdProductAsync(int idProduct);
 
     }
 }

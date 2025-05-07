@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gm+z5vF+9MgZkYFtIHiGfaYfGHGV6eu52uxtZCDXlAg=",
+  "Hash": "GMJNmIZeTEZ5m8+MzWUVYl7m9gPD1FA3lVNy2tEuDiU=",
   "Source": "NE.WebApp",
   "BasePath": "_content/NE.WebApp",
   "Mode": "Default",
@@ -1727,12 +1727,12 @@
       "OriginalItemSpec": "wwwroot\\NEStore\\img\\banner\\auth2.webp"
     },
     {
-      "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\banner-1.jpg",
+      "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\avatar.jpg",
       "SourceId": "NE.WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\",
       "BasePath": "_content/NE.WebApp",
-      "RelativePath": "NEStore/img/banner/banner-1.jpg",
+      "RelativePath": "NEStore/img/banner/avatar.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1743,26 +1743,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\NEStore\\img\\banner\\banner-1.jpg"
-    },
-    {
-      "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\banner-2.jpg",
-      "SourceId": "NE.WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\",
-      "BasePath": "_content/NE.WebApp",
-      "RelativePath": "NEStore/img/banner/banner-2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\NEStore\\img\\banner\\banner-2.jpg"
+      "OriginalItemSpec": "wwwroot\\NEStore\\img\\banner\\avatar.jpg"
     },
     {
       "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\blog-7.jpg",
@@ -2238,6 +2219,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\NEStore\\img\\featured\\feature-8.jpg"
+    },
+    {
+      "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\feedback\\avatar.jpg",
+      "SourceId": "NE.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\",
+      "BasePath": "_content/NE.WebApp",
+      "RelativePath": "NEStore/img/feedback/avatar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NEStore\\img\\feedback\\avatar.jpg"
     },
     {
       "Identity": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\hero\\banner.jpg",

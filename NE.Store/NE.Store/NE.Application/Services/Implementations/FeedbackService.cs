@@ -45,6 +45,16 @@ namespace NE.Application.Services.Implementations
             return await _unitOfWork.Feedbacks.GetAllAsync();
         }
 
+        public async Task<List<Feedback>> GetByIdProductAsync(int idProduct)
+        {
+            var feedbacks = await _unitOfWork.Feedbacks.GetByIdProductAsync(idProduct);
+            if (feedbacks == null)
+            {
+                throw new Exception("Feedback does not exist!");
+            }
+            return feedbacks;
+        }
+
         public async Task<Feedback> GetFeedbackByIdAsync(int id)
         {
             var feedback = await _unitOfWork.Feedbacks.GetByIdAsync(id);
