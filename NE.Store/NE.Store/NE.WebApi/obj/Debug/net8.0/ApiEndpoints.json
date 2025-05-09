@@ -1157,6 +1157,22 @@
   },
   {
     "ContainingType": "NE.WebApi.Controllers.UserController",
+    "Method": "EditUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateInforUserDto",
+        "Type": "NE.Application.Dtos.UserDto.UpdateInforUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NE.WebApi.Controllers.UserController",
     "Method": "GetUserByIdAsync",
     "RelativePath": "api/User/{id}",
     "HttpMethod": "GET",

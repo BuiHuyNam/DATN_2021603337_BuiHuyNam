@@ -1,4 +1,5 @@
-﻿using NE.Application.Dtos.ProductDto;
+﻿using NE.Application.Dtos.OrderDto;
+using NE.Application.Dtos.ProductDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,7 @@ namespace NE.Application.Dtos.OrderDetailDto
         public int OrderId { get; set; }
 
         public ProductViewDto Product { get; set; }
+      
+
     }
 }

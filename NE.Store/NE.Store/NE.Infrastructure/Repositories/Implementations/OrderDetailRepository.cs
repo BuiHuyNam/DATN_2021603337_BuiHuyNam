@@ -20,6 +20,7 @@ namespace NE.Infrastructure.Repositories.Implementations
         {
             return await _context.Set<OrderDetail>()
                 .Include(p => p.Product)
+                .Include(o=>o.Order)
                 .FirstOrDefaultAsync(bp => bp.Id == id);
         }
     }

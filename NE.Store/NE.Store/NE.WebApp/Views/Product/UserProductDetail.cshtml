@@ -122,15 +122,20 @@
                     {
                         var color = Model.ProductColors[i];
                         var isSelected = i == 0;
+                        var isOutOfStock = color.Quantity <= 0;  // Kiểm tra số lượng
+
                         <button type="button"
-                                class="btn btn-sm mr-2 @(isSelected ? "text-white" : "btn-outline-secondary") color-option"
-                                style="@(isSelected ? "background-color: #7fad39; " : "")"
+                                class="btn btn-sm mr-2 @(isSelected ? "text-white" : "btn-outline-secondary") color-option @(isOutOfStock ? "disabled" : "")"
+                                style="@(isSelected ? "background-color: #7fad39;" : "")"
                                 data-color-id="@color.ColorId"
-                                data-quantity="@color.Quantity">
+                                data-quantity="@color.Quantity"
+                        @(isOutOfStock ? "disabled" : "")>
+                            <!-- Thêm thuộc tính disabled nếu số lượng là 0 -->
                             @color.Color.ColorName
                         </button>
                     }
                 </div>
+
             </div>
 
             <!-- Số lượng -->
@@ -157,7 +162,7 @@
                     <!-- OrderCreateDto -->
                     @* <input type="hidden" name="UserId" value="10" /> *@
                     <input type="hidden" name="Status" value="1" />
-                    <input type="hidden" name="Note" value="Mua ngay từ trang chủ" />
+                    <input type="hidden" name="Note" value="" />
                     <input type="hidden" name="TotalMoney" id="orderTotalMoney"   />
                     <input type="hidden" name="CouponId"  />
 

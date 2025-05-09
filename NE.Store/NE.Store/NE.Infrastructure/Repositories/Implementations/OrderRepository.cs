@@ -22,7 +22,18 @@ namespace NE.Infrastructure.Repositories.Implementations
                 .Include(od => od.OrderDetails)
                     .ThenInclude(p=>p.Product)
                 .Include(u=>u.User)
+                    .ThenInclude(w=>w.Ward)
+                        .ThenInclude(d=>d.District)
+                            .ThenInclude(p=>p.Province)
                 .ToListAsync();
+        }
+
+        public async override Task<Order> GetByIdAsync(int id)
+        {
+            return await _context.Set<Order>()
+                .Include(u=>u.User)
+                .Include(od=>od.OrderDetails)       
+                .FirstOrDefaultAsync(bp => bp.Id == id);
         }
     }
 }

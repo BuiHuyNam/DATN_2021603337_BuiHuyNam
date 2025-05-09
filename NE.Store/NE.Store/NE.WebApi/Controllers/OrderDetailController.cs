@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.OrderDetailDto;
@@ -22,6 +23,8 @@ namespace NE.WebApi.Controllers
         }
 
         [HttpPost()]
+        [Authorize]
+
         public async Task<ActionResult> AddOrderDetail(OrderDetailCreateDto orderDetailCreateDto)
         {
             var orderDetail = _mapper.Map<OrderDetail>(orderDetailCreateDto);

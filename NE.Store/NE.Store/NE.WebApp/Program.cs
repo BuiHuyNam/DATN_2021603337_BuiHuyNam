@@ -1,3 +1,5 @@
+using NE.WebApp.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
@@ -12,6 +14,10 @@ builder.Services.AddCors(options =>
                                 .AllowCredentials(); 
                       });
 });
+
+//Connect VNPay API
+builder.Services.AddScoped<IVnPayService, VnPayService>();
+
 
 // Thêm d?ch v? Session vào DI container
 builder.Services.AddSession(options =>

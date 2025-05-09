@@ -8,6 +8,8 @@ using NE.Application.Services.Implementations;
 using NE.Application.Services.Interfaces;
 using NE.Domain.Entitis;
 using NE.Application.Dtos.BrandDto;
+using System.Net.Http;
+using NE.Application.Dtos.ProductDto;
 
 namespace NE.WebApi.Controllers
 {
@@ -56,6 +58,14 @@ namespace NE.WebApi.Controllers
             var userDto = _mapper.Map<UserViewDto>(user);
             return Ok(userDto);
         }
+        [HttpPut]
+        public async Task<IActionResult> EditUser(UpdateInforUserDto updateInforUserDto)
+        {
+            var userUpdate = _mapper.Map<User>(updateInforUserDto);
+            await _userService.UpdateUserAsync(userUpdate);
+            return Ok();
+        }
+
 
 
     }

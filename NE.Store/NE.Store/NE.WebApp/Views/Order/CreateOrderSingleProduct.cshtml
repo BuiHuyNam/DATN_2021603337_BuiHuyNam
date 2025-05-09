@@ -8,21 +8,14 @@
 <!-- Checkout Section Begin -->
 <section class="checkout spad">
     <div class="container">
-        @* <div class="row"> *@
-        @*     <div class="col-lg-12"> *@
-        @*         <h6> *@
-        @*             <span class="icon_tag_alt"></span> Have a coupon? <a href="#">Click here</a> to enter your code *@
-        @*         </h6> *@
-        @*     </div> *@
-        @* </div> *@
         <div class="checkout__form">
             <h4>Thông tin đặt hàng</h4>
-            <form action="#">
+            <form method="post" asp-action="PlaceOrder" asp-controller="Order">
                 <div class="row">
                     <div class="col-lg-8 col-md-6">
                         <div class="checkout__input">
                             <p>Họ và tên<span>*</span></p>
-                            <input type="text" name="fullName" required>
+                            <input type="text" name="FullName" required>
                         </div>
 
                         <div class="row">
@@ -45,7 +38,7 @@
                             <div class="col-lg-4">
                                 <div class="checkout__input">
                                     <p>Phường/Xã<span>*</span></p>
-                                    <select id="ward" name="wardName" required class="form-control" disabled>
+                                    <select id="ward" name="WardId" required class="form-control" disabled>
                                         <option value="">-- Chọn phường/xã --</option>
                                     </select>
                                 </div>
@@ -55,14 +48,14 @@
 
                         <div class="checkout__input mt-4">
                             <p>Địa chỉ chi tiết<span>*</span></p>
-                            <input type="text" name="detailedAddress" required placeholder="Số nhà, tên đường...">
+                            <input type="text" name="AddressDetail" required placeholder="Số nhà, tên đường...">
                         </div>
 
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="checkout__input">
                                     <p>Số điện thoại<span>*</span></p>
-                                    <input type="text" name="phone" required>
+                                    <input type="text" name="PhoneNumber" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -108,17 +101,40 @@
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-                            <button type="submit" class="site-btn">THANH TOÁN</button>
+                            
+                            @* <input type="hidden" name="Hidden_FullName" id="Hidden_FullName" /> *@
+                           
+                            @* <input type="hidden" name="Hidden_DetailedAddress" id="Hidden_DetailedAddress" /> *@
+                            @* <input type="hidden" name="Hidden_Phone" id="Hidden_Phone" /> *@
+                            @* <input type="hidden" name="Hidden_Email" id="Hidden_Email" /> *@
+                            @* <input type="hidden" name="Hidden_Note" id="Hidden_Note" /> *@
+
+
+                            @* <form method="post" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment"> *@
+                                <input  type="hidden" name="Name" value="Cảm ơn bạn "/>
+                                <input type="hidden" name="Amount" value="@Model.TotalMoney" />
+                            <input type="hidden" name="OrderDescription" value=" đã thanh toán thành công đơn hàng" />
+                                <input type="hidden" name="OrderType" value="other" />
+
+                                <input type="hidden" name="OrderId" value="@Model.OrderId" />
+
+
+
+                                <button type="submit" class="site-btn">THANH TOÁN</button>
+                            @* </form> *@
                         </div>
                     </div>
                 </div>
-            </form>
+             </form> 
         </div>
     </div>
 </section>
 <!-- Checkout Section End -->
 @section Scripts {
     <script>
+    
+
+
                $(document).ready(function () {
             let allDistricts = [];
             let allWards = [];

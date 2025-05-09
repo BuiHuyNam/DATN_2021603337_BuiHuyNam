@@ -67,9 +67,11 @@
                     }
                 },
                 {
-                    data: "user.addressDetail",
+                    data: "user",
                     render: function (data, type, row) {
-                        return data ?? "(Chưa cập nhật)";
+                        if (!data) return "(Chưa cập nhật)";
+                        const address = `${data.addressDetail ?? ""}, ${data.ward?.wardName ?? ""}, ${data.ward?.district?.districtName ?? ""}, ${data.ward?.district?.province?.provinceName ?? ""}`;
+                        return address.trim() !== ", , ," ? address : "(Chưa cập nhật)";
                     }
                 },
                 {

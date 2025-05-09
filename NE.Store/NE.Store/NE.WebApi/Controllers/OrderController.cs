@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.BrandDto;
@@ -22,6 +23,8 @@ namespace NE.WebApi.Controllers
         }
 
         [HttpPost()]
+        [Authorize]
+
         public async Task<ActionResult> AddOrder(OrderCreateDto orderCreateDto)
         {
             var order = _mapper.Map<Order>(orderCreateDto);

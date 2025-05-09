@@ -63,9 +63,21 @@ namespace NE.Application.Services.Implementations
             return user;
         }
 
-        public Task UpdateUserAsync(User user)
+        public async Task UpdateUserAsync(User user)
         {
-            throw new NotImplementedException();
+            var userUpdate = await _unitOfWork.Users.GetByIdAsync(user.Id);
+            if (userUpdate == null)
+            {
+                throw new Exception("User does not exist!");
+            }
+            userUpdate.DateOfBirth = user.DateOfBirth;
+            userUpdate.AddressDetail = user.AddressDetail;
+            userUpdate.FullName = user.FullName;
+            userUpdate.PhoneNumber = user.PhoneNumber;
+            userUpdate.WardId = user.WardId;
+
+            await _unitOfWork.Users.Update(userUpdate);
+            await _unitOfWork.SaveChangesAsync();
         }
 
         public async Task IsActiveUser(User user)
