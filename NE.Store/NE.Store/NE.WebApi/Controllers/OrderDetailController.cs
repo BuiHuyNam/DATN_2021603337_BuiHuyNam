@@ -26,7 +26,7 @@ namespace NE.WebApi.Controllers
         {
             var orderDetail = _mapper.Map<OrderDetail>(orderDetailCreateDto);
             await _orderDetailService.AddOrderDetailAsync(orderDetail);
-            return Ok();
+            return Ok(new {id = orderDetail.Id});
         }
 
         [HttpGet()]

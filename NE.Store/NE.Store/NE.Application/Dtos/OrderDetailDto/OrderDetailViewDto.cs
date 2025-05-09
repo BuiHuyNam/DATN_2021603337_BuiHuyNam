@@ -13,6 +13,7 @@ namespace NE.Application.Dtos.OrderDetailDto
         public double Price { get; set; }
         public int Quantity { get; set; }
         public double TotalMoney { get; set; }
+        public int ColorId { get; set; }
 
         public int ProductId { get; set; }
         public int OrderId { get; set; }

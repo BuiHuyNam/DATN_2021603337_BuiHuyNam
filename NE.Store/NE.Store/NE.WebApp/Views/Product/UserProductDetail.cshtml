@@ -166,6 +166,7 @@
                     <input type="hidden" name="Price" value="@(Model.Price * (1 - Model.Discount / 100))" />
                     <input type="hidden" name="Quantity" id="orderQuantity" />
                     <input type="hidden" name="TotalMoney" id="orderDetailTotalMoney" />
+                    <input type="hidden" name="colorId" id="hiddenColorId2" />
 
                     <input type="hidden" id="productPrice" value="@Model.Price" />
                     <input type="hidden" id="productDiscount" value="@Model.Discount" />
@@ -417,6 +418,7 @@
 
         // Cập nhật colorId vào input ẩn để gửi lên server
         document.getElementById("hiddenColorId").value = colorId;
+        document.getElementById("hiddenColorId2").value = colorId;
             });
         });
 

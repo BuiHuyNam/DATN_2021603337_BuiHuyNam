@@ -2353,6 +2353,10 @@
           "orderId": {
             "type": "integer",
             "format": "int32"
+          },
+          "colorId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

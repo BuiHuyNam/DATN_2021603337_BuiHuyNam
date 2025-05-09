@@ -1,4 +1,5 @@
-﻿using NE.Domain.Entitis;
+﻿using Microsoft.EntityFrameworkCore;
+using NE.Domain.Entitis;
 using NE.Infrastructure.Context;
 using NE.Infrastructure.Repositories.Interfaces;
 using System;
@@ -13,6 +14,13 @@ namespace NE.Infrastructure.Repositories.Implementations
     {
         public OrderDetailRepository(NEContext context) : base(context)
         {
+            
+        }
+        public async override Task<OrderDetail> GetByIdAsync(int id)
+        {
+            return await _context.Set<OrderDetail>()
+                .Include(p => p.Product)
+                .FirstOrDefaultAsync(bp => bp.Id == id);
         }
     }
 }

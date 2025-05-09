@@ -15,5 +15,6 @@ namespace NE.Application.Dtos.OrderDetailDto
 
         public int ProductId { get; set; }
         public int OrderId { get; set; }
+        public int ColorId { get; set; }
     }
 }

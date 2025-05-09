@@ -65,7 +65,13 @@ namespace NE.WebApp.Controllers
                 TempData["Error"] = "Tao don hang thanh cong, loi tao chi tiet don hang!";
             }
 
-            return View(responseDetail);
+            var orderDetailContent = await responseDetail.Content.ReadFromJsonAsync<OrderDetail>();
+            int orderDetailId = orderDetailContent.Id;
+
+            var responseOrderDetail = await _httpClient.GetFromJsonAsync<OrderDetailViewDto>($"{ApiUrlOrderDetail}/{orderDetailId}");
+
+
+            return View(responseOrderDetail);
 
         }
     }
