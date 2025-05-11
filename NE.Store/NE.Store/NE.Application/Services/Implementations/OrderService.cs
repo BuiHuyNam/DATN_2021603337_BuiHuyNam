@@ -54,6 +54,12 @@ namespace NE.Application.Services.Implementations
             return order;
         }
 
+        public async Task<List<Order>> GetOrderByUserIdAsync(int userId)
+        {
+            var order = await _unitOfWork.Orders.GetOrderByUserIdAsync(userId);
+            return order;
+        }
+
         public async Task UpdateOrderAsync(Order order)
         {
             var orderUpdate = await _unitOfWork.Orders.GetByIdAsync(order.Id);

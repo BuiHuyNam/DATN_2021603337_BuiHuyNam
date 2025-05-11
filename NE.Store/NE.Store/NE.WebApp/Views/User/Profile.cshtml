@@ -1,0 +1,90 @@
+﻿@model NE.Application.Dtos.UserDto.UserViewDto
+
+@{
+    Layout = "~/Views/Shared/_LayoutSub.cshtml";
+    ViewData["Title"] = "Thông tin cá nhân";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="row g-0">
+                    <!-- Avatar -->
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center bg-light rounded-start p-4">
+                        <img src="~/NEStore/img/feedback/avatar.jpg" alt="Avatar" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                        <p class="fw-semibold">Ảnh đại diện</p>
+                    </div>
+
+                    <!-- Form Info -->
+                    <div class="col-md-8 p-5">
+                        <h4 class="mb-4 text-center">Thông tin tài khoản</h4>
+                        <form method="post" asp-action="UpdateInfor" asp-controller="User">
+                            @* Hidden input *@
+                            <input type="hidden" name="WardId" value="@Model.WardId" />
+                            <input type="hidden" name="AddressDetail" value="@Model.AddressDetail" />
+
+
+
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="username" class="form-label">Tên đăng nhập</label>
+                                    <input type="text" class="form-control" id="username" value="@Model.UserName" disabled>
+                                </div>
+                                <div class="col">
+                                    <label for="FullName" class="form-label">Họ tên</label>
+                                    <input type="text" class="form-control" id="FullName" name="FullName" value="@Model.FullName">
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" value="@Model.Email" disabled>
+                                </div>
+                                <div class="col">
+                                    <label for="PhoneNumber" class="form-label">Số điện thoại</label>
+                                    <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" value="@Model.PhoneNumber">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="DateOfBirth" class="form-label">Ngày sinh</label>
+                                <input type="date" class="form-control" id="DateOfBirth" name="DateOfBirth"
+                                       value="@(Model.DateOfBirth.ToString("yyyy-MM-dd") ?? "")">
+                            </div>
+
+                            @* <div class="row mb-3"> *@
+                            @*     <div class="col"> *@
+                            @*         <label class="form-label">Tỉnh/Thành phố</label> *@
+                            @*         <input type="text" class="form-control" *@
+                            @*                value="@Model.Ward.District.Province.ProvinceName" disabled> *@
+                            @*     </div> *@
+                            @*     <div class="col"> *@
+                            @*         <label class="form-label">Quận/Huyện</label> *@
+                            @*         <input type="text" class="form-control" *@
+                            @*                value="@Model.Ward.District.DistrictName" disabled> *@
+                            @*     </div> *@
+                            @*     <div class="col"> *@
+                            @*         <label class="form-label">Phường/Xã</label> *@
+                            @*         <input type="text" class="form-control" *@
+                            @*                value="@Model.Ward.WardName" disabled> *@
+                            @*     </div> *@
+                            @* </div> *@
+
+
+                            @* <div class="mb-3"> *@
+                            @*     <label for="AddressDetail" class="form-label">Địa chỉ chi tiết</label> *@
+                            @*     <input type="text" class="form-control" name="AddressDetail" id="AddressDetail" value="@Model.AddressDetail"> *@
+                            @* </div> *@
+
+                            <div class="mb-3 text-center">
+                                <button type="submit" class="btn btn-custom mt-2">Lưu thay đổi</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

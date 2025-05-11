@@ -1,0 +1,138 @@
+﻿@model List<NE.Application.Dtos.OrderDto.OrderViewDto>
+
+@{
+    Layout = "~/Views/Shared/_LayoutSub.cshtml";
+    ViewData["Title"] = "Lịch sử đơn hàng";
+}
+
+
+
+<div class="container py-4">
+    <h4 class="mb-4">Đơn hàng của tôi</h4>
+
+    <!-- Tabs -->
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-3" id="orderTabs">
+        <li class="nav-item mr-3">
+            <a class="nav-link active text-custom fw-bold border-custom" data-bs-toggle="tab" href="#tatca">Tất cả đơn</a>
+        </li>
+        <li class="nav-item mr-3">
+            <a class="nav-link text-custom fw-bold border-custom" data-bs-toggle="tab" href="#dathanhtoan">Đã thanh toán</a>
+        </li>
+        <li class="nav-item mr-3">
+            <a class="nav-link text-custom fw-bold border-custom" data-bs-toggle="tab" href="#danggiao">Đang giao</a>
+        </li>
+        <li class="nav-item mr-3">
+            <a class="nav-link text-custom fw-bold border-custom" data-bs-toggle="tab" href="#dagiao">Đã giao</a>
+        </li>
+        <li class="nav-item mr-3">
+            <a class="nav-link text-custom fw-bold border-custom" data-bs-toggle="tab" href="#dahuy">Đã hủy</a>
+        </li>
+    </ul>
+
+
+    <!-- Search -->
+    <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Tìm theo tên sản phẩm">
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="tatca">
+            @foreach (var order in Model)
+            {
+                <div class="card mb-4 bg-light">
+                    <div class="card-body">
+                        <!-- Trạng thái là một khối div riêng biệt -->
+                        <div class="mb-3 justify-content-between">
+                            <p>Thời gian tạo đơn: @order.CreatedDate.ToString("dd/MM/yyyy HH:mm:ss")</p>
+                            <p class="fw-bold @(GetStatusClass(order.Status))">@GetStatusName(order.Status)</p>
+                           
+                        </div>
+
+                        <!-- Đường kẻ phân cách giữa trạng thái và sản phẩm -->
+                        <hr class="my-3" style="border-top: 1px solid #ccc;" />
+
+                        <!-- Hiển thị sản phẩm -->
+                        @foreach (var item in order.OrderDetails)
+                        {
+                            var matchedColor = item.Product.ProductColors
+                            ?.FirstOrDefault(pc => pc.ColorId == item.ColorId);
+
+                            var imageId = matchedColor?.ImageFiles?.FirstOrDefault()?.Id;
+                            var imageUrl = imageId.HasValue
+                            ? $"https://localhost:7099/api/ImageFile/Download?id={imageId}"
+                            : "/images/no-image.jpg";
+
+                            <div class="d-flex mb-2 bg-light">
+                                <img src="@imageUrl"
+                                     alt="Ảnh sản phẩm"
+                                     style="width: 80px; height: 80px; object-fit: cover;"
+                                     class="me-3 border rounded mr-4" />
+
+                                <div>
+                                    <strong>@item.Product.ProductName</strong><br />
+                                    Màu sắc: <span>@matchedColor?.Color?.ColorName</span><br />
+                                    Số lượng: <span>@item.Quantity</span>
+                                </div>
+                            </div>
+                        }
+
+                        <!-- Đường kẻ phân cách giữa sản phẩm và tổng tiền -->
+                        <hr class="my-3" style="border-top: 1px solid #ccc;" />
+
+                        <!-- Tổng tiền căn trái -->
+                        <!-- Tổng tiền căn phải -->
+                        <div class="text-end mb-3 ">
+                            <strong>Tổng tiền:</strong> @String.Format("{0:N0} ₫", order.TotalMoney)
+                        </div>
+
+                        <!-- Các nút căn phải -->
+                        <div class="text-end">
+                            <button class="btn btn-outline-primary btn-sm">Xem chi tiết</button>
+
+                            @if (order.Status == 5)
+                            {
+                                <button class="btn btn-outline-success btn-sm">Đánh giá</button>
+                                <button class="btn btn-outline-secondary btn-sm">Mua lại</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+@functions {
+    string GetStatusName(int status)
+    {
+        return status switch
+        {
+            1 => "Chờ xác nhận",
+            2 => "Đã xác nhận",
+            3 => "Đã thanh toán",
+            4 => "Đang giao hàng",
+            5 => "Đã giao hàng",
+            6 => "Đã hủy",
+            7 => "Yêu cầu trả hàng",
+            _ => "Không xác định"
+        };
+    }
+
+    string GetStatusClass(int status)
+    {
+        return status switch
+        {
+            1 => "text-warning",
+            2 => "text-info",
+            3 => "text-primary",
+            4 => "text-primary",
+            5 => "text-success",
+            6 => "text-danger",
+            7 => "text-danger",
+            _ => "text-secondary"
+        };
+    }
+}

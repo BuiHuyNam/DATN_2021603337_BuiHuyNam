@@ -729,6 +729,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NE.WebApi.Controllers.OrderController",
+    "Method": "GetOrderUserIdAsync",
+    "RelativePath": "api/Order/UserId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NE.WebApi.Controllers.OrderDetailController",
     "Method": "AddOrderDetail",
     "RelativePath": "api/OrderDetail",

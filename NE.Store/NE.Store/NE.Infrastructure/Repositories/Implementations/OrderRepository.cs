@@ -35,5 +35,24 @@ namespace NE.Infrastructure.Repositories.Implementations
                 .Include(od=>od.OrderDetails)       
                 .FirstOrDefaultAsync(bp => bp.Id == id);
         }
+
+        public async Task<List<Order>> GetOrderByUserIdAsync(int userId)
+        {
+            return await _context.Set<Order>()
+               .Include(u => u.User)
+               .Include(od => od.OrderDetails)
+                    .ThenInclude(p=>p.Product)
+                        .ThenInclude(pc=>pc.ProductColors)
+                            .ThenInclude(c=>c.Color)
+                .Include(od => od.OrderDetails)
+                    .ThenInclude(p => p.Product)
+                        .ThenInclude(pc => pc.ProductColors)
+                            .ThenInclude(i=>i.ImageFiles)
+
+
+               .Where(u => u.UserId == userId)
+               .OrderByDescending(x=>x.CreatedDate)
+               .ToListAsync();
+        }
     }
 }

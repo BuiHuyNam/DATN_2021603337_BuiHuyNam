@@ -112,6 +112,52 @@
     .user-dropdown:hover .user-dropdown-menu {
         display: block;
     }
+
+
+    .bg-custom {
+        background-color: #7fad39 !important;
+    }
+
+    .text-custom {
+        color: #7fad39 !important;
+    }
+
+    .btn-custom {
+        background-color: #7fad39 !important;
+        color: white;
+    }
+
+    .bg-custom {
+        background-color: #7fad39 !important;
+    }
+
+    .text-custom {
+        color: #7fad39 !important;
+    }
+
+    .btn-custom {
+        background-color: #7fad39 !important;
+        color: white !important;
+    }
+
+        .btn-custom:hover {
+            background-color: #689c2f !important; /* Màu hover đậm hơn một chút */
+            color: white !important;
+        }
+
+    .nav-tabs .nav-link.active {
+        background-color: #7fad39 !important;
+        color: white !important;
+        border-color: #7fad39 !important;
+    }
+
+    .nav-tabs .nav-link:hover {
+        color: #689c2f !important;
+    }
+
+    .border-custom {
+        border: 1px solid #7fad39 !important;
+    }
 </style>
 
 
@@ -154,12 +200,16 @@
 
                                     <div class="user-dropdown">
                                         <div class="user-dropdown-toggle">
-                                            Xin chào: abc123@gmail.com <i class="fa fa-caret-down"></i>
+                                            Xin chào: @email <i class="fa fa-caret-down"></i>
                                         </div>
                                         <div class="user-dropdown-menu">
                                             <a href="@Url.Action("Profile", "User")">
                                                 <i class="fa fa-user"></i> Thông tin cá nhân
                                             </a>
+                                            <a href="@Url.Action("HistoryOrder", "User")">
+                                                <i class="fa fa-shopping-cart"></i> Xem đơn hàng
+                                            </a>
+
                                             <a href="@Url.Action("Logout", "Auth")">
                                                 <i class="fa fa-sign-out-alt"></i> Đăng xuất
                                             </a>

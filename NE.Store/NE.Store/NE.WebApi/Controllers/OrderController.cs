@@ -71,5 +71,16 @@ namespace NE.WebApi.Controllers
             await _orderService.UpdateOrderStatus(orderUpdate);
             return Ok();
         }
+
+        [HttpGet("UserId/{id}")]
+        [Authorize]
+        public async Task<ActionResult> GetOrderUserIdAsync(int id)
+        {
+            var order = await _orderService.GetOrderByUserIdAsync(id);
+            var orderDto = _mapper.Map<List<OrderViewDto>>(order);
+            return Ok(orderDto);
+        }
+
+
     }
 }

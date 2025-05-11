@@ -150,12 +150,16 @@
 
                                     <div class="user-dropdown">
                                         <div class="user-dropdown-toggle">
-                                            Xin chào: abc123@gmail.com <i class="fa fa-caret-down"></i>
+                                            Xin chào: @email <i class="fa fa-caret-down"></i>
                                         </div>
                                         <div class="user-dropdown-menu">
                                             <a href="@Url.Action("Profile", "User")">
                                                 <i class="fa fa-user"></i> Thông tin cá nhân
                                             </a>
+                                            <a href="@Url.Action("HistoryOrder", "User")">
+                                                <i class="fa fa-shopping-cart"></i> Xem đơn hàng
+                                            </a>
+
                                             <a href="@Url.Action("Logout", "Auth")">
                                                 <i class="fa fa-sign-out-alt"></i> Đăng xuất
                                             </a>

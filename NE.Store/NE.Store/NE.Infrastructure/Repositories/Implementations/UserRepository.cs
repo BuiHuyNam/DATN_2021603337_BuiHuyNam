@@ -29,6 +29,8 @@ namespace NE.Infrastructure.Repositories.Implementations
             return await _context.Set<User>()
                 .Include(r => r.Role)
                 .Include(w => w.Ward)
+                    .ThenInclude(d=>d.District)
+                        .ThenInclude(p=>p.Province)
                 .Where(u => u.Id == id)
                 .FirstOrDefaultAsync();
         }

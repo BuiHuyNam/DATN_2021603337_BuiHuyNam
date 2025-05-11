@@ -9,5 +9,7 @@ namespace NE.Infrastructure.Repositories.Interfaces
 {
     public interface IOrderRepository:IGenericRepository<Order>
     {
+        Task<List<Order>> GetOrderByUserIdAsync(int userId);
+
     }
 }

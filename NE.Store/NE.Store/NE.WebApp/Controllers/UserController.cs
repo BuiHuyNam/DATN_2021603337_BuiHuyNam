@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NE.Application.Dtos.ColorDto;
+using NE.Application.Dtos.OrderDto;
 using NE.Application.Dtos.ProductDto;
 using NE.Application.Dtos.UserDto;
+using NE.Domain.Entitis;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace NE.WebApp.Controllers
 {
@@ -9,6 +13,8 @@ namespace NE.WebApp.Controllers
 
         private readonly HttpClient _httpClient;
         private const string ApiUrl = "https://localhost:7099/api/user";
+        private const string ApiUrlOrder = "https://localhost:7099/api/order";
+
 
         public UserController(HttpClient httpClient)
         {
@@ -26,10 +32,128 @@ namespace NE.WebApp.Controllers
         {
             var response = await _httpClient.PutAsJsonAsync(ApiUrl + "/IsActiveUser", isActiveUserDto);
             return RedirectToAction("Index", "User");
+        }
+
+        [HttpGet("Profile")]
+        public async Task<IActionResult> Profile()
+        {
+            var token = HttpContext.Session.GetString("JwtToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            else
+            {
+                // Giải mã Token để lấy UserId
+                var handler = new JwtSecurityTokenHandler();
+                var jwtToken = handler.ReadJwtToken(token);
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "nameid");
+
+                if (userIdClaim == null)
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+                _httpClient.DefaultRequestHeaders.Authorization =
+                                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+
+                var response = await _httpClient.GetFromJsonAsync<UserViewDto>($"{ApiUrl}/{userId}");
+                return View(response);
+            }
+
+        }
+
+        [HttpPost("UpdateInfor")]
+        public async Task<IActionResult> UpdateInfor(UpdateInforUserDto updateInforUserDto)
+        {
+            var token = HttpContext.Session.GetString("JwtToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            else
+            {
+                // Giải mã Token để lấy UserId
+                var handler = new JwtSecurityTokenHandler();
+                var jwtToken = handler.ReadJwtToken(token);
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "nameid");
+
+                if (userIdClaim == null)
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+                updateInforUserDto.Id = userId;
+
+                _httpClient.DefaultRequestHeaders.Authorization =
+                                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+
+                var response = await _httpClient.PutAsJsonAsync(ApiUrl, updateInforUserDto);
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    TempData["Error"] = "Luu that bai!";
+                }
+                else
+                {
+                    TempData["Success"] = "Luu thanh cong!";
+                }
+                return RedirectToAction("Profile", "User");
+
+
+            }
 
 
         }
 
-       
+        [HttpGet("HistoryOrder")]
+        public async Task<IActionResult> HistoryOrder()
+        {
+            var token = HttpContext.Session.GetString("JwtToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            else
+            {
+                // Giải mã Token để lấy UserId
+                var handler = new JwtSecurityTokenHandler();
+                var jwtToken = handler.ReadJwtToken(token);
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "nameid");
+
+                if (userIdClaim == null)
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+
+
+                _httpClient.DefaultRequestHeaders.Authorization =
+                                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+
+                var response = await _httpClient.GetFromJsonAsync<List<OrderViewDto>>($"{ApiUrlOrder}/UserId/{userId}");
+
+
+                return View(response);
+            }
+        }
     }
 }
