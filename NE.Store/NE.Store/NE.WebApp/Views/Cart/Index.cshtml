@@ -115,7 +115,40 @@
                         <li>Tổng <span>@grandTotal.ToString("N0") ₫</span></li>
                         <li>Tổng tiền <span>@grandTotal.ToString("N0") ₫</span></li>
                     </ul>
-                    <a href="#" class="primary-btn">MUA NGAY</a>
+                    <form asp-action="CheckOut" asp-controller="Order" method="post">
+                        @* Ở đây bạn cần truyền dữ liệu orderCreateDto và list orderDetails *@
+
+                        <!-- OrderCreateDto -->
+                        @* <input type="hidden" name="UserId" value="10" /> *@
+                        <input type="hidden" name="Status" value="1" />
+                        <input type="hidden" name="Note" value="" />
+                        <input type="hidden" name="TotalMoney" value="@grandTotal" />
+                        <input type="hidden" name="CouponId" />
+
+                        @* VD: Thêm các hidden input chứa thông tin đơn hàng *@
+                        @* <input type="hidden" name="orderCreateDto.TotalPrice" value="@grandTotal" /> *@
+
+                        @* Vòng lặp tạo hidden inputs cho từng item trong giỏ hàng *@
+                        @for (int i = 0; i < Model.Count; i++)
+                        {
+                            var product = Model[i].Product;
+                            var discountedPrice = product.Price * (1 - product.Discount / 100.0);
+                            var totalMoney = discountedPrice * Model[i].Quatity;
+
+                            <input type="hidden" name="orderDetails[@i].ProductId" value="@product.Id" />
+                            <input type="hidden" name="orderDetails[@i].ColorId" value="@Model[i].ColorId" />
+                            <input type="hidden" name="orderDetails[@i].Quantity" value="@Model[i].Quatity" />
+                            <input type="hidden" name="orderDetails[@i].Price" value="@discountedPrice" />
+                            <input type="hidden" name="orderDetails[@i].TotalMoney" value="@totalMoney" />
+                            <!-- Gửi CartId -->
+                            <input type="hidden" name="CartId" value="@Model[i].Id" />
+
+
+                            }
+
+                        <button type="submit" class="primary-btn">MUA NGAY</button>
+                    </form>
+
                 </div>
            </div>
 

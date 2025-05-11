@@ -22,6 +22,8 @@ namespace NE.WebApp.Controllers
         private const string ApiUrlOrderDetail = "https://localhost:7099/api/orderDetail";
         private const string ApiUrlUser = "https://localhost:7099/api/user";
         private const string ApiUrlProductColor = "https://localhost:7099/api/productColor";
+        private const string ApiUrlCart = "https://localhost:7099/api/cart";
+
 
 
         private readonly IVnPayService _vnPayService;
@@ -114,7 +116,6 @@ namespace NE.WebApp.Controllers
         }
 
     
-
         [HttpPost("PlaceOrder")]
         public async Task<IActionResult> PlaceOrder(UpdateInforUserDto updateInforUserDto, PaymentInformationModel paymentInformationModel)
         {
@@ -161,7 +162,7 @@ namespace NE.WebApp.Controllers
 
         }
 
-            [HttpGet]
+        [HttpGet]
         public async Task<IActionResult> PaymentCallbackVnpay()
         {  
             var response = _vnPayService.PaymentExecute(Request.Query);
@@ -226,5 +227,78 @@ namespace NE.WebApp.Controllers
 
             return View(response);
         }
+
+
+        [HttpPost("CheckOut")]
+        public async Task<IActionResult> CheckOut(OrderCreateDto orderCreateDto, List<OrderDetailCreateDto> orderDetails, List<int> CartId)
+        {
+            var token = HttpContext.Session.GetString("JwtToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "nameid");
+
+            if (userIdClaim == null)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
+            orderCreateDto.UserId = int.Parse(userIdClaim.Value);
+            _httpClient.DefaultRequestHeaders.Authorization =
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+            // B1: Tạo đơn hàng
+            var responseOrder = await _httpClient.PostAsJsonAsync(ApiUrl, orderCreateDto);
+            if (!responseOrder.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Không thể tạo đơn hàng!";
+                return RedirectToAction("Cart", "User");
+            }
+
+            var orderContent = await responseOrder.Content.ReadFromJsonAsync<Order>();
+            int orderId = orderContent.Id;
+
+            // B2: Tạo chi tiết đơn hàng cho từng sản phẩm
+            var orderDetailResults = new List<OrderDetailViewDto>();
+            foreach (var detailDto in orderDetails)
+            {
+                detailDto.OrderId = orderId;
+
+                var responseDetail = await _httpClient.PostAsJsonAsync(ApiUrlOrderDetail, detailDto);
+                if (!responseDetail.IsSuccessStatusCode)
+                {
+                    TempData["Error"] = "Một số sản phẩm không thể thêm vào đơn hàng!";
+                    continue;
+                }
+
+                var createdDetail = await responseDetail.Content.ReadFromJsonAsync<OrderDetail>();
+                var detailView = await _httpClient.GetFromJsonAsync<OrderDetailViewDto>($"{ApiUrlOrderDetail}/{createdDetail.Id}");
+
+                if (detailView != null)
+                {
+                    orderDetailResults.Add(detailView);
+                }
+            }
+            // B3: Xóa các mục giỏ hàng đã đặt
+            foreach (var id in CartId)
+            {
+                var deleteResponse = await _httpClient.DeleteAsync($"{ApiUrlCart}/{id}");
+                if (!deleteResponse.IsSuccessStatusCode)
+                {
+                    // Ghi log lỗi hoặc lưu thông báo nếu cần
+                    TempData["Error"] = "Khong the xoa gio hang!";
+                }
+            }
+
+
+            // B3: Trả về view hiển thị danh sách chi tiết đơn hàng vừa tạo
+            return View("CheckOut", orderDetailResults);
+        }
+
+        
     }
 }
