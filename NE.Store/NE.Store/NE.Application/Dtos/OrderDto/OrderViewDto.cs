@@ -15,6 +15,9 @@ namespace NE.Application.Dtos.OrderDto
         public int Status { get; set; }
         public string? Note { get; set; }
         public double TotalMoney { get; set; }
+        public string? FullName { get; set; }
+        public string? AddressDetail { get; set; }
+        public string? PhoneNumber { get; set; }
 
         public int UserId { get; set; }
 

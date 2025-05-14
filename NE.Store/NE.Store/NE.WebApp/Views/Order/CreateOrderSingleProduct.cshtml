@@ -48,7 +48,8 @@
 
                         <div class="checkout__input mt-4">
                             <p>Địa chỉ chi tiết<span>*</span></p>
-                            <input type="text" name="AddressDetail" required placeholder="Số nhà, tên đường...">
+                            <input type="text" name="AddressDetailUser" required placeholder="Số nhà, tên đường...">
+
                         </div>
 
                         <div class="row">
@@ -108,6 +109,8 @@
                             @* <input type="hidden" name="Hidden_Phone" id="Hidden_Phone" /> *@
                             @* <input type="hidden" name="Hidden_Email" id="Hidden_Email" /> *@
                             @* <input type="hidden" name="Hidden_Note" id="Hidden_Note" /> *@
+                            <input type="hidden" name="AddressDetail" id="AddressDetail" />
+
 
 
                             @* <form method="post" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment"> *@
@@ -132,7 +135,6 @@
 <!-- Checkout Section End -->
 @section Scripts {
     <script>
-    
 
 
                $(document).ready(function () {
@@ -185,6 +187,7 @@
                 if (!provinceId || filteredDistricts.length === 0) {
                     $('#district').prop('disabled', true);
                     $('#ward').prop('disabled', true);
+                    updateAddressDetail();  // Cập nhật AddressDetail khi không có tỉnh
                     return;
                 }
 
@@ -193,6 +196,8 @@
                 );
                 $('#district').prop('disabled', false).niceSelect('destroy');
                 $('#ward').prop('disabled', true);
+
+                updateAddressDetail();  // Cập nhật AddressDetail khi chọn tỉnh
             });
 
             // Khi chọn quận
@@ -205,6 +210,7 @@
 
                 if (!districtId || filteredWards.length === 0) {
                     $('#ward').prop('disabled', true);
+                    updateAddressDetail();  // Cập nhật AddressDetail khi không có quận
                     return;
                 }
 
@@ -212,8 +218,35 @@
                     $('#ward').append(`<option value="${w.id}">${w.wardName}</option>`)
                 );
                 $('#ward').prop('disabled', false).niceSelect('destroy');
+
+                updateAddressDetail();  // Cập nhật AddressDetail khi chọn quận
             });
+
+            // Khi chọn xã
+            $('#ward').on('change', function () {
+                updateAddressDetail();  // Cập nhật AddressDetail khi chọn xã
+            });
+
+            // Khi người dùng nhập vào địa chỉ chi tiết
+            $('input[name="AddressDetailUser"]').on('input', function () {
+                updateAddressDetail();  // Cập nhật AddressDetail khi thay đổi địa chỉ chi tiết
+            });
+
+            // Cập nhật trường AddressDetail
+            function updateAddressDetail() {
+                const province = $('#province option:selected').text();
+                const district = $('#district option:selected').text();
+                const ward = $('#ward option:selected').text();
+                const addressDetail = $('input[name="AddressDetailUser"]').val();
+
+                // Tạo một địa chỉ đầy đủ
+                const fullAddress = `${addressDetail}, ${ward}, ${district}, ${province}`;
+
+                // Cập nhật giá trị cho input hidden AddressDetail
+                $('#AddressDetail').val(fullAddress);
+            }
         });
+
 
     </script>
 }

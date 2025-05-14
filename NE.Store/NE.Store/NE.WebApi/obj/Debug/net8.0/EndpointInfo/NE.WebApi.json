@@ -2484,6 +2484,18 @@
           "totalMoney": {
             "type": "number",
             "format": "double"
+          },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
+          "addressDetail": {
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

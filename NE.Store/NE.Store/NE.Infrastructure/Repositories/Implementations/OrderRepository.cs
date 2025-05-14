@@ -32,7 +32,14 @@ namespace NE.Infrastructure.Repositories.Implementations
         {
             return await _context.Set<Order>()
                 .Include(u=>u.User)
-                .Include(od=>od.OrderDetails)       
+                .Include(od=>od.OrderDetails) 
+                    .ThenInclude(p=>p.Product)
+                        .ThenInclude(pc=>pc.ProductColors)
+                            .ThenInclude(c=>c.Color)
+                .Include(od => od.OrderDetails)
+                    .ThenInclude(p => p.Product)
+                        .ThenInclude(pc => pc.ProductColors)
+                            .ThenInclude(i=>i.ImageFiles)
                 .FirstOrDefaultAsync(bp => bp.Id == id);
         }
 

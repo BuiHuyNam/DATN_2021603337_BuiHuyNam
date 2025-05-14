@@ -67,8 +67,12 @@ namespace NE.Application.Services.Implementations
             {
                 throw new Exception("Order does not exist!");
             }
+
             order.CouponId = orderUpdate.CouponId;
             order.UserId = orderUpdate.UserId;
+            order.CreatedDate = orderUpdate.CreatedDate;
+            order.UpdatedDate = orderUpdate.UpdatedDate;
+
             await _unitOfWork.Orders.Update(order);
             await _unitOfWork.SaveChangesAsync();
         }

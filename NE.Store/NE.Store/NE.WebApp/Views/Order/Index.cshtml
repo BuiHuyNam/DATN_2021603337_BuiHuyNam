@@ -26,7 +26,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Họ và tên</th>
-                    <th>Số điện thoại</th>
+                    <th>SĐT</th>
                     <th>Địa chỉ</th>
                     <th>Sản phẩm</th>
                     <th>Tổng tiền</th>
@@ -55,24 +55,13 @@
             columns: [
                 { data: "id" },
                 {
-                    data: "user.fullName",
-                    render: function (data, type, row) {
-                        return data ?? "(Chưa cập nhật)";
-                    }
+                    data: "fullName"
                 },
                 {
-                    data: "user.phoneNumber",
-                    render: function (data, type, row) {
-                        return data ?? "(Chưa cập nhật)";
-                    }
+                    data: "phoneNumber"
                 },
                 {
-                    data: "user",
-                    render: function (data, type, row) {
-                        if (!data) return "(Chưa cập nhật)";
-                        const address = `${data.addressDetail ?? ""}, ${data.ward?.wardName ?? ""}, ${data.ward?.district?.districtName ?? ""}, ${data.ward?.district?.province?.provinceName ?? ""}`;
-                        return address.trim() !== ", , ," ? address : "(Chưa cập nhật)";
-                    }
+                    data: "addressDetail"
                 },
                 {
                     data: "orderDetails",
@@ -117,19 +106,53 @@
                     className: "text-center",
                     render: function (data, type, row) {
                         return `
-                                <a href="/Admin/EditOrder/${row.id}" class="btn btn-warning btn-sm me-2"><i class="bi bi-pencil-square"></i>
-    </a>
-                                <button type="button" class="btn btn-danger btn-sm"
+                           <!-- Xem chi tiết -->
+                            <a href="/Admin/OrderDetail/${row.id}" class="btn btn-primary btn-sm me-1">
+                                <i class="bi bi-eye"></i>
+                            </a>
+
+                            <!-- Sửa -->
+                            <a href="/Admin/EditOrder/${row.id}" class="btn btn-warning btn-sm me-1">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+
+                            <!-- Cập nhật trạng thái (hoặc khôi phục, làm mới) -->
+                            <button type="button"
+                                    class="btn btn-info btn-sm me-1"
                                     data-id="${row.id}"
                                     data-bs-toggle="modal"
                                     data-bs-target="#updateStatusModal">
-                                     <i class="bi bi-arrow-clockwise"></i>
-                                </button>
+                                <i class="bi bi-arrow-clockwise"></i>
+                            </button>
+
+                            <!-- Xóa -->
+
+                                <form method="post" action="/Admin/DeleteOrder/${row.id}"
+                                      class="d-inline-block"
+                                      onsubmit="return confirm('Bạn có chắc chắn muốn xóa không?');">
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i>
+                                    </button>
+                                </form>
+
+                            
 
                         `;
                     }
                 }
             ],
+                columnDefs: [
+        { targets: 0, width: "5%" },   // ID
+        { targets: 1, width: "10%" },  // Họ và tên
+        { targets: 2, width: "8%" },  // SĐT
+        { targets: 3, width: "15%" },  // Địa chỉ
+        { targets: 4, width: "17%" },  // Sản phẩm
+        { targets: 5, width: "10%" },  // Tổng tiền
+        { targets: 6, width: "10%" },  // Ghi chú
+        { targets: 7, width: "10%" },  // Trạng thái
+        { targets: 8, width: "14%" },   // Chức năng
+    ],
+
             language: {
                 search: "Tìm kiếm:",
                 lengthMenu: "Hiển thị _MENU_ dòng",

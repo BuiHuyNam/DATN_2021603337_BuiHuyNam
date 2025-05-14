@@ -106,8 +106,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlT3JkZXJTaW5nbGVQcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Order/EditOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Order/OrderDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Order/PaymentCallbackVnpay.cshtml]

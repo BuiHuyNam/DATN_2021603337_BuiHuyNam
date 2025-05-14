@@ -1,0 +1,158 @@
+﻿@model NE.Application.Dtos.OrderDto.OrderViewDto
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Chỉnh sửa đơn hàng";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <div class="card">
+
+                <div class="card-header text-center">
+                    <h4>Chỉnh Sửa Đơn Hàng</h4>
+                </div>
+                <form asp-action="EditOrder" asp-controller="Order" method="post">
+                    <input type="hidden" name="Id" value="@Model.Id" />
+                    <input type="hidden" name="Status" value="@Model.Status" />
+
+
+                    <div class="card-body row g-3">
+                        <div class="col-md-3 fw-bold">Mã đơn hàng:</div>
+                        <div class="col-md-9">
+                            <input class="form-control" value="@Model.Id" disabled />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Người nhận:</div>
+                        <div class="col-md-9">
+                            <input name="FullName" class="form-control" value="@Model.FullName" />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Số điện thoại:</div>
+                        <div class="col-md-9">
+                            <input name="PhoneNumber" class="form-control" value="@Model.PhoneNumber" />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Email:</div>
+                        <div class="col-md-9">
+                            <input name="User.Email" class="form-control" value="@Model.User.Email" disabled />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Địa chỉ giao hàng:</div>
+                        <div class="col-md-9">
+                            <input name="AddressDetail" class="form-control" value="@Model.AddressDetail" />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Ngày đặt hàng:</div>
+                        <div class="col-md-9">
+                            <input class="form-control" value="@Model.CreatedDate.ToString("dd/MM/yyyy HH:mm")" disabled />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Tổng tiền:</div>
+                        <div class="col-md-9">
+                            <input class="form-control" value="@Model.TotalMoney.ToString("N0") ₫" disabled />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Hình thức thanh toán:</div>
+                        <div class="col-md-9">
+                            <input class="form-control" value="@(Model.Status >= 3 ? "VnPay" : "Chưa thanh toán")" disabled />
+                        </div>
+
+                        <div class="col-md-3 fw-bold">Ghi chú:</div>
+                        <div class="col-md-9">
+                            <textarea name="Note" class="form-control">@Model.Note</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Status" class="form-label fw-bold">Trạng thái đơn hàng:</label>
+                            <select asp-for="Status"  class="form-select" disabled>
+                                <option value="1">Chờ xác nhận</option>
+                                <option value="2">Đã xác nhận</option>
+                                <option value="3">Đã thanh toán</option>
+                                <option value="4">Đang giao hàng</option>
+                                <option value="5">Đã giao hàng</option>
+                                <option value="6">Đã hủy</option>
+                                <option value="7">Yêu cầu trả hàng</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-primary">Cập nhật thông tin</button>
+                        </div>
+                    </div>
+                </form>
+
+
+                    @if (Model.OrderDetails != null && Model.OrderDetails.Any())
+                    {
+                        <div class="mt-4">
+                            <h5 class="text-center mb-3">Danh sách sản phẩm đã mua</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="table-dark text-center">
+                                        <tr>
+                                            <th>Ảnh</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Màu sắc</th>
+                                            <th>Giá</th>
+                                            <th>Số lượng</th>
+                                            <th>Thành tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OrderDetails)
+                                        {
+                                            // Lấy màu sắc
+                                            var productColor = item.Product.ProductColors
+                                            .FirstOrDefault(pc => pc.ColorId == item.ColorId);
+
+                                            var colorName = productColor?.Color?.ColorName ?? "Không xác định";
+
+                                            // Lấy ảnh đầu tiên của màu sản phẩm (nếu có)
+
+
+                                            // Lấy ảnh đầu tiên của sản phẩm theo màu
+                                            var imageFile = productColor?.ImageFiles?.FirstOrDefault();
+
+                                            var imageUrl = imageFile != null
+                                            ? $"https://localhost:7099/api/ImageFile/Download?id={imageFile.Id}"
+                                            : "/images/no-image.png";  // fallback nếu không có ảnh
+
+
+
+                                            <tr>
+                                                <td>
+                                                    <img src="@imageUrl" width="60" height="60" class="m-1" alt="Ảnh sản phẩm" />
+                                                </td>
+                                                <td>@item.Product.ProductName</td>
+                                                <td>@colorName</td>
+                                                <td>@item.Price.ToString("N0") ₫</td>
+                                                <td>@item.Quantity</td>
+                                                <td>@item.TotalMoney.ToString("N0") ₫</td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                    <tfoot class="table-dark">
+                                        <tr class="text-center">
+                                            <td colspan="5"><strong>Tổng tiền</strong></td>
+                                            <td><strong>@Model.TotalMoney.ToString("N0") ₫</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    }
+
+
+
+                    <div class="d-flex justify-content-between">
+                        <a href="@Url.Action("Index", "Order")" class="btn btn-secondary">Quay Lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

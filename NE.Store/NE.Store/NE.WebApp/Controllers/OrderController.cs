@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure;
+using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.BrandDto;
 using NE.Application.Dtos.CartDto;
 using NE.Application.Dtos.OrderDetailDto;
@@ -11,6 +12,7 @@ using NE.Application.Dtos.WardDto;
 using NE.Domain.Entitis;
 using NE.WebApp.Service;
 using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http.Json;
 
 namespace NE.WebApp.Controllers
 {
@@ -117,7 +119,7 @@ namespace NE.WebApp.Controllers
 
     
         [HttpPost("PlaceOrder")]
-        public async Task<IActionResult> PlaceOrder(UpdateInforUserDto updateInforUserDto, PaymentInformationModel paymentInformationModel)
+        public async Task<IActionResult> PlaceOrder(OrderUpdateDto orderUpdateDto, PaymentInformationModel paymentInformationModel)
         {
             var token = HttpContext.Session.GetString("JwtToken");
             if (string.IsNullOrEmpty(token))
@@ -137,15 +139,18 @@ namespace NE.WebApp.Controllers
                 }
 
                 // Gán UserId vào commentCreateDto
-                updateInforUserDto.Id = int.Parse(userIdClaim.Value);
+                //updateInforUserDto.Id = int.Parse(userIdClaim.Value);
                 _httpClient.DefaultRequestHeaders.Authorization =
                                         new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
 
+                orderUpdateDto.Id = paymentInformationModel.OrderId;
+                orderUpdateDto.Status = 2;
+                orderUpdateDto.TotalMoney = paymentInformationModel.Amount;
 
 
                 //updateInforUserDto.Id = 4;
-                var responseUser = await _httpClient.PutAsJsonAsync(ApiUrlUser, updateInforUserDto);
+                var responseUser = await _httpClient.PutAsJsonAsync(ApiUrl, orderUpdateDto);
 
                 if (!responseUser.IsSuccessStatusCode)
                 {
@@ -299,6 +304,51 @@ namespace NE.WebApp.Controllers
             return View("CheckOut", orderDetailResults);
         }
 
-        
+
+        [HttpGet("Admin/OrderDetail/{id}")]
+        public async Task<IActionResult> OrderDetail(int id)
+        {
+            var result = await _httpClient.GetFromJsonAsync<OrderViewDto>($"{ApiUrl}/{id}");
+            return View(result);
+        }
+
+        [HttpGet("Admin/EditOrder/{id}")]
+        public async Task<IActionResult> EditOrder(int id)
+        {
+            var result = await _httpClient.GetFromJsonAsync<OrderViewDto>($"{ApiUrl}/{id}");
+            return View(result);
+        }
+
+        [HttpPost("Admin/EditOrder/{id}")]
+        public async Task<IActionResult> EditOrder(OrderUpdateDto orderUpdateDto)
+        {
+            var response = await _httpClient.PutAsJsonAsync(ApiUrl, orderUpdateDto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Sua that bai!";
+            }
+            else
+            {
+                TempData["Success"] = "Sua thanh cong!";
+            }
+            return RedirectToAction("Index", "Order");
+
+        }
+
+        [HttpPost("Admin/DeleteOrder/{id}")]
+        public async Task<IActionResult> DeleteOrder(int id)
+        {
+            var response = await _httpClient.DeleteAsync($"{ApiUrl}/{id}");
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Khong the xoa!";
+            }
+            else
+            {
+                TempData["Success"] = "Xoa thanh cong!";
+            }
+            return RedirectToAction("Index", "Order");
+        }
+
     }
 }

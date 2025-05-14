@@ -1,0 +1,186 @@
+﻿@model NE.Application.Dtos.OrderDto.OrderViewDto
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Chi tiết đơn hàng";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-11">
+            <div class="card">
+
+                <div class="card-header text-center">
+                    <h4>Thông Tin Chi Tiết Đơn Hàng</h4>
+                </div>
+
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Mã đơn hàng:</label>
+                        <span>#@Model.Id</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Người nhận:</label>
+                        <span>@Model.FullName</span>
+                    </div>
+
+                    @* <div class="mb-3"> *@
+                    @*     <label class="form-label fw-bold">Khách hàng:</label> *@
+                    @*     <span>@Model.User.UserName</span> *@
+                    @* </div> *@
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Số điện thoại:</label>
+                        <span>@Model.PhoneNumber</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email:</label>
+                        <span>@Model.User.Email</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Địa chỉ giao hàng:</label>
+                        <span>@Model.AddressDetail</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Ngày đặt hàng:</label>
+                        <span>@Model.CreatedDate.ToString("dd/MM/yyyy HH:mm")</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tổng tiền:</label>
+                        <span>@Model.TotalMoney.ToString("N0") ₫</span>
+                    </div>
+                    @* //1. Chờ xác nhận *@
+                    @* //2. Đã xác nhận *@
+                    @* //3. Đã thanh toán *@
+                    @* //4. Đang giao hàng *@
+                    @* //5. Đã giao hàng *@
+                    @* //6. Đã Hủy *@
+                    @* //7. Yêu cầu trả hàng *@
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Hình thức thanh toán:</label>
+                        @if (Model.Status >= 3)
+                        {
+                            <span>VnPay</span>
+                        }
+                        else
+                        {
+                            <span>Chưa thanh toán</span>
+                        }
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Ghi chú:</label>
+                        <span>@Model.Note</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Trạng thái:</label>
+                        @{
+                            string statusBadge;
+                            switch (Model.Status)
+                            {
+                                case 1:
+                                    statusBadge = "<span class='badge bg-warning text-dark'>Chờ xác nhận</span>";
+                                    break;
+                                case 2:
+                                    statusBadge = "<span class='badge bg-info'>Đã xác nhận</span>";
+                                    break;
+                                case 3:
+                                    statusBadge = "<span class='badge bg-primary'>Đã thanh toán</span>";
+                                    break;
+                                case 4:
+                                    statusBadge = "<span class='badge bg-secondary'>Đang giao hàng</span>";
+                                    break;
+                                case 5:
+                                    statusBadge = "<span class='badge bg-success'>Đã giao</span>";
+                                    break;
+                                case 6:
+                                    statusBadge = "<span class='badge bg-danger'>Đã hủy</span>";
+                                    break;
+                                case 7:
+                                    statusBadge = "<span class='badge bg-dark'>Yêu cầu trả hàng</span>";
+                                    break;
+                                default:
+                                    statusBadge = "<span class='badge bg-light text-dark'>Không xác định</span>";
+                                    break;
+                            }
+                        }
+                        @Html.Raw(statusBadge)
+                    </div>
+                    @if (Model.OrderDetails != null && Model.OrderDetails.Any())
+                    {
+                        <div class="mt-4">
+                            <h5 class="text-center mb-3">Danh sách sản phẩm đã mua</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="table-dark text-center">
+                                        <tr>
+                                            <th>Ảnh</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Màu sắc</th>
+                                            <th>Giá</th>
+                                            <th>Số lượng</th>
+                                            <th>Thành tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model.OrderDetails)
+                                        {
+                                            // Lấy màu sắc
+                                            var productColor = item.Product.ProductColors
+                                            .FirstOrDefault(pc => pc.ColorId == item.ColorId);
+
+                                            var colorName = productColor?.Color?.ColorName ?? "Không xác định";
+
+                                            // Lấy ảnh đầu tiên của màu sản phẩm (nếu có)
+
+
+                                            // Lấy ảnh đầu tiên của sản phẩm theo màu
+                                            var imageFile = productColor?.ImageFiles?.FirstOrDefault();
+
+                                            var imageUrl = imageFile != null
+                                            ? $"https://localhost:7099/api/ImageFile/Download?id={imageFile.Id}"
+                                            : "/images/no-image.png";  // fallback nếu không có ảnh
+
+                                           
+
+                                            <tr>
+                                                <td>
+                                                    <img src="@imageUrl" width="60" height="60" class="m-1" alt="Ảnh sản phẩm" />
+                                                </td>
+                                                <td>@item.Product.ProductName</td>
+                                                <td>@colorName</td>
+                                                <td>@item.Price.ToString("N0") ₫</td>
+                                                <td>@item.Quantity</td>
+                                                <td>@item.TotalMoney.ToString("N0") ₫</td>
+                                            </tr>
+                                        }
+
+                                    </tbody>
+                                    <tfoot class="table-dark">
+                                        <tr class="text-center">
+                                            <td colspan="5"><strong>Tổng tiền</strong></td>
+                                            <td><strong>@Model.TotalMoney.ToString("N0") ₫</strong></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    }
+
+
+
+                    <div class="d-flex justify-content-between">
+                        <a href="@Url.Action("Index", "Order")" class="btn btn-secondary">Quay Lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
