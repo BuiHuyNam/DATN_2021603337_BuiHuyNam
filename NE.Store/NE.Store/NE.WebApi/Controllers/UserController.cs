@@ -10,6 +10,7 @@ using NE.Domain.Entitis;
 using NE.Application.Dtos.BrandDto;
 using System.Net.Http;
 using NE.Application.Dtos.ProductDto;
+using Microsoft.AspNetCore.Authorization;
 
 namespace NE.WebApi.Controllers
 {
@@ -63,6 +64,14 @@ namespace NE.WebApi.Controllers
         {
             var userUpdate = _mapper.Map<User>(updateInforUserDto);
             await _userService.UpdateUserAsync(userUpdate);
+            return Ok();
+        }
+
+        [HttpPut("UpdatePassword")]
+        [Authorize]
+        public async Task<IActionResult> UpdatePassword(UpdatePasswordDto updatePasswordDto)
+        {    
+            await _userService.UpdatePassword(updatePasswordDto);
             return Ok();
         }
 

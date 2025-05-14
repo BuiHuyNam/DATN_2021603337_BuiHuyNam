@@ -66,7 +66,9 @@ namespace NE.WebApi.Controllers
                 {
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()), // Thêm UserId
                     new Claim(ClaimTypes.Email, loginDto.Email)  ,
-                    new Claim(ClaimTypes.Role, roleName)
+                    new Claim(ClaimTypes.Role, roleName)   ,
+                    new Claim("IsActive", user.IsActive.ToString().ToLower()) // "true" hoặc "false"
+
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
                 Issuer = _configuration["JwtSettings:Issuer"],

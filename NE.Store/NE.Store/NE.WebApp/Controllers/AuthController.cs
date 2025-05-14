@@ -37,6 +37,9 @@ namespace NE.WebApp.Controllers
             {
                 return View(loginDto);
             }
+           
+
+
 
 
             var response = await _httpClient.PostAsJsonAsync($"{ApiUrlAuth}/login", loginDto);
@@ -46,6 +49,8 @@ namespace NE.WebApp.Controllers
                 ModelState.AddModelError("", "❌Sai tài khoản hoặc mật khẩu.");
                 return View(loginDto);
             }
+            
+             
 
             var token = await response.Content.ReadAsStringAsync();
             HttpContext.Session.SetString("JwtToken", token);
@@ -53,6 +58,16 @@ namespace NE.WebApp.Controllers
             // ✅ Parse token để lấy role
             var handler = new JwtSecurityTokenHandler();
             var jwtToken = handler.ReadJwtToken(token);
+
+            var isActiveClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "IsActive");
+
+            if (isActiveClaim != null && isActiveClaim.Value == "false")
+            {
+                ModelState.AddModelError("", "❌Tài khoản đã bị vô hiệu hóa.");
+                return View(loginDto);
+            }
+
+
 
             // Tùy theo API, claim có thể là "role", "roles", hoặc ClaimTypes.Role
             var role = jwtToken.Claims.FirstOrDefault(c =>

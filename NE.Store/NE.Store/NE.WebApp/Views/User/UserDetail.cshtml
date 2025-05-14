@@ -1,0 +1,80 @@
+﻿@model NE.Application.Dtos.UserDto.UserViewDto
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Chi tiết người dùng";
+
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>Thông Tin Chi Tiết Người Dùng</h4>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Họ và tên:</label>
+                        <span>@Model.FullName</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Tên đăng nhập:</label>
+                        <span>@Model.UserName</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Email:</label>
+                        <span>@Model.Email</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Số điện thoại:</label>
+                        <span>@Model.PhoneNumber</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Ngày sinh:</label>
+                        <span>@Model.DateOfBirth.ToString("dd/MM/yyyy")</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Vai trò:</label>
+                        <span>@Model.Role.RoleName</span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Trạng thái hoạt động:</label>
+                        @{
+                            var statusClass = "";
+                            var statusText = "";
+                            if (Model.IsActive == true)
+                            {
+                                statusClass = "text-success";
+                                statusText = "Đang hoạt động";
+                            }
+                            else
+                            {
+                                statusClass = "text-danger";
+                                statusText = "Không hoạt động";
+                            }
+                        }
+                       
+                        <span class="@statusClass fw-bold">
+                            @statusText
+                        </span>
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Ngày tạo tài khoản:</label>
+                        <span>@Model.CreatedDate.ToString("dd/MM/yyyy HH:mm")</span>
+                    </div>
+                    @* <div class="mb-3"> *@
+                    @*     <label class="form-label fw-bold">Địa chỉ:</label> *@
+                    @*     <span> *@
+                    @*         @Model.AddressDetail, @Model.Ward.WardName, @Model.Ward.District.DistrictName, @Model.Ward.District.Province.ProvinceName *@
+                    @*     </span> *@
+                    @* </div> *@
+                   
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" onclick="window.location='@Url.Action("Index", "User")'">Quay Lại</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

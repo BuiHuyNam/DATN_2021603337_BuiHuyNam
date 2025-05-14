@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNetCore.Identity;
+using NE.Application.Dtos.AuthDto;
+using NE.Application.Dtos.UserDto;
 using NE.Application.Services.Interfaces;
 using NE.Domain.Entitis;
 using NE.Infrastructure.Repositories.Interfaces;
@@ -97,6 +99,35 @@ namespace NE.Application.Services.Implementations
             {
                 userUpdate.IsActive = true;
             }
+
+            await _unitOfWork.Users.Update(userUpdate);
+            await _unitOfWork.SaveChangesAsync();
+        }
+
+        public async Task UpdatePassword(UpdatePasswordDto updatePasswordDto)
+        {
+            var userUpdate = await _unitOfWork.Users.GetByIdAsync(updatePasswordDto.Id);
+            if (userUpdate == null)
+            {
+                throw new Exception("User does not exist!");
+            }
+
+            // ✅ So sánh mật khẩu cũ
+            var result = _passwordHasher.VerifyHashedPassword(userUpdate, userUpdate.Password, updatePasswordDto.Password);
+            if (result != Microsoft.AspNetCore.Identity.PasswordVerificationResult.Success)
+            {
+                throw new Exception("Sai mật khẩu cũ!");
+            }
+
+            // ✅ Kiểm tra xác nhận mật khẩu mới
+            if (updatePasswordDto.NewPassword != updatePasswordDto.ComfirmPassword)
+            {
+                throw new Exception("Mật khẩu xác nhận không khớp!");
+            }
+
+            // ✅ Mã hóa và cập nhật mật khẩu mới
+            var hashedNewPassword = _passwordHasher.HashPassword(userUpdate, updatePasswordDto.NewPassword);
+            userUpdate.Password = hashedNewPassword;
 
             await _unitOfWork.Users.Update(userUpdate);
             await _unitOfWork.SaveChangesAsync();

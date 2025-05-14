@@ -155,5 +155,103 @@ namespace NE.WebApp.Controllers
                 return View(response);
             }
         }
+
+        [HttpGet("ChangePassword")]
+        public IActionResult ChangePassword()
+        {
+            return View();
+        }
+
+        [HttpPost("ChangePassword")]
+        public async Task<IActionResult> ChangePassword(UpdatePasswordDto updatePasswordDto)
+        {
+            var token = HttpContext.Session.GetString("JwtToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+            else
+            {
+                // Giải mã Token để lấy UserId
+                var handler = new JwtSecurityTokenHandler();
+                var jwtToken = handler.ReadJwtToken(token);
+                var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == "nameid");
+
+                if (userIdClaim == null)
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+                if (!int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return RedirectToAction("Login", "Auth");
+                }
+
+                updatePasswordDto.Id = userId;
+
+                _httpClient.DefaultRequestHeaders.Authorization =
+                                        new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+              
+
+
+
+                var response = await _httpClient.PutAsJsonAsync($"{ApiUrl}/updatePassword", updatePasswordDto);
+
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    if (updatePasswordDto.NewPassword != updatePasswordDto.ComfirmPassword)
+                    {
+                        ModelState.AddModelError("ComfirmPassword", "Mật khẩu xác nhận không khớp.");
+                        return View(updatePasswordDto);
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("Password", "Mật khẩu không đúng.");
+                        return View(updatePasswordDto);
+                    }
+
+                }
+                else
+                {
+                    TempData["Success"] = "Thay doi thanh cong!";
+                }
+                return RedirectToAction("ChangePassword", "User");
+
+
+            }
+        }
+
+        [HttpGet("Admin/UserDetail/{id}")]
+        public async Task<IActionResult> UserDetail(int id)
+        {
+            var result = await _httpClient.GetFromJsonAsync<UserViewDto>($"{ApiUrl}/{id}");
+            return View(result);
+        }
+
+        [HttpGet("Admin/EditUser/{id}")]
+
+        public async Task<IActionResult> EditUser(int id) {
+            var result = await _httpClient.GetFromJsonAsync<UserViewDto>($"{ApiUrl}/{id}");
+            return View(result);
+        }
+
+        [HttpPost("Admin/EditUser/{id}")]
+
+        public async Task<IActionResult> EditUser(UpdateInforUserDto updateInforUserDto)
+        {
+            var response = await _httpClient.PutAsJsonAsync(ApiUrl, updateInforUserDto);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Sua that bai!";
+            }
+            else
+            {
+                TempData["Success"] = "Sua thanh cong!";
+            }
+            return RedirectToAction("Index", "User");
+        }
     }
 }

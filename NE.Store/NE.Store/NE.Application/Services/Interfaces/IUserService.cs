@@ -1,4 +1,5 @@
-﻿using NE.Domain.Entitis;
+﻿using NE.Application.Dtos.UserDto;
+using NE.Domain.Entitis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace NE.Application.Services.Interfaces
         Task DeleteUserAsync(int id);
         Task UpdateUserAsync(User user);
         Task IsActiveUser(User user);
+        Task UpdatePassword(UpdatePasswordDto updatePasswordDto);
 
     }
 }

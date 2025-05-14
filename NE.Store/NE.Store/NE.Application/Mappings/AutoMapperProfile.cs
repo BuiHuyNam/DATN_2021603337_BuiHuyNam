@@ -91,6 +91,7 @@ namespace NE.Application.Mappings
             CreateMap<User, UserViewDto>().ReverseMap();
             CreateMap<User, IsActiveUserDto>().ReverseMap();
             CreateMap<User, UpdateInforUserDto>().ReverseMap();
+            CreateMap<User, UpdatePasswordDto>().ReverseMap();
 
 
 

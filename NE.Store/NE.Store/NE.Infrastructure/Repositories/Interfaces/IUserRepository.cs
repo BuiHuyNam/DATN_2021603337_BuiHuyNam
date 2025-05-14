@@ -9,5 +9,7 @@ namespace NE.Infrastructure.Repositories.Interfaces
 {
     public interface IUserRepository:IGenericRepository<User>
     {
+       
+
     }
 }
