@@ -298,7 +298,12 @@
 <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form id="reviewForm">
+            <form method="post" asp-action="AddFeedback" asp-controller="Feedback">
+                <input type="hidden" name="ProductId" value="@Model.Id" />
+                <input type="hidden" name="Image" />
+
+                
+
                 <div class="modal-header">
                     <h5 class="modal-title" id="reviewModalLabel">Viết đánh giá sản phẩm</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
@@ -307,7 +312,7 @@
                     <div class="mb-3 row align-items-center">
                         <label for="starSelect" class="col-sm-3 col-form-label">Chọn số sao:</label>
                         <div class="col-sm-9">
-                            <select class="form-select" id="starSelect" required>
+                            <select class="form-select" id="starSelect" name="Star" required>
                                 <option value="">-- Chọn số sao --</option>
                                 <option value="5">5 Sao - Tuyệt vời</option>
                                 <option value="4">4 Sao - Tốt</option>
@@ -321,7 +326,7 @@
 
                     <div class="mb-3">
                         <label for="reviewContent" class="form-label">Nội dung:</label>
-                        <textarea class="form-control" id="reviewContent" rows="4" required></textarea>
+                        <textarea class="form-control" name="Content" id="reviewContent" rows="4" required></textarea>
                     </div>
                     @* <div class="mb-3"> *@
                     @*     <label for="reviewImage" class="form-label">Chọn ảnh (nếu có):</label> *@
@@ -591,48 +596,7 @@
 
 
 
-        //Xử lý thêm đánh giá
-             $(document).ready(function () {
-            $('#reviewForm').submit(function (e) {
-                e.preventDefault();
-
-                // Lấy dữ liệu từ form
-                const star = parseInt($('#starSelect').val());
-                const content = $('#reviewContent').val();
-
-                // Giả định bạn có userId và productId ở đây
-                const userId = 4;
-                const productId = @Model.Id; // Thay bằng id sản phẩm thật
-
-                // Tạo object dữ liệu
-                const reviewData = {
-                    content: content,
-                    star: star,
-                    image: null,
-                    userId: userId,
-                    productId: productId
-                };
-
-                // Gửi ajax POST
-                $.ajax({
-                    url: 'https://localhost:7099/api/Feedback',
-                    method: 'POST',
-                    contentType: 'application/json',
-                    data: JSON.stringify(reviewData),
-                   
-                    success: function (response) {
-                        alert('Gửi đánh giá thành công!');
-                        $('#reviewModal').modal('hide');
-                        $('#reviewForm')[0].reset();
-                        // Optional: refresh lại danh sách đánh giá nếu có
-                    },
-                    error: function (xhr) {
-                        if (xhr.status === 401) alert('Cần đăng nhập');
-                        else if (xhr.status === 403) alert('Không có quyền');
-                    }
-                });
-            });
-        });
+   
     </script>
 
 }

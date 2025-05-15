@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Thống kê đơn hàng";
+}
+
+<div style="width: 90%; max-width: 1000px; height: 500px; margin: 0 auto; text-align: center;">
+    <h2 class="m-4">Biểu đồ thống kê đơn hàng</h2>
+    <canvas id="orderChart" style="max-width: 100%; height: 100%;"></canvas>
+</div>
+
+
+
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Lấy dữ liệu từ ViewBag, chú ý dùng JSON.stringify và JSON.parse để đảm bảo mảng JS đúng định dạng
+        const chartLabels = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.Months))');
+        const cancelledData = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.Cancelled))');
+        const waitingData = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.Waiting))');
+        const soldData = JSON.parse('@Html.Raw(Json.Serialize(ViewBag.Sold))');
+
+        const ctx = document.getElementById('orderChart').getContext('2d');
+
+        const orderChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartLabels,
+                datasets: [
+                    {
+                        label: 'Đã hủy',
+                        data: cancelledData,
+                        backgroundColor: 'rgba(255, 99, 132, 0.7)'
+                    },
+                    {
+                        label: 'Chờ xác nhận',
+                        data: waitingData,
+                        backgroundColor: 'rgba(255, 206, 86, 0.7)'
+                    },
+                    {
+                        label: 'Đã bán',
+                        data: soldData,
+                        backgroundColor: 'rgba(75, 192, 192, 0.7)'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        stacked: false,
+                        title: {
+                            display: true,
+                            text: 'Tháng'
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Số lượng đơn hàng'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Biểu đồ đơn hàng theo tháng'
+                    },
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+    </script>
+}
+

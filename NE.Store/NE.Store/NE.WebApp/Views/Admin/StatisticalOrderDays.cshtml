@@ -1,0 +1,89 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Thống kê đơn hàng 10 ngày";
+}
+
+
+
+<div style="width: 90%; max-width: 1000px; height: 500px; margin: 0 auto; text-align: center;">
+    <h2 class="m-4">Biểu đồ thống kê đơn hàng 10 ngày gần nhất</h2>
+    <canvas id="orderChart" style="max-width: 100%; height: 100%;"></canvas>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const chartLabels = @Html.Raw(Json.Serialize(ViewBag.Days));
+        const cancelledData = @Html.Raw(Json.Serialize(ViewBag.Cancelled));
+        const waitingData = @Html.Raw(Json.Serialize(ViewBag.Waiting));
+        const soldData = @Html.Raw(Json.Serialize(ViewBag.Sold));
+
+        const ctx = document.getElementById('orderChart').getContext('2d');
+
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: chartLabels,
+                datasets: [
+                    {
+                        label: 'Đã hủy',
+                        backgroundColor: 'rgba(255, 99, 132, 0.7)',
+                        data: cancelledData
+                    },
+                    {
+                        label: 'Chờ xác nhận',
+                        backgroundColor: 'rgba(255, 206, 86, 0.7)',
+                        data: waitingData
+                    },
+                    {
+                        label: 'Đã bán',
+                        backgroundColor: 'rgba(75, 192, 192, 0.7)',
+                        data: soldData
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                scales: {
+                    x: {
+                        stacked: false,
+                        title: {
+                            display: true,
+                            text: 'Ngày'
+                        },
+                        ticks: {
+                            maxRotation: 90,
+                            minRotation: 45,
+                            autoSkip: true,
+                            maxTicksLimit: 15
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Số lượng đơn hàng'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Thống kê đơn hàng theo ngày (10 ngày gần nhất)'
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    legend: {
+                        position: 'top',
+                    }
+                }
+            }
+        });
+    </script>
+}

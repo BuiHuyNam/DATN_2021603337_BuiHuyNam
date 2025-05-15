@@ -56,11 +56,20 @@
                                         @discountedPrice.ToString("N0") ₫
                                     </td>
                                     <td class="shoping__cart__quantity">
-                                        <div class="quantity">
-                                            <div class="pro-qty">
-                                                <input type="text" value="@item.Quatity">
+                                        <form asp-action="UpdateQuantity" asp-controller="Cart" method="post" class="quantity-form">
+                                            <input type="hidden" name="Id" value="@item.Id" />
+                                            <div class="shoping__cart__quantity">
+                                                <div class="quantity">
+                                                    <div class="pro-qty">
+                                                      
+                                                        <input type="text" name="Quatity" value="@item.Quatity" readonly>
+                                                       
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </form>
+
+
                                     </td>
                                     <td class="">
                                         @total.ToString("N0") ₫
@@ -155,3 +164,30 @@
         </div>
     </div>
 </section>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll(".pro-qty").forEach(function (container) {
+                const input = container.querySelector('input[name="Quatity"]');
+                const form = container.closest("form");
+
+
+
+                container.querySelector(".dec").addEventListener("click", function () {
+                    let value = parseInt(input.value);
+                    if (value > 1) {
+                        input.value = value - 1;
+                        form.submit();
+                    }
+                });
+
+                container.querySelector(".inc").addEventListener("click", function () {
+                    let value = parseInt(input.value);
+                    input.value = value + 1;
+                    form.submit();
+                });
+            });
+        });
+    </script>
+}

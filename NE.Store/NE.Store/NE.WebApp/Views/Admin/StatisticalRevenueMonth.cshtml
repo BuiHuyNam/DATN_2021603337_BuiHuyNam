@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewData["Title"] = "Thống kê đơn hàng";
+}
+
+<div style="width: 90%; max-width: 1000px; height: 500px; margin: 0 auto; text-align: center;">
+    <h2 class="m-4">Biểu đồ thống kê doanh thu ( 6 tháng gần nhất)</h2>
+    <canvas id="revenueChart" style="max-width: 100%; height: 100%;"></canvas>
+</div>
+
+@section Scripts {
+    <script>
+                   const labels = @Html.Raw(Json.Serialize(ViewBag.Months));   // [202405, 202404, ...]
+        const data = @Html.Raw(Json.Serialize(ViewBag.Revenues));   // [1000000, 500000, ...]
+
+        const ctx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Doanh thu theo tháng',
+                    data: data,
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        ticks: {
+                            callback: function(value, index, values) {
+                                const raw = this.getLabelForValue(value); // e.g. 202405
+                                const year = Math.floor(raw / 100);
+                                const month = raw % 100;
+                                return `${('0' + month).slice(-2)}/${year}`; // 05/2024
+                            }
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return value.toLocaleString('vi-VN') + ' ₫';
+                            }
+                        }
+                    }
+                },
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+    </script>
+}

@@ -73,6 +73,7 @@ namespace NE.Application.Services.Implementations
             }
             cart.ProductId = cartUpdate.ProductId;
             cart.UserId = cartUpdate.UserId;
+            cart.ColorId = cartUpdate.ColorId;
             await _unitOfWork.Carts.Update(cart);
             await _unitOfWork.SaveChangesAsync();
         }

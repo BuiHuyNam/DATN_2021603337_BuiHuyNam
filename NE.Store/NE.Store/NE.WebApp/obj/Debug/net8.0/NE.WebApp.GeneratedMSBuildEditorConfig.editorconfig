@@ -30,6 +30,22 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Admin/StatisticalOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhdGlzdGljYWxPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Admin/StatisticalOrderDays.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhdGlzdGljYWxPcmRlckRheXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Admin/StatisticalRevenueDays.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhdGlzdGljYWxSZXZlbnVlRGF5cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Admin/StatisticalRevenueMonth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhdGlzdGljYWxSZXZlbnVlTW9udGguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DATN/DATN_2021603337_BuiHuyNam/NE.Store/NE.Store/NE.WebApp/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
