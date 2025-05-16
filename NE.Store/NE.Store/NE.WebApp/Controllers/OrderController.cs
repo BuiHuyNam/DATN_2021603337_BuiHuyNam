@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using NE.Application.Dtos.BrandDto;
 using NE.Application.Dtos.CartDto;
+using NE.Application.Dtos.CouponDto;
 using NE.Application.Dtos.OrderDetailDto;
 using NE.Application.Dtos.OrderDto;
 using NE.Application.Dtos.ProductColorDto;
@@ -25,6 +26,8 @@ namespace NE.WebApp.Controllers
         private const string ApiUrlUser = "https://localhost:7099/api/user";
         private const string ApiUrlProductColor = "https://localhost:7099/api/productColor";
         private const string ApiUrlCart = "https://localhost:7099/api/cart";
+        private const string ApiUrlCoupon = "https://localhost:7099/api/coupon";
+
 
 
 
@@ -258,6 +261,17 @@ namespace NE.WebApp.Controllers
                         }
                     }
 
+                    if(responseGetOrder.CouponId != null)
+                    {
+                        var responseGetCounpon = await _httpClient.GetFromJsonAsync<CouponViewDto>($"{ApiUrlCoupon}/{responseGetOrder.CouponId}");
+
+                        responseGetCounpon.Quantity -= 1;
+
+                        var updateCoupon = await _httpClient.PutAsJsonAsync(ApiUrlCoupon, responseGetCounpon);
+                    }
+
+
+
 
 
                 }
@@ -372,9 +386,13 @@ namespace NE.WebApp.Controllers
                 }
             }
 
+            var getOrder = await _httpClient.GetFromJsonAsync<OrderViewDto>($"{ApiUrl}/{orderId}");
+
 
             // B3: Trả về view hiển thị danh sách chi tiết đơn hàng vừa tạo
-            return View("CheckOut", orderDetailResults);
+            //return View("CheckOut", orderDetailResults);
+            return View("CheckOut", getOrder);
+
         }
 
 

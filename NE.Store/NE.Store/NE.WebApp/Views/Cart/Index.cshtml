@@ -10,6 +10,18 @@
         var discountedPrice = item.Product.Price * (1 - item.Product.Discount / 100.0);
         grandTotal += discountedPrice * item.Quatity;
     }
+
+    int discount = 0;
+    if (TempData["Discount"] != null)
+    {
+        discount = Convert.ToInt32(TempData["Discount"]);
+    }
+
+    double finalTotal = grandTotal * (1 - discount / 100.0);
+    double discountAmount = grandTotal * (discount / 100.0);
+
+
+
 }
 
 <section class="shoping-cart spad">
@@ -24,7 +36,7 @@
                                 <th>Màu</th>
                                 <th>Giá</th>
                                 <th>Số lượng</th>
-                                
+
                                 <th>Tổng tiền</th>
                                 <th></th>
                             </tr>
@@ -61,9 +73,9 @@
                                             <div class="shoping__cart__quantity">
                                                 <div class="quantity">
                                                     <div class="pro-qty">
-                                                      
+
                                                         <input type="text" name="Quatity" value="@item.Quatity" readonly>
-                                                       
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -85,11 +97,11 @@
 
                                 </tr>
 
-                               
+
 
 
                             }
-                          
+
                         </tbody>
                     </table>
                 </div>
@@ -109,21 +121,38 @@
                 <div class="shoping__continue">
                     <div class="shoping__discount">
                         <h5>Mã giảm giá</h5>
-                        <form action="#">
-                            <input type="text" placeholder="Nhập mã giảm giá...">
+                        <form asp-action="ApplyCoupon" asp-controller="Coupon" method="post">
+                            <input type="text" name="code" placeholder="Nhập mã giảm giá..." />
                             <button type="submit" class="site-btn">ÁP DỤNG</button>
                         </form>
+
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-6">
                 <div class="shoping__checkout">
+
+
+
                     <h5>Tổng giỏ hàng</h5>
                     <ul>
                         <li>Tổng <span>@grandTotal.ToString("N0") ₫</span></li>
-                        <li>Tổng tiền <span>@grandTotal.ToString("N0") ₫</span></li>
+
+                        @if (discount > 0)
+                        {
+                            <li>
+                                Giảm giá 
+                                <span>-@discount.ToString("N0")% (-@discountAmount.ToString("N0") ₫)</span>
+                            </li>
+                            <li>Tổng tiền <span>@finalTotal.ToString("N0") ₫</span></li>
+                        }
+                        else
+                        {
+                            <li>Tổng tiền <span>@grandTotal.ToString("N0") ₫</span></li>
+                        }
                     </ul>
+
                     <form asp-action="CheckOut" asp-controller="Order" method="post">
                         @* Ở đây bạn cần truyền dữ liệu orderCreateDto và list orderDetails *@
 
@@ -131,8 +160,18 @@
                         @* <input type="hidden" name="UserId" value="10" /> *@
                         <input type="hidden" name="Status" value="1" />
                         <input type="hidden" name="Note" value="" />
-                        <input type="hidden" name="TotalMoney" value="@grandTotal" />
-                        <input type="hidden" name="CouponId" />
+                        <input type="hidden" name="TotalMoney" value="@(discount > 0 ? finalTotal : grandTotal)" />
+
+                        @if (TempData["CouponId"] != null)
+                        {
+                            <input type="hidden" name="CouponId" value="@TempData["CouponId"]" />
+                        }
+                        else
+                        {
+                            <input type="hidden" name="CouponId" />
+                        }
+
+                       
 
                         @* VD: Thêm các hidden input chứa thông tin đơn hàng *@
                         @* <input type="hidden" name="orderCreateDto.TotalPrice" value="@grandTotal" /> *@

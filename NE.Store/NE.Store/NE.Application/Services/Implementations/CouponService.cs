@@ -69,11 +69,11 @@ namespace NE.Application.Services.Implementations
                 throw new Exception("Coupon does not exist!");
             }
 
-            var coupons = await _unitOfWork.Coupons.FindAsync(c => c.Code == coupon.Code);
-            if (coupons.Any())
-            {
-                throw new Exception("Coupon already exists!");
-            }
+            //var coupons = await _unitOfWork.Coupons.FindAsync(c => c.Code == coupon.Code);
+            //if (coupons.Any())
+            //{
+            //    throw new Exception("Coupon already exists!");
+            //}
 
             await _unitOfWork.Coupons.Update(coupon);
             await _unitOfWork.SaveChangesAsync();

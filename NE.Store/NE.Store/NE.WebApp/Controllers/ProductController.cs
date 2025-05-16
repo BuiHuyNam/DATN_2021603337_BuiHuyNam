@@ -90,7 +90,7 @@ namespace NE.WebApp.Controllers
             var productColors = await _httpClient.GetFromJsonAsync<IEnumerable<ProductColorViewDto>>(ApiUrlProductColor);
             foreach(var pc in productColors)
             {
-                if(productColorCreateDto.ProductId == pc.ProductId)
+                if(productColorCreateDto.ProductId == pc.ProductId && productColorCreateDto.ColorId == pc.ColorId)
                 {
                     TempData["Error"] = " San pham va mau da ton tai!";
                     return RedirectToAction("AddProductByColor", "Product");

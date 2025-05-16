@@ -25,6 +25,7 @@ namespace NE.Infrastructure.Repositories.Implementations
                     .ThenInclude(w=>w.Ward)
                         .ThenInclude(d=>d.District)
                             .ThenInclude(p=>p.Province)
+                 .OrderByDescending(o=>o.CreatedDate)
                 .ToListAsync();
         }
 

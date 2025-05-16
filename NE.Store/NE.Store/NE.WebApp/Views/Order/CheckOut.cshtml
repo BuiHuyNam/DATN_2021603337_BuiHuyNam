@@ -1,4 +1,6 @@
-﻿@model List<NE.Application.Dtos.OrderDetailDto.OrderDetailViewDto>
+﻿@* @model List<NE.Application.Dtos.OrderDetailDto.OrderDetailViewDto> *@
+@model NE.Application.Dtos.OrderDto.OrderViewDto
+
 
 
 @{
@@ -79,17 +81,22 @@
 
                             <div class="checkout__order__products">Sản phẩm</div>
                             <ul>
-                                @foreach (var item in Model)
+                                @foreach (var item in Model.OrderDetails)
                                 {
                                     <li>@item.Product.ProductName x Số lượng (@item.Quantity) <span>@item.TotalMoney.ToString("N0") ₫</span></li>
                                 }
                             </ul>
 
                             @{
-                                var totalAmount = Model.Sum(x => x.TotalMoney);
+                                var totalAmount = Model.OrderDetails.Sum(x => x.TotalMoney);
                             }
                             <div class="checkout__order__subtotal">Tạm tính <span>@totalAmount.ToString("N0") ₫</span></div>
-                            <div class="checkout__order__total">Tổng tiền <span>@totalAmount.ToString("N0") ₫</span></div>
+
+                            @if(Model.CouponId != null)
+                            {
+                                <div class="checkout__order__subtotal">Khuyến mãi <span>- @(((double)totalAmount - (double)Model.TotalMoney).ToString("N0")) ₫</span></div>
+                            }
+                            <div class="checkout__order__total">Tổng tiền <span>@Model.TotalMoney.ToString("N0") ₫</span></div>
 
 
                             <div class="checkout__input__checkbox">
@@ -111,21 +118,22 @@
 
 
                             <input type="hidden" name="Name" value="Cảm ơn bạn " />
-                            <input type="hidden" name="Amount" value="@totalAmount" />
+                            <input type="hidden" name="Amount" value="@Model.TotalMoney" />
 
                             <input type="hidden" name="OrderDescription" value=" đã thanh toán thành công đơn hàng" />
                             <input type="hidden" name="OrderType" value="other" />
 
-                            @if (Model.Any())
-                            {
-                                <input type="hidden" name="OrderId" value="@Model.First().OrderId" />
+                            @* @if (Model.Any()) *@
+                            @* { *@
+                            @*     <input type="hidden" name="OrderId" value="@Model.First().OrderId" /> *@
                                
 
-                            }
-                           
+                            @* } *@
+                            <input type="hidden" name="OrderId" value="@Model.Id" />
 
 
-                            
+
+
 
 
 

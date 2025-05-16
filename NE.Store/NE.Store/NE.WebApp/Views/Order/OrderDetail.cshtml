@@ -148,7 +148,7 @@
                                             ? $"https://localhost:7099/api/ImageFile/Download?id={imageFile.Id}"
                                             : "/images/no-image.png";  // fallback nếu không có ảnh
 
-                                           
+
 
                                             <tr>
                                                 <td>
@@ -164,6 +164,17 @@
 
                                     </tbody>
                                     <tfoot class="table-dark">
+                                        @if(Model.CouponId != null)
+                                        {
+                                            
+                                            double totalAmount = Model.OrderDetails.Sum(x => x.Price * x.Quantity);
+                                            double discountAmount = totalAmount - Model.TotalMoney;
+                                              
+                                            <tr class="text-center">
+                                                <td colspan="5"><strong>Khuyến mãi</strong></td>
+                                                <td><strong>-@discountAmount.ToString("N0") ₫</strong></td>
+                                            </tr>
+                                        }
                                         <tr class="text-center">
                                             <td colspan="5"><strong>Tổng tiền</strong></td>
                                             <td><strong>@Model.TotalMoney.ToString("N0") ₫</strong></td>
