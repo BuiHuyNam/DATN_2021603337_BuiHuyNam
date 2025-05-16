@@ -2,6 +2,7 @@
 using NE.Application.Dtos.BrandDto;
 using NE.Application.Dtos.CartDto;
 using NE.Application.Dtos.CategoryDto;
+using NE.Application.Dtos.OrderDetailDto;
 using NE.Application.Dtos.ProductColorDto;
 using NE.Domain.Entitis;
 using System.IdentityModel.Tokens.Jwt;
@@ -80,6 +81,38 @@ namespace NE.WebApp.Controllers
                 cartCreateDto.UserId = int.Parse(userIdClaim.Value);
                 _httpClient.DefaultRequestHeaders.Authorization =
                                         new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+
+
+
+                // Lấy toàn bộ ProductColor để so sánh số lượng
+                var responseProductColor = await _httpClient.GetFromJsonAsync<List<ProductColorViewDto>>(ApiUrlProductColor);
+                if (responseProductColor == null)
+                {
+                    TempData["Error"] = "Không thể lấy thông tin sản phẩm!";
+                    return RedirectToAction("Cart", "User");
+                }
+
+                // Kiểm tra từng sản phẩm trong chi tiết đơn hàng
+
+                var productColor = responseProductColor
+                .FirstOrDefault(pc => pc.ProductId == cartCreateDto.ProductId && pc.ColorId == cartCreateDto.ColorId);
+
+                if (productColor == null)
+                {
+                    //TempData["Error"] = $"Không tìm thấy sản phẩm có ID {orderDetailCreateDto.ProductId} với màu {orderDetailCreateDto.ColorId}.";
+                    TempData["Error"] = "San pham da het hang! ";
+
+                    return RedirectToAction("UserProductDetail", "Product", new { id = cartCreateDto.ProductId });
+                }
+
+              
+
+
+
+
+
+
 
 
                 // Lấy danh sách cart hiện tại

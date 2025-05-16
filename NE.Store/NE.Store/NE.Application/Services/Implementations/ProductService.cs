@@ -75,6 +75,9 @@ namespace NE.Application.Services.Implementations
             {
                 throw new Exception("San pham khong ton tai");
             }
+            product.View += 1;
+            await _unitOfWork.Products.Update(product);
+            await _unitOfWork.SaveChangesAsync();
             return product;
         }
 

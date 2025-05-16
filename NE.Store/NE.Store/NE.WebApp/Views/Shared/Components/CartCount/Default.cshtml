@@ -1,0 +1,8 @@
+﻿@model IEnumerable<NE.Application.Dtos.CartDto.CartViewDto>
+
+
+<ul>
+    <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
+    <li><a href="@Url.Action("Index", "Cart")"><i class="fa fa-shopping-bag"></i> <span>@Model.Count()</span></a></li>
+</ul>
+<div class="header__cart__price">Tiền giỏ hàng: <span>@ViewBag.TotalMoney.ToString("N0") đ</span></div>

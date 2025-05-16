@@ -200,12 +200,20 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="header__cart">
-                 
+                        @if (isLoggedIn)
+                        {
+                            @await Component.InvokeAsync("CartCount")
+                        }
+                        else
+                        {
                             <ul>
                                 <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
                                 <li><a href="@Url.Action("Index", "Cart")"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
                             </ul>
                             <div class="header__cart__price">Tiền giỏ hàng: <span>0 đ</span></div>
+                        }
+
+                          
                         
                         
                     </div>

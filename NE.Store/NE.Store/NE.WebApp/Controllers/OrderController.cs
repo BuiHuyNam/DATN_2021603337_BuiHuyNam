@@ -86,7 +86,44 @@ namespace NE.WebApp.Controllers
 
 
 
-               
+
+                // Lấy toàn bộ ProductColor để so sánh số lượng
+                var responseProductColor = await _httpClient.GetFromJsonAsync<List<ProductColorViewDto>>(ApiUrlProductColor);
+                if (responseProductColor == null)
+                {
+                    TempData["Error"] = "Không thể lấy thông tin sản phẩm!";
+                    return RedirectToAction("Cart", "User");
+                }
+
+                // Kiểm tra từng sản phẩm trong chi tiết đơn hàng
+              
+                    var productColor = responseProductColor
+                        .FirstOrDefault(pc => pc.ProductId == orderDetailCreateDto.ProductId && pc.ColorId == orderDetailCreateDto.ColorId);
+
+                    if (productColor == null)
+                    {
+                    //TempData["Error"] = $"Không tìm thấy sản phẩm có ID {orderDetailCreateDto.ProductId} với màu {orderDetailCreateDto.ColorId}.";
+                    TempData["Error"] = "San pham da het hang! ";
+
+                    return RedirectToAction("UserProductDetail", "Product", new { id = orderDetailCreateDto.ProductId });
+
+                }
+
+                if (orderDetailCreateDto.Quantity > productColor.Quantity)
+                    {
+                    //TempData["Error"] = $"Sản phẩm \"{productColor.ProductName}\" màu \"{productColor.ColorName}\" chỉ còn {productColor.Quantity} sản phẩm!";
+                    TempData["Error"] = "San pham da het hang! ";
+
+                    return RedirectToAction("UserProductDetail", "Product", new { id = orderDetailCreateDto.ProductId });
+
+
+                }
+
+
+
+
+
+
                 // B1: Gửi Order trước
                 var responseOrder = await _httpClient.PostAsJsonAsync(ApiUrl, orderCreateDto);
                 if (!responseOrder.IsSuccessStatusCode)
@@ -255,6 +292,42 @@ namespace NE.WebApp.Controllers
             orderCreateDto.UserId = int.Parse(userIdClaim.Value);
             _httpClient.DefaultRequestHeaders.Authorization =
                 new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+
+
+            // Lấy toàn bộ ProductColor để so sánh số lượng
+            var responseProductColor = await _httpClient.GetFromJsonAsync<List<ProductColorViewDto>>(ApiUrlProductColor);
+            if (responseProductColor == null)
+            {
+                TempData["Error"] = "Không thể lấy thông tin sản phẩm!";
+                return RedirectToAction("Cart", "User");
+            }
+
+            // Kiểm tra từng sản phẩm trong chi tiết đơn hàng
+            foreach (var detail in orderDetails)
+            {
+                var productColor = responseProductColor
+                    .FirstOrDefault(pc => pc.ProductId == detail.ProductId && pc.ColorId == detail.ColorId);
+
+                if (productColor == null)
+                {
+                    TempData["Error"] = $"Không tìm thấy sản phẩm có ID {detail.ProductId} với màu {detail.ColorId}.";
+                    return RedirectToAction("Index", "Cart", new { userId = orderCreateDto.UserId });
+                }
+
+                if (detail.Quantity > productColor.Quantity)
+                {
+                    //TempData["Error"] = $"Sản phẩm \"{productColor.ProductName}\" màu \"{productColor.ColorName}\" chỉ còn {productColor.Quantity} sản phẩm!";
+                    TempData["Error"] = "So luong trong kho cua hang khong du! ";
+                    return RedirectToAction("Index", "Cart", new { userId = orderCreateDto.UserId });
+
+                }
+            }
+
+
+
+
+
+
 
             // B1: Tạo đơn hàng
             var responseOrder = await _httpClient.PostAsJsonAsync(ApiUrl, orderCreateDto);
