@@ -2,7 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/_LayoutSub.cshtml";
-    ViewData["Title"] = "Đơn hàng";
+    ViewData["Title"] = "Thông tin đặt hàng";
 }
 
 <!-- Checkout Section Begin -->
@@ -85,7 +85,7 @@
 
                             <div class="checkout__order__products">Số lượng <span> @Model.Quantity</span></div>
 
-                            <div class="checkout__order__subtotal">Tổng <span> @Model.TotalMoney.ToString("N0") ₫</span></div>
+                            <div class="checkout__order__subtotal">Tạm tính <span> @Model.TotalMoney.ToString("N0") ₫</span></div>
                             <div class="checkout__order__total">Tổng <span> @Model.TotalMoney.ToString("N0") ₫</span></div>
                             
                             <div class="checkout__input__checkbox">

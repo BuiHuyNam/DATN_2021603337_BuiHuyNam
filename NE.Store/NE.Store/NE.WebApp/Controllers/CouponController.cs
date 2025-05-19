@@ -35,17 +35,17 @@ namespace NE.WebApp.Controllers
             // Kiểm tra ngày áp dụng và ngày hết hạn hợp lệ
             if (couponCreateDto.UseDate >= couponCreateDto.ExpiryDate)
             {
-                TempData["Error"] = "Ngay ap dung phai truoc ngay het han!";
+                TempData["Error"] = "Ngày áp dụng phải trước ngày hết hạn!";
                 return RedirectToAction("AddCoupon", "Coupon"); // hoặc return View nếu bạn dùng View
             }
             var response = await _httpClient.PostAsJsonAsync(ApiUrl, couponCreateDto);
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = " Them that bai!";
+                TempData["Error"] = " Thêm thất bại!";
             }
             else
             {
-                TempData["Success"] = "Them thanh cong!";
+                TempData["Success"] = "Thêm thành công!";
             }
             return RedirectToAction("Index", "Coupon");
         }
@@ -57,11 +57,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.DeleteAsync($"{ApiUrl}/{id}");
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Khong the xoa!";
+                TempData["Error"] = "Không thể xóa!";
             }
             else
             {
-                TempData["Success"] = "Xoa thanh cong!";
+                TempData["Success"] = "Xóa thành công!";
             }
             return RedirectToAction("Index", "Coupon");
         }
@@ -84,18 +84,18 @@ namespace NE.WebApp.Controllers
             // Kiểm tra ngày áp dụng và ngày hết hạn hợp lệ
             if (couponUpdateDto.UseDate >= couponUpdateDto.ExpiryDate)
             {
-                TempData["Error"] = "Ngay ap dung phai truoc ngay het han!";
+                TempData["Error"] = "Ngày áp dụng phải trước ngày hết hạn!";
                 return RedirectToAction("Index", "Coupon"); // hoặc return View nếu bạn dùng View
             }
 
             var response = await _httpClient.PutAsJsonAsync(ApiUrl, couponUpdateDto);
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Sua that bai!";
+                TempData["Error"] = "Sửa thất bại!";
             }
             else
             {
-                TempData["Success"] = "Sua thanh cong!";
+                TempData["Success"] = "Sửa thành công!";
             }
             return RedirectToAction("Index", "Coupon");
         }
@@ -131,7 +131,7 @@ namespace NE.WebApp.Controllers
                 var response = await _httpClient.GetFromJsonAsync<List<CouponViewDto>>(ApiUrl);
                 if (response == null)
                 {
-                    TempData["Error"] = "Ma giam gia khong ton tai";
+                    TempData["Error"] = "Mã giảm giá không tồn tại";
                     return RedirectToAction("Index", "Cart", new { userId = userId });
                 }
 
@@ -141,13 +141,13 @@ namespace NE.WebApp.Controllers
 
                 if (matchedCoupon == null)
                 {
-                    TempData["Error"] = "Ma giam gia khong hop le.";
+                    TempData["Error"] = "Mã giảm giá không hợp lệ.";
                     return RedirectToAction("Index", "Cart", new { userId });
                 }
 
                 if (matchedCoupon.Quantity <=0)
                 {
-                    TempData["Error"] = "Ma giam gia da het.";
+                    TempData["Error"] = "Mã giảm giá đã hết.";
                     return RedirectToAction("Index", "Cart", new { userId });
                 }
 
@@ -155,13 +155,13 @@ namespace NE.WebApp.Controllers
 
                 if (matchedCoupon.UseDate > now)
                 {
-                    TempData["Error"] = "Ma giam gia chua kich hoat.";
+                    TempData["Error"] = "Mã giảm giá chưa kích hoạt.";
                     return RedirectToAction("Index", "Cart", new { userId });
                 }
 
                 if (matchedCoupon.ExpiryDate < now)
                 {
-                    TempData["Error"] = "Ma giam gia da het han.";
+                    TempData["Error"] = "Mã giảm giá đã hết hạn.";
                     return RedirectToAction("Index", "Cart", new { userId });
                 }
                 // Lưu mã hợp lệ vào TempData

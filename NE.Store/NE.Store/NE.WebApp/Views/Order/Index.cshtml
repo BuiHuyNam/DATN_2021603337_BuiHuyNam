@@ -1,6 +1,6 @@
 ﻿@{
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml"; // layout admin riêng
-    ViewData["Title"] = "Trang quản trị đơn hàng";
+    ViewData["Title"] = "Quản lý đơn hàng";
 }
 
 <style>
@@ -97,6 +97,8 @@
                             case 5: return '<span class="badge bg-success">Đã giao</span>';
                             case 6: return '<span class="badge bg-danger">Đã hủy</span>';
                             case 7: return '<span class="badge bg-dark">Yêu cầu trả hàng</span>';
+                            case 8: return '<span class="badge bg-success">Đã hoàn trả hàng</span>';
+
                             default: return '<span class="badge bg-light text-dark">Không xác định</span>';
                         }
                     }
@@ -193,6 +195,8 @@
                             <option value="5">Đã giao</option>
                             <option value="6">Đã hủy</option>
                             <option value="7">Yêu cầu trả hàng</option>
+                            <option value="8">Đã hoàn trả hàng</option>
+
                         </select>
                     </div>
                     <div class="text-end">

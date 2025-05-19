@@ -48,11 +48,11 @@ namespace NE.WebApp.Controllers
                 var response = await _httpClient.PostAsJsonAsync(ApiUrl, feedbackCreate);
                 if (!response.IsSuccessStatusCode)
                 {
-                    TempData["Error"] = "Gui danh gia that bai!";
+                    TempData["Error"] = "Gửi đánh giá thất bại!";
                 }
                 else
                 {
-                    TempData["Success"] = "Gui danh gia thanh cong!";
+                    TempData["Success"] = "Gửi đánh giá thành công!";
                 }
 
                 return RedirectToAction("UserProductDetail", "Product", new { id = feedbackCreate.ProductId });

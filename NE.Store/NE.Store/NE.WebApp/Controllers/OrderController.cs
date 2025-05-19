@@ -53,11 +53,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.PutAsJsonAsync(ApiUrl + "/UpdateOrderStatus", updateOrderStatusDto);
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Sua that bai!";
+                TempData["Error"] = "Sửa thất bại!";
             }
             else
             {
-                TempData["Success"] = "Sua thanh cong!";
+                TempData["Success"] = "Sửa thành công!";
             }
             return RedirectToAction("Index", "Order");
         }
@@ -106,7 +106,7 @@ namespace NE.WebApp.Controllers
                     if (productColor == null)
                     {
                     //TempData["Error"] = $"Không tìm thấy sản phẩm có ID {orderDetailCreateDto.ProductId} với màu {orderDetailCreateDto.ColorId}.";
-                    TempData["Error"] = "San pham da het hang! ";
+                    TempData["Error"] = "Sản phẩm đã hết hàng! ";
 
                     return RedirectToAction("UserProductDetail", "Product", new { id = orderDetailCreateDto.ProductId });
 
@@ -115,7 +115,7 @@ namespace NE.WebApp.Controllers
                 if (orderDetailCreateDto.Quantity > productColor.Quantity)
                     {
                     //TempData["Error"] = $"Sản phẩm \"{productColor.ProductName}\" màu \"{productColor.ColorName}\" chỉ còn {productColor.Quantity} sản phẩm!";
-                    TempData["Error"] = "San pham da het hang! ";
+                    TempData["Error"] = "Sản phẩm đã hết hàng! ";
 
                     return RedirectToAction("UserProductDetail", "Product", new { id = orderDetailCreateDto.ProductId });
 
@@ -131,7 +131,7 @@ namespace NE.WebApp.Controllers
                 var responseOrder = await _httpClient.PostAsJsonAsync(ApiUrl, orderCreateDto);
                 if (!responseOrder.IsSuccessStatusCode)
                 {
-                    TempData["Error"] = "Khong the tao don hang!";
+                    TempData["Error"] = "Không thể tạo đơn hàng!";
                 }
                 // B2: Lấy OrderId từ response
                 var orderContent = await responseOrder.Content.ReadFromJsonAsync<Order>();
@@ -143,7 +143,7 @@ namespace NE.WebApp.Controllers
 
                 if (!responseDetail.IsSuccessStatusCode)
                 {
-                    TempData["Error"] = "Tao don hang thanh cong, loi tao chi tiet don hang!";
+                    TempData["Error"] = "Tạo đơn hàng thành công, lỗi tạo chi tiết đơn hàng!";
                 }
 
                 var orderDetailContent = await responseDetail.Content.ReadFromJsonAsync<OrderDetail>();
@@ -194,7 +194,7 @@ namespace NE.WebApp.Controllers
 
                 if (!responseUser.IsSuccessStatusCode)
                 {
-                    TempData["Error"] = "Khong the cap nhat thong tin giao hang";
+                    TempData["Error"] = "Không thể cập nhật thông tin đơn hàng";
                 }
 
                 // 3. Tạo URL thanh toán và chuyển hướng
@@ -330,8 +330,8 @@ namespace NE.WebApp.Controllers
 
                 if (detail.Quantity > productColor.Quantity)
                 {
-                    //TempData["Error"] = $"Sản phẩm \"{productColor.ProductName}\" màu \"{productColor.ColorName}\" chỉ còn {productColor.Quantity} sản phẩm!";
-                    TempData["Error"] = "So luong trong kho cua hang khong du! ";
+                    //TempData["Error"] = $"Sản phẩm \"{productColor.Pr}\" màu \"{productColor.Color.ColorName}\" chỉ còn {productColor.Quantity} sản phẩm!";
+                    TempData["Error"] = "Số lượng trong kho cửa hàng không đủ! ";
                     return RedirectToAction("Index", "Cart", new { userId = orderCreateDto.UserId });
 
                 }
@@ -382,7 +382,7 @@ namespace NE.WebApp.Controllers
                 if (!deleteResponse.IsSuccessStatusCode)
                 {
                     // Ghi log lỗi hoặc lưu thông báo nếu cần
-                    TempData["Error"] = "Khong the xoa gio hang!";
+                    TempData["Error"] = "Không thể xóa giỏ hàng!";
                 }
             }
 
@@ -416,11 +416,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.PutAsJsonAsync(ApiUrl, orderUpdateDto);
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Sua that bai!";
+                TempData["Error"] = "Sửa thất bại!";
             }
             else
             {
-                TempData["Success"] = "Sua thanh cong!";
+                TempData["Success"] = "Sửa thành công!";
             }
             return RedirectToAction("Index", "Order");
 
@@ -432,13 +432,28 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.DeleteAsync($"{ApiUrl}/{id}");
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Khong the xoa!";
+                TempData["Error"] = "Không thể xóa!";
             }
             else
             {
-                TempData["Success"] = "Xoa thanh cong!";
+                TempData["Success"] = "Xóa thành công!";
             }
             return RedirectToAction("Index", "Order");
+        }
+
+        [HttpPost("CancelOrder")]
+        public async Task<IActionResult> CancelOrder(UpdateOrderStatusDto updateOrderStatusDto)
+        {
+            var response = await _httpClient.PutAsJsonAsync(ApiUrl + "/UpdateOrderStatus", updateOrderStatusDto);
+            if (!response.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "Sửa thất bại!";
+            }
+            else
+            {
+                TempData["Success"] = "Sửa thành công!";
+            }
+            return RedirectToAction("HistoryOrder", "User");
         }
 
     }

@@ -40,7 +40,7 @@
     <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ogani | Template</title>
+    <title>@ViewData["Title"]</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
@@ -105,6 +105,21 @@
     .user-dropdown:hover .user-dropdown-menu {
     display: block;
     }
+
+
+    .bg-custom {
+        background-color: #7fad39 !important;
+    }
+
+    .text-custom {
+        color: #7fad39 !important;
+    }
+
+    .btn-custom {
+        background-color: #7fad39 !important;
+        color: white;
+    }
+
 </style>
 
 
@@ -335,6 +350,52 @@
         </div>
     </footer>
 
+    <!-- Icon để mở chatbot -->
+    <div id="chatbotIcon" style="position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
+        <img src="~/NEStore/img/chatbot2.png" style="width: 70px; height: 70px" />
+    </div>
+
+  
+    <!-- Giao diện chatbot ẩn mặc định -->
+    <div class="chatbot" id="chatbot" style="display: none;">
+        <div class="card">
+            <div class="card-header bg-custom text-white d-flex justify-content-between align-items-center">
+                <span>Chatbot AI</span>
+                <button id="closeChatbot" class="btn btn-close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="card-body" id="chatbotMessages" style="height: 300px; overflow-y: auto;"></div>
+            <div class="input-group mb-3">
+                <input type="text" id="chatbotInput" class="form-control" placeholder="Nhập tin nhắn..." />
+                <div class="input-group-append">
+                    <button class="btn btn-custom" id="sendMessage">Gửi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot CSS -->
+    <style>
+        .chatbot {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 350px;
+            z-index: 1050;
+        }
+
+        .btn-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+
+
+
     <!-- Footer Section End -->
     <!-- Js Plugins -->
     <script src="~/NEStore/js/jquery-3.3.1.min.js"></script>
@@ -385,6 +446,40 @@
         $(this).toggleClass("active", linkPath === currentPath);
       });
     });
+
+
+
+    <!-- Chatbot JavaScript -->
+ 
+        $(document).ready(function() {
+            $('#chatbotIcon').click(function() {
+                $('#chatbot').toggle();
+            });
+
+             $('#closeChatbot').click(function() {
+            $('#chatbot').hide(); // Ẩn chatbot
+        });
+
+
+            $('#sendMessage').click(function() {
+                const message = $('#chatbotInput').val();
+                if (message) {
+                    $('#chatbotMessages').append('<div><strong>User:</strong> ' + message + '</div>');
+                    $('#chatbotInput').val('');
+
+                    $.post('/Chatbot/SendMessage', { userMessage: message }, function(data) {
+                        $('#chatbotMessages').append('<div><strong>Chatbot:</strong> ' + data.reply + '</div>');
+                    });
+                }
+            });
+
+            $('#chatbotInput').keypress(function(e) {
+                if (e.which === 13) {
+                    $('#sendMessage').click();
+                }
+            });
+        });
+
 
 
 

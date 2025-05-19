@@ -47,7 +47,7 @@
                         <div class="mb-3 justify-content-between">
                             <p>Thời gian tạo đơn: @order.CreatedDate.ToString("dd/MM/yyyy HH:mm:ss")</p>
                             <p class="fw-bold @(GetStatusClass(order.Status))">@GetStatusName(order.Status)</p>
-                           
+
                         </div>
 
                         <!-- Đường kẻ phân cách giữa trạng thái và sản phẩm -->
@@ -66,9 +66,9 @@
 
                             <div class="d-flex mb-2 bg-light">
                                 <img src="@imageUrl"
-                                     alt="Ảnh sản phẩm"
-                                     style="width: 80px; height: 80px; object-fit: cover;"
-                                     class="me-3 border rounded mr-4" />
+                                alt="Ảnh sản phẩm"
+                                style="width: 80px; height: 80px; object-fit: cover;"
+                                class="me-3 border rounded mr-4" />
 
                                 <div>
                                     <strong>@item.Product.ProductName</strong><br />
@@ -88,13 +88,34 @@
                         </div>
 
                         <!-- Các nút căn phải -->
-                        <div class="text-end">
-                            <button class="btn btn-outline-primary btn-sm">Xem chi tiết</button>
-
-                            @if (order.Status == 5)
+                        <div class="text-end" style="display: flex; align-items: center;">
+                            <button class="btn btn-outline-primary btn-sm mr-4">Xem chi tiết</button>
+                            @* Khác với đã hủy và đã giao và yêu cầu hoàn trả và đã hoản trả hàng*@
+                            @if (order.Status != 6 && order.Status != 5 && order.Status !=7 && order.Status !=8)
                             {
-                                <button class="btn btn-outline-success btn-sm">Đánh giá</button>
-                                <button class="btn btn-outline-secondary btn-sm">Mua lại</button>
+                                <form id="cancelForm" asp-action="CancelOrder" asp-controller="Order" method="POST">
+                                    <input type="hidden" name="Id" value="@order.Id">
+                                    <input type="hidden" name="Status" value="6">
+                                    <button type="button" class="btn btn-outline-danger btn-sm" onclick="confirmSubmit()">Hủy</button>
+                                </form>
+                            }
+                           
+
+                        
+
+
+                            @if (order.Status == 5 && order.Status != 8)
+                            {
+                                @* <button class="btn btn-outline-success btn-sm">Đánh giá</button> *@
+                                @* <button class="btn btn-outline-secondary btn-sm">Mua lại</button> *@
+                                <form id="yeuCauTraHang" asp-action="CancelOrder" asp-controller="Order" method="POST">
+                                    <input type="hidden" name="Id" value="@order.Id">
+                                    <input type="hidden" name="Status" value="7">
+                                    <button type="button" class="btn btn-outline-danger btn-sm" onclick="confirmSubmit2()">Yêu cầu trả hàng</button>
+                                </form>
+                                @* <button class="btn btn-outline-danger btn-sm">Yêu cầu trả hàng</button> *@
+
+
                             }
                         </div>
                     </div>
@@ -104,6 +125,25 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        function confirmSubmit() {
+            if (confirm('Bạn có chắc chắn muốn Hủy không?')) {
+                document.getElementById('cancelForm').submit();
+            }
+        }
+
+          function confirmSubmit2() {
+            if (confirm('Bạn có chắc chắn muốn hoàn trả hàng không?')) {
+                document.getElementById('yeuCauTraHang').submit();
+            }
+        }
+    </script>
+}
+
+
+
 
 @functions {
     string GetStatusName(int status)
@@ -117,6 +157,7 @@
             5 => "Đã giao hàng",
             6 => "Đã hủy",
             7 => "Yêu cầu trả hàng",
+            8 => "Đã hoàn trả hàng",
             _ => "Không xác định"
         };
     }
@@ -132,6 +173,7 @@
             5 => "text-success",
             6 => "text-danger",
             7 => "text-danger",
+            8 => "text-success",
             _ => "text-secondary"
         };
     }

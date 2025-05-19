@@ -49,7 +49,7 @@ namespace NE.WebApp.Controllers
 
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Them san pham thai bai!";
+                TempData["Error"] = "Thêm sản phẩm thất bại!";
                 return RedirectToAction("Index", "Product");
             }
 
@@ -69,11 +69,11 @@ namespace NE.WebApp.Controllers
             var responseProductColor = await _httpClient.PostAsJsonAsync(ApiUrlProductColor, productColorCreateDto);
             if (!responseProductColor.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Them mau san pham that bai!";
+                TempData["Error"] = "Thêm màu sản phẩm thất bại!";
                 return RedirectToAction("Index", "Product");
             }
 
-            TempData["Success"] = "Them san pham thanh cong!";
+            TempData["Success"] = "Thêm sản phẩm thành công!";
             return RedirectToAction("Index", "Product");
 
         }
@@ -101,11 +101,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.PostAsJsonAsync(ApiUrlProductColor, productColorCreateDto) ;
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = " Them that bai!";
+                TempData["Error"] = " Thêm thất bại!";
             }
             else
             {
-                TempData["Success"] = "Them thanh cong!";
+                TempData["Success"] = "Thêm thành công!";
             }
             return RedirectToAction("Index", "Product");
         }
@@ -130,11 +130,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.PutAsJsonAsync(ApiUrlProductColor, productColorUpdateDto);
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Sua that bai!";
+                TempData["Error"] = "Sửa thất bại!";
             }
             else
             {
-                TempData["Success"] = "Sua thanh cong!";
+                TempData["Success"] = "Sửa thành công!";
             }
             int productId = Convert.ToInt32(TempData["ProductId"]);
             return RedirectToAction("ProductDetail", new { id = productId });
@@ -148,11 +148,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.DeleteAsync($"{ApiUrlProductColor}/{id}");
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Khong the xoa!";
+                TempData["Error"] = "Không thể xóa!";
             }
             else
             {
-                TempData["Success"] = "Xoa thanh cong!";
+                TempData["Success"] = "Xóa thành công!";
             }
           
             int productId = Convert.ToInt32(TempData["ProductId"]);
@@ -198,11 +198,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.PutAsJsonAsync(ApiUrl, productUpdateDto);
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Sua that bai!";
+                TempData["Error"] = "Sửa thất bại!";
             }
             else
             {
-                TempData["Success"] = "Sua thanh cong!";
+                TempData["Success"] = "Sửa thành công!";
             }
             return RedirectToAction("Index", "Product");
         }

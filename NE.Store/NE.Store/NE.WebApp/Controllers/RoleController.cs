@@ -60,11 +60,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.PutAsJsonAsync(ApiUrl, roleUpdateDto);
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Sua that bai!";
+                TempData["Error"] = "Sửa thất bại!";
             }
             else
             {
-                TempData["Success"] = "Sua thanh cong!";
+                TempData["Success"] = "Sửa thành công!";
             }
             return RedirectToAction("Index", "Role");
         }
@@ -75,11 +75,11 @@ namespace NE.WebApp.Controllers
             var response = await _httpClient.DeleteAsync($"{ApiUrl}/{id}");
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Khong the xoa!";
+                TempData["Error"] = "Không thể xóa!";
             }
             else
             {
-                TempData["Success"] = "Xoa thanh cong!";
+                TempData["Success"] = "Xóa thành công!";
             }
             return RedirectToAction("Index", "Role");
         }

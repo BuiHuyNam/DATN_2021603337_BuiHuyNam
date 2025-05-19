@@ -104,11 +104,11 @@ namespace NE.WebApp.Controllers
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    TempData["Error"] = "Luu that bai!";
+                    TempData["Error"] = "Lưu thất bại!";
                 }
                 else
                 {
-                    TempData["Success"] = "Luu thanh cong!";
+                    TempData["Success"] = "Lưu thành công!";
                 }
                 return RedirectToAction("Profile", "User");
 
@@ -215,7 +215,7 @@ namespace NE.WebApp.Controllers
                 }
                 else
                 {
-                    TempData["Success"] = "Thay doi thanh cong!";
+                    TempData["Success"] = "Thay đổi thành công!";
                 }
                 return RedirectToAction("ChangePassword", "User");
 
@@ -245,11 +245,11 @@ namespace NE.WebApp.Controllers
 
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Sua that bai!";
+                TempData["Error"] = "Sửa thất bại!";
             }
             else
             {
-                TempData["Success"] = "Sua thanh cong!";
+                TempData["Success"] = "Sửa thành công!";
             }
             return RedirectToAction("Index", "User");
         }

@@ -101,7 +101,7 @@ namespace NE.WebApp.Controllers
                 if (productColor == null)
                 {
                     //TempData["Error"] = $"Không tìm thấy sản phẩm có ID {orderDetailCreateDto.ProductId} với màu {orderDetailCreateDto.ColorId}.";
-                    TempData["Error"] = "San pham da het hang! ";
+                    TempData["Error"] = "Sản phẩm đã hết hàng! ";
 
                     return RedirectToAction("UserProductDetail", "Product", new { id = cartCreateDto.ProductId });
                 }
@@ -124,7 +124,7 @@ namespace NE.WebApp.Controllers
 
                 if (existedItem != null)
                 {
-                    TempData["Error"] = "San pham nay da co trong gio hang!";
+                    TempData["Error"] = "Sản phẩm này đã có trong giỏ hàng!";
                 }
                 else
                 {
@@ -132,11 +132,11 @@ namespace NE.WebApp.Controllers
                     var response = await _httpClient.PostAsJsonAsync(ApiUrl, cartCreateDto);
                     if (!response.IsSuccessStatusCode)
                     {
-                        TempData["Error"] = "Them that bai!";
+                        TempData["Error"] = "Thêm thất bại!";
                     }
                     else
                     {
-                        TempData["Success"] = "Them thanh cong!";
+                        TempData["Success"] = "Thêm thành công!";
                     }
                 }
                 return RedirectToAction("UserProductDetail", "Product", new { id = cartCreateDto.ProductId });

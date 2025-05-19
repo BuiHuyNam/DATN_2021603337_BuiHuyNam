@@ -101,10 +101,10 @@ namespace NE.WebApp.Controllers
 
             if (!response.IsSuccessStatusCode)
             {
-                TempData["Error"] = "Email , ten nguoi dung ton tai!";
+                TempData["Error"] = "Email , tên người dùng đã tồn tại!";
                 return View(userCreateDto);
             }
-            TempData["Success"] = " Dang ky thanh cong! Vui long dang nhap.";
+            TempData["Success"] = "Đăng ký thành công! Vui lòng đăng nhập.";
             return RedirectToAction("Login", "Auth");
 
 

@@ -189,6 +189,14 @@
       "PackagePath": "staticwebassets\\NEStore\\img\\categories\\cat-5.jpg"
     },
     {
+      "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\chatbot.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\chatbot.png"
+    },
+    {
+      "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\chatbot2.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\chatbot2.png"
+    },
+    {
       "Id": "D:\\DATN\\DATN_2021603337_BuiHuyNam\\NE.Store\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-1.jpg",
       "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-1.jpg"
     },

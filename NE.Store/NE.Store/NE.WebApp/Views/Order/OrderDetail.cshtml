@@ -60,6 +60,7 @@
                     @* //5. Đã giao hàng *@
                     @* //6. Đã Hủy *@
                     @* //7. Yêu cầu trả hàng *@
+                    @* //8. Đã hoàn trả hàng *@
 
                     <div class="mb-3">
                         <label class="form-label fw-bold">Hình thức thanh toán:</label>
@@ -105,6 +106,9 @@
                                     break;
                                 case 7:
                                     statusBadge = "<span class='badge bg-dark'>Yêu cầu trả hàng</span>";
+                                    break;
+                                case 8:
+                                    statusBadge = "<span class='badge bg-success'>Đã hoàn trả hàng</span>";
                                     break;
                                 default:
                                     statusBadge = "<span class='badge bg-light text-dark'>Không xác định</span>";
