@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "My Api",
-    "description": "API authentication with Jwt",
+    "title": "API Website selling electronics for Nam Electronics company",
+    "description": "Website selling electronics for Nam Electronics company",
     "version": "v1"
   },
   "paths": {

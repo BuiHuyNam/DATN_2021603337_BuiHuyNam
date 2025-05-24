@@ -76,14 +76,15 @@ namespace NE.WebApp.Controllers
             HttpContext.Session.SetString("UserRole", role ?? "Guest");
 
             // 👉 Phân trang theo role
-            if (role == "User")
+            if (role == "Admin")
             {
-                return RedirectToAction("GetAllProductPages", "Product");
+                return RedirectToAction("Index", "Admin");
             }
                 
             else
             {
-                return RedirectToAction("Index", "Admin");
+                
+                return RedirectToAction("GetAllProductPages", "Product");
             }
               
         }
