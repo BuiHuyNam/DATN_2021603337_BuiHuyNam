@@ -216,72 +216,90 @@ namespace NE.WebApp.Controllers
             int orderId = int.Parse(Request.Query["vnp_TxnRef"]);
 
 
-
-            var updateOrderStatusDto = new UpdateOrderStatusDto
-            {   
-               Id = orderId,
-                Status = 3 //Đã thanh toán
-            };
-
-            if (response.Success)
+            // Kiểm tra mã phản hồi từ VNPAY
+            if (response.VnPayResponseCode == "00")
             {
-                // Gọi API hoặc service lưu trạng thái đơn hàng
-                var responseStatus = await _httpClient.PutAsJsonAsync(ApiUrl + "/UpdateOrderStatus", updateOrderStatusDto);
 
-                if (!responseStatus.IsSuccessStatusCode)
+                var updateOrderStatusDto = new UpdateOrderStatusDto
                 {
-                    TempData["Error"] = "Không thể cập nhật trạng thái đơn hàng.";
-                }
+                    Id = orderId,
+                    Status = 3 //Đã thanh toán
+                };
 
-                var responseGetOrder = await _httpClient.GetFromJsonAsync<OrderViewDto>($"{ApiUrl}/{updateOrderStatusDto.Id}");
-                if (responseGetOrder != null)
+                if (response.Success)
                 {
-                    var productIds = responseGetOrder.OrderDetails.Select(od => od.ProductId).ToList();
-                    var colorIds = responseGetOrder.OrderDetails.Select(od => od.ColorId).ToList();
-                    var quantities = responseGetOrder.OrderDetails.Select(od => od.Quantity).ToList();
+                    // Gọi API hoặc service lưu trạng thái đơn hàng
+                    var responseStatus = await _httpClient.PutAsJsonAsync(ApiUrl + "/UpdateOrderStatus", updateOrderStatusDto);
 
-                    var responseGetProductColor = await _httpClient.GetFromJsonAsync<List<ProductColorViewDto>>(ApiUrlProductColor);
-                    foreach (var orderDetail in responseGetOrder.OrderDetails)
+                    if (!responseStatus.IsSuccessStatusCode)
                     {
-                        var productColor = responseGetProductColor
-                                            .FirstOrDefault(pc => pc.ProductId == orderDetail.ProductId && pc.ColorId == orderDetail.ColorId);
+                        TempData["Error"] = "Không thể cập nhật trạng thái đơn hàng.";
+                    }
 
-                        if (productColor != null)
+                    var responseGetOrder = await _httpClient.GetFromJsonAsync<OrderViewDto>($"{ApiUrl}/{updateOrderStatusDto.Id}");
+                    if (responseGetOrder != null)
+                    {
+                        var productIds = responseGetOrder.OrderDetails.Select(od => od.ProductId).ToList();
+                        var colorIds = responseGetOrder.OrderDetails.Select(od => od.ColorId).ToList();
+                        var quantities = responseGetOrder.OrderDetails.Select(od => od.Quantity).ToList();
+
+                        var responseGetProductColor = await _httpClient.GetFromJsonAsync<List<ProductColorViewDto>>(ApiUrlProductColor);
+                        foreach (var orderDetail in responseGetOrder.OrderDetails)
                         {
-                            // Cập nhật số lượng sau khi bán
-                            productColor.Quantity -= orderDetail.Quantity;
+                            var productColor = responseGetProductColor
+                                                .FirstOrDefault(pc => pc.ProductId == orderDetail.ProductId && pc.ColorId == orderDetail.ColorId);
 
-                            // Gửi yêu cầu API để cập nhật lại số lượng
-                            var responseUpdateProductColor = await _httpClient.PutAsJsonAsync(ApiUrlProductColor, productColor);
-
-                            if (!responseUpdateProductColor.IsSuccessStatusCode)
+                            if (productColor != null)
                             {
-                                TempData["Error"] = "Không thể cập nhật số lượng sản phẩm.";
+                                // Cập nhật số lượng sau khi bán
+                                productColor.Quantity -= orderDetail.Quantity;
+
+                                // Gửi yêu cầu API để cập nhật lại số lượng
+                                var responseUpdateProductColor = await _httpClient.PutAsJsonAsync(ApiUrlProductColor, productColor);
+
+                                if (!responseUpdateProductColor.IsSuccessStatusCode)
+                                {
+                                    TempData["Error"] = "Không thể cập nhật số lượng sản phẩm.";
+                                }
                             }
                         }
+
+                        if (responseGetOrder.CouponId != null)
+                        {
+                            var responseGetCounpon = await _httpClient.GetFromJsonAsync<CouponViewDto>($"{ApiUrlCoupon}/{responseGetOrder.CouponId}");
+
+                            responseGetCounpon.Quantity -= 1;
+
+                            var updateCoupon = await _httpClient.PutAsJsonAsync(ApiUrlCoupon, responseGetCounpon);
+                        }
+
+
+
+
+
                     }
-
-                    if(responseGetOrder.CouponId != null)
-                    {
-                        var responseGetCounpon = await _httpClient.GetFromJsonAsync<CouponViewDto>($"{ApiUrlCoupon}/{responseGetOrder.CouponId}");
-
-                        responseGetCounpon.Quantity -= 1;
-
-                        var updateCoupon = await _httpClient.PutAsJsonAsync(ApiUrlCoupon, responseGetCounpon);
-                    }
-
 
 
 
 
                 }
+            }
+            else
+            {
+                // Giao dịch thất bại => có thể lưu trạng thái "hủy"
+                var updateOrderStatusDto = new UpdateOrderStatusDto
+                {
+                    Id = orderId,
+                    Status = 6 // Ví dụ: 6 = Đã hủy
+                };
 
-
-
-
+                await _httpClient.PutAsJsonAsync(ApiUrl + "/UpdateOrderStatus", updateOrderStatusDto);
+                //TempData["Error"] = $"Giao dịch thất bại. Mã lỗi: {response.VnPayResponseCode}";
             }
 
             return View(response);
+            
+            //return Json(response);
         }
 
 

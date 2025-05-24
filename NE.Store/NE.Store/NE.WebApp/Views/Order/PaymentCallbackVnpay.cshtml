@@ -2,7 +2,7 @@
 
 @{
     Layout = "~/Views/Shared/_LayoutPayment.cshtml";
-    ViewData["Title"] = "Thanh Toán Thành Công";
+    ViewData["Title"] = "Thanh Toán ";
 }
 
 
@@ -11,7 +11,7 @@
         <div class="col-md-8 col-lg-6">
             <div class="card shadow-lg border-0 rounded-4">
                 <div class="card-body text-center">
-                    @if (Model.Success)
+                    @if (Model.VnPayResponseCode == "00")
                     {
                         <div class="mb-4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="green" class="bi bi-check-circle" viewBox="0 0 16 16">

@@ -87,9 +87,9 @@ builder.Services.AddSwaggerGen(ops =>
 {
     ops.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "My Api",
+        Title = "API Website selling electronics for Nam Electronics company",
         Version = "v1",
-        Description = "API authentication with Jwt"
+        Description = "Website selling electronics for Nam Electronics company"
     });
 
     ops.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

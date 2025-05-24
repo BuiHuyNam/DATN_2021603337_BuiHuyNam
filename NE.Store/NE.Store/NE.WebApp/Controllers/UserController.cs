@@ -119,7 +119,7 @@ namespace NE.WebApp.Controllers
         }
 
         [HttpGet("HistoryOrder")]
-        public async Task<IActionResult> HistoryOrder()
+        public async Task<IActionResult> HistoryOrder(int? status = null)
         {
             var token = HttpContext.Session.GetString("JwtToken");
             if (string.IsNullOrEmpty(token))
@@ -152,7 +152,19 @@ namespace NE.WebApp.Controllers
                 var response = await _httpClient.GetFromJsonAsync<List<OrderViewDto>>($"{ApiUrlOrder}/UserId/{userId}");
 
 
-                return View(response);
+
+                // Lọc theo status nếu có
+                var filteredOrders = response;
+                if (status.HasValue)
+                {
+                    filteredOrders = filteredOrders
+                        .Where(o => o.Status == status.Value) // Giả sử OrderViewDto có thuộc tính StatusId
+                        .ToList();
+                }
+
+                ViewBag.Status = status;
+
+                return View(filteredOrders);
             }
         }
 
