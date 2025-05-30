@@ -21,7 +21,10 @@ namespace NE.WebApp.Controllers
             private const string ApiUrl = "https://localhost:7099/api/product";
 
             private readonly HttpClient _httpClient;
-            private readonly string _apiKey = ""; // 🔴 Nhớ thay bằng API Key thật
+            //private readonly string _apiKey = ""; 
+            
+            private readonly string _apiKey = ""; 
+
 
             public ChatbotService()
             {
@@ -38,18 +41,18 @@ namespace NE.WebApp.Controllers
                     // Tạo chuỗi nối tên sản phẩm và giá
                     string productListString = string.Join(", ", product.Where(p=>p.IsActive == true).Select(p => $"{p.ProductName} ({p.Price:N0} VND)"));
 
-
-
-
-
-
                     var requestBody = new
                     {
-                        model = "gpt-3.5-turbo",
+                        //model = "gpt-3.5-turbo",
+                        model = "gpt-4o-mini",
+                        store = true,
+
                         messages = new[]
                         {
                             new { role = "system", content = "Bạn là một trợ lý AI luôn trả lời bằng tiếng Việt." },
                             new { role = "system", content = "Website bán hàng điện tử của Nam Electronics chuyên laptop, điện thoại, phụ kiện." },
+                            new { role = "system", content = "Bạn chỉ trả lời các câu hỏi liên quan đến website Nam Electronics." },
+
                             new { role = "system", content = "Nếu hỏi về sản phẩm thì trả lời theo kiểu liệt kê đúng trọng tâm." },
 
                             new { role = "system", content = productListString },
@@ -67,7 +70,7 @@ namespace NE.WebApp.Controllers
 
                     var result = await response.Content.ReadFromJsonAsync<GptResponse>();
 
-                    return result?.choices?[0]?.message?.content?.Trim() ?? "GPT không phản hồi.";
+                    return result?.choices?[0]?.message?.content?.Trim() ?? "Hệ thống đang bảo trì.";
                 }
                 catch (Exception ex)
                 {

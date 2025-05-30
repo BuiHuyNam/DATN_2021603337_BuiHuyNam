@@ -20,7 +20,7 @@
 
                 <div class="mb-3">
                     <label asp-for="Price" class="form-label">Giá</label>
-                    <input asp-for="Price" type="number" step="0.01" class="form-control" placeholder="Nhập giá" required />
+                    <input asp-for="Price" type="number" step="1" class="form-control" placeholder="Nhập giá" required />
                 </div>
 
                 <div class="mb-3">
@@ -45,7 +45,7 @@
 
                 <div class="mb-3">
                     <label asp-for="Quantity" class="form-label">Số lượng</label>
-                    <input asp-for="Quantity" type="number" step="1" class="form-control" placeholder="Nhập số lượng" required />
+                    <input asp-for="Quantity" type="number" step="1" min="0" class="form-control" placeholder="Nhập số lượng" required />
                 </div>
 
              

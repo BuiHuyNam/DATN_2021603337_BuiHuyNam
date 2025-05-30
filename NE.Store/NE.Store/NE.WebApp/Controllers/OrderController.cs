@@ -469,8 +469,42 @@ namespace NE.WebApp.Controllers
             }
             else
             {
-                TempData["Success"] = "Sửa thành công!";
+                var responseGetOrder = await _httpClient.GetFromJsonAsync<OrderViewDto>($"{ApiUrl}/{updateOrderStatusDto.Id}");
+                if (responseGetOrder != null)
+                {
+                    var productIds = responseGetOrder.OrderDetails.Select(od => od.ProductId).ToList();
+                    var colorIds = responseGetOrder.OrderDetails.Select(od => od.ColorId).ToList();
+                    var quantities = responseGetOrder.OrderDetails.Select(od => od.Quantity).ToList();
+
+                    var responseGetProductColor = await _httpClient.GetFromJsonAsync<List<ProductColorViewDto>>(ApiUrlProductColor);
+                    foreach (var orderDetail in responseGetOrder.OrderDetails)
+                    {
+                        var productColor = responseGetProductColor
+                                            .FirstOrDefault(pc => pc.ProductId == orderDetail.ProductId && pc.ColorId == orderDetail.ColorId);
+
+                        if (productColor != null)
+                        {
+                            // Cập nhật số lượng sau khi bán
+                            productColor.Quantity += orderDetail.Quantity;
+
+                            // Gửi yêu cầu API để cập nhật lại số lượng
+                            var responseUpdateProductColor = await _httpClient.PutAsJsonAsync(ApiUrlProductColor, productColor);
+
+                            if (!responseUpdateProductColor.IsSuccessStatusCode)
+                            {
+                                TempData["Error"] = "Không thể cập nhật số lượng sản phẩm.";
+                            }
+                        }
+                    }
+                }
+
+
+
+                    TempData["Success"] = "Sửa thành công!";
             }
+
+
+
             return RedirectToAction("HistoryOrder", "User");
         }
 
