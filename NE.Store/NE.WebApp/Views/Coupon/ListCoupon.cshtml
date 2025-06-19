@@ -1,0 +1,51 @@
+﻿@model List<NE.Application.Dtos.CouponDto.CouponViewDto>
+
+@{
+    Layout = "~/Views/Shared/_LayoutSub.cshtml";
+    ViewData["Title"] = "Khuyến mãi";
+}
+<div class="container py-4">
+    <h4 class="mb-4">Mã khuyến mãi</h4>
+
+    <div class="row">
+        @foreach (var coupon in Model)
+        {
+            var now = DateTime.Now;
+            var isExpired = coupon.ExpiryDate < now;
+            var notYetStarted = coupon.UseDate > now;
+            var isAvailable = !isExpired && !notYetStarted && coupon.Quantity > 0;
+
+            <div class="col-md-6 mb-4">
+                <div class="card @(isExpired ? "border-danger" : isAvailable ? "border-success" : "border-warning") shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title text-uppercase fw-bold">@coupon.Code</h5>
+                        <p class="mb-2">
+                            <strong>Giảm giá:</strong> @coupon.Discount%<br />
+                            <strong>Ngày bắt đầu:</strong> @coupon.UseDate.ToString("dd/MM/yyyy")<br />
+                            <strong>Hạn sử dụng:</strong>
+                            <span class="@(isExpired ? "text-danger" : "")">
+                                @coupon.ExpiryDate.ToString("dd/MM/yyyy")
+                                @(isExpired ? "(Hết hạn)" : "")
+                            </span><br />
+                            <strong>Số lượng còn:</strong> @coupon.Quantity
+                        </p>
+
+                        @if (notYetStarted)
+                        {
+                            <span class="text-warning fw-bold">Chưa áp dụng</span>
+                        }
+                        else if (isAvailable)
+                        {
+                            <span class="text-success fw-bold">Đang áp dụng</span>
+                        }
+                        else
+                        {
+                            <span class="text-muted fw-bold">Không khả dụng</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

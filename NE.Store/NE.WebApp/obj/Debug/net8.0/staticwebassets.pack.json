@@ -1,0 +1,765 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\NE.WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\NE.WebApp.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\assets\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\assets\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\assets\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\assets\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\Admin\\assets\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\assets\\img\\error-404-monochrome.svg",
+      "PackagePath": "staticwebassets\\Admin\\assets\\img\\error-404-monochrome.svg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\css\\styles.css",
+      "PackagePath": "staticwebassets\\Admin\\css\\styles.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\Admin\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\scripts.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\elegant-icons.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\css\\style.css",
+      "PackagePath": "staticwebassets\\NEStore\\css\\style.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\ElegantIcons.eot"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\ElegantIcons.svg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\ElegantIcons.woff"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\NEStore\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\auth.jpeg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\banner\\auth.jpeg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\auth2.webp",
+      "PackagePath": "staticwebassets\\NEStore\\img\\banner\\auth2.webp"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\banner\\avatar.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\banner\\avatar.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\blog-7.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\blog-7.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\blog-8.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\blog-8.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\details\\details-author.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\details\\details-author.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\details\\details-hero.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\details\\details-hero.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\details\\details-pic.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\details\\details-pic.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\sidebar\\sr-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\sidebar\\sr-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\sidebar\\sr-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\sidebar\\sr-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\blog\\sidebar\\sr-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\blog\\sidebar\\sr-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\breadcrumb.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\breadcrumb.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\cart\\cart-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\cart\\cart-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\cart\\cart-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\cart\\cart-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\cart\\cart-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\cart\\cart-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\categories\\cat-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\categories\\cat-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\categories\\cat-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\categories\\cat-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\categories\\cat-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\categories\\cat-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\categories\\cat-4.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\categories\\cat-4.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\categories\\cat-5.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\categories\\cat-5.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\chatbot.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\chatbot.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\chatbot2.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\chatbot2.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-4.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-4.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-5.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-5.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-6.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-6.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-7.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-7.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\featured\\feature-8.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\featured\\feature-8.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\feedback\\avatar.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\feedback\\avatar.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\hero\\banner.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\hero\\banner.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\hero\\banner2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\hero\\banner2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\hero\\banner3.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\hero\\banner3.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\language.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\language.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\languagevn.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\languagevn.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\latest-product\\lp-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\latest-product\\lp-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\latest-product\\lp-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\latest-product\\lp-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\latest-product\\lp-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\latest-product\\lp-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\logo.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\logo2.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\logo2.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\logo3.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\logo3.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\logo4.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\logo4.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\logo5.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\logo5.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\payment-item.png",
+      "PackagePath": "staticwebassets\\NEStore\\img\\payment-item.png"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\product-details-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\product-details-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\product-details-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\product-details-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\product-details-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\product-details-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\product-details-4.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\product-details-4.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\product-details-5.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\product-details-5.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\thumb-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\thumb-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\thumb-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\thumb-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\thumb-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\thumb-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\details\\thumb-4.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\details\\thumb-4.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\discount\\pd-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\discount\\pd-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\discount\\pd-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\discount\\pd-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\discount\\pd-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\discount\\pd-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\discount\\pd-4.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\discount\\pd-4.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\discount\\pd-5.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\discount\\pd-5.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\discount\\pd-6.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\discount\\pd-6.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-1.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-1.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-10.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-10.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-11.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-11.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-12.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-12.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-2.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-2.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-3.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-3.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-4.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-4.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-5.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-5.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-6.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-6.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-7.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-7.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-8.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-8.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\img\\product\\product-9.jpg",
+      "PackagePath": "staticwebassets\\NEStore\\img\\product\\product-9.jpg"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\main.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\main.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\mixitup.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\NEStore\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_base.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_base.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_blog-details.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_blog-details.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_blog-sidebar.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_blog-sidebar.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_blog.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_blog.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_breadcrumb.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_checkout.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_checkout.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_contact.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_contact.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_footer.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_footer.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_header.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_header.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_hero.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_hero.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_home-page.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_home-page.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_mixins.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_responsive.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_responsive.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_shop-details.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_shop-details.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_shop-grid.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_shop-grid.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_shoping-cart.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_shoping-cart.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_sidebar.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_sidebar.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\_variable.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\_variable.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\NEStore\\sass\\style.scss",
+      "PackagePath": "staticwebassets\\NEStore\\sass\\style.scss"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NE.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.NE.WebApp.props",
+      "PackagePath": "build\\NE.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NE.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\NE.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.NE.WebApp.props",
+      "PackagePath": "buildTransitive\\NE.WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

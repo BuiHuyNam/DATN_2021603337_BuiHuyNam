@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DATN\\Data\\NE.Store\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\data\\ne.store\\ne.webapp\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\chatbotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\data\\ne.store\\ne.webapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\data\\ne.store\\ne.application\\dtos\\chatbotdto\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\chatbotdto\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\data\\ne.store\\ne.application\\dtos\\chatbotdto\\gptresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\chatbotdto\\gptresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|d:\\datn\\data\\ne.store\\ne.application\\dtos\\chatbotdto\\choice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7142F081-30CE-46B2-8231-E7F9C7484E80}|NE.Application\\NE.Application.csproj|solutionrelative:ne.application\\dtos\\chatbotdto\\choice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|d:\\datn\\data\\ne.store\\ne.webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C7A3A0B-F2D5-4923-AC57-B912854A63E3}|NE.WebApp\\NE.WebApp.csproj|solutionrelative:ne.webapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|d:\\datn\\data\\ne.store\\ne.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17DFA292-63AE-4F13-9622-CBD1FA410D52}|NE.WebApi\\NE.WebApi.csproj|solutionrelative:ne.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 132,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\OrderController.cs",
+              "ToolTip": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T02:52:31.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\DATN\\Data\\NE.Store\\NE.Application\\Dtos\\ChatbotDto\\Message.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ChatbotDto\\Message.cs",
+              "ToolTip": "D:\\DATN\\Data\\NE.Store\\NE.Application\\Dtos\\ChatbotDto\\Message.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ChatbotDto\\Message.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T01:48:27.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GptResponse.cs",
+              "DocumentMoniker": "D:\\DATN\\Data\\NE.Store\\NE.Application\\Dtos\\ChatbotDto\\GptResponse.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ChatbotDto\\GptResponse.cs",
+              "ToolTip": "D:\\DATN\\Data\\NE.Store\\NE.Application\\Dtos\\ChatbotDto\\GptResponse.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ChatbotDto\\GptResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T01:48:20.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Choice.cs",
+              "DocumentMoniker": "D:\\DATN\\Data\\NE.Store\\NE.Application\\Dtos\\ChatbotDto\\Choice.cs",
+              "RelativeDocumentMoniker": "NE.Application\\Dtos\\ChatbotDto\\Choice.cs",
+              "ToolTip": "D:\\DATN\\Data\\NE.Store\\NE.Application\\Dtos\\ChatbotDto\\Choice.cs",
+              "RelativeToolTip": "NE.Application\\Dtos\\ChatbotDto\\Choice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T01:47:59.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatbotController.cs",
+              "DocumentMoniker": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\Controllers\\ChatbotController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\ChatbotController.cs",
+              "ToolTip": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\Controllers\\ChatbotController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\ChatbotController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAADYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T01:46:36.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "NE.WebApp\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\DATN\\Data\\NE.Store\\NE.WebApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "NE.WebApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T08:58:37.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DATN\\Data\\NE.Store\\NE.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "NE.WebApi\\appsettings.json",
+              "ToolTip": "D:\\DATN\\Data\\NE.Store\\NE.WebApi\\appsettings.json",
+              "RelativeToolTip": "NE.WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-04T04:59:26.803Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

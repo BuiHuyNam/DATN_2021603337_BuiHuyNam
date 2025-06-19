@@ -1,0 +1,269 @@
+﻿@* @model List<NE.Application.Dtos.OrderDetailDto.OrderDetailViewDto> *@
+@model NE.Application.Dtos.OrderDto.OrderViewDto
+
+
+
+@{
+    Layout = "~/Views/Shared/_LayoutSub.cshtml";
+    ViewData["Title"] = "Thông tin đặt hàng";
+}
+
+<!-- Checkout Section Begin -->
+<section class="checkout spad">
+    <div class="container">
+        <div class="checkout__form">
+            <h4>Thông tin đặt hàng</h4>
+            <form method="post" asp-action="PlaceOrder" asp-controller="Order">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <div class="checkout__input">
+                            <p>Họ và tên<span>*</span></p>
+                            <input type="text" name="FullName" required value="@Model.User.FullName">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="checkout__input">
+                                    <p>Tỉnh/Thành phố<span>*</span></p>
+                                    <select id="province" name="provinceName" required class="form-control">
+                                        <option value="">-- Chọn tỉnh/thành phố --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="checkout__input">
+                                    <p>Quận/Huyện<span>*</span></p>
+                                    <select id="district" name="districtName" required class="form-control" disabled>
+                                        <option value="">-- Chọn quận/huyện --</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="checkout__input">
+                                    <p>Phường/Xã<span>*</span></p>
+                                    <select id="ward" name="WardId" required class="form-control" disabled>
+                                        <option value="">-- Chọn phường/xã --</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="checkout__input mt-4">
+                            <p>Địa chỉ chi tiết<span>*</span></p>
+                            <input type="text" name="AddressDetailUser" required placeholder="Số nhà, tên đường...">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Số điện thoại<span>*</span></p>
+                                    <input type="text" name="PhoneNumber" required value="@Model.User.PhoneNumber">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout__input">
+                                    <p>Email<span>*</span></p>
+                                    <input type="email" name="email" required value=" @Model.User.Email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout__input">
+                            <p>Ghi chú</p>
+                            <input type="text" name="Note" placeholder="Ghi chú cho đơn hàng (nếu có)">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="checkout__order">
+                            <h4>Đơn hàng của bạn</h4>
+
+                            <div class="checkout__order__products">Sản phẩm</div>
+                            <ul>
+                                @foreach (var item in Model.OrderDetails)
+                                {
+                                    <li>@item.Product.ProductName x Số lượng (@item.Quantity) <span>@item.TotalMoney.ToString("N0") ₫</span></li>
+                                }
+                            </ul>
+
+                            @{
+                                var totalAmount = Model.OrderDetails.Sum(x => x.TotalMoney);
+                            }
+                            <div class="checkout__order__subtotal">Tạm tính <span>@totalAmount.ToString("N0") ₫</span></div>
+
+                            @if(Model.CouponId != null)
+                            {
+                                <div class="checkout__order__subtotal">Khuyến mãi <span>- @(((double)totalAmount - (double)Model.TotalMoney).ToString("N0")) ₫</span></div>
+                            }
+                            <div class="checkout__order__total">Tổng tiền <span>@Model.TotalMoney.ToString("N0") ₫</span></div>
+
+
+                            <div class="checkout__input__checkbox">
+                                <label for="payment">
+                                    Thanh toán khi nhận hàng
+                                    <input type="checkbox" id="payment">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="checkout__input__checkbox">
+                                <label for="paypal">
+                                    VNPay
+                                    <input type="checkbox" id="paypal" checked>
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                            <input type="hidden" name="AddressDetail"  id="AddressDetail"  />
+
+
+                            <input type="hidden" name="Name" value="Cảm ơn bạn " />
+                            <input type="hidden" name="Amount" value="@Model.TotalMoney" />
+
+                            <input type="hidden" name="OrderDescription" value=" đã thanh toán thành công đơn hàng" />
+                            <input type="hidden" name="OrderType" value="other" />
+
+                            @* @if (Model.Any()) *@
+                            @* { *@
+                            @*     <input type="hidden" name="OrderId" value="@Model.First().OrderId" /> *@
+                               
+
+                            @* } *@
+                            <input type="hidden" name="OrderId" value="@Model.Id" />
+
+
+
+
+
+
+
+
+
+                            <button type="submit" class="site-btn">THANH TOÁN</button>
+                            @* </form> *@
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- Checkout Section End -->
+@section Scripts {
+    <script>
+
+                  $(document).ready(function () {
+            let allDistricts = [];
+            let allWards = [];
+
+            // Vô hiệu hóa district và ward ban đầu
+            $('#district').prop('disabled', true);
+            $('#ward').prop('disabled', true);
+
+            // Load tỉnh
+            $.ajax({
+                url: "https://localhost:7099/api/Province",
+                method: "GET",
+                success: function (data) {
+                    $('#province').append(
+                        data.map(p => `<option value="${p.id}">${p.provinceName}</option>`)
+                    );
+                    $('#province').niceSelect('destroy');
+                }
+            });
+
+            // Load toàn bộ quận
+            $.ajax({
+                url: "https://localhost:7099/api/District",
+                method: "GET",
+                success: function (data) {
+                    allDistricts = data;
+                }
+            });
+
+            // Load toàn bộ xã
+            $.ajax({
+                url: "https://localhost:7099/api/Ward",
+                method: "GET",
+                success: function (data) {
+                    allWards = data;
+                }
+            });
+
+            // Khi chọn tỉnh
+            $('#province').on('change', function () {
+                const provinceId = parseInt($(this).val());
+
+                const filteredDistricts = allDistricts.filter(d => d.provinceId === provinceId);
+
+                $('#district').html('<option value="">-- Chọn quận/huyện --</option>');
+                $('#ward').html('<option value="">-- Chọn phường/xã --</option>');
+
+                if (!provinceId || filteredDistricts.length === 0) {
+                    $('#district').prop('disabled', true);
+                    $('#ward').prop('disabled', true);
+                    updateAddressDetail();  // Cập nhật AddressDetail khi không có tỉnh
+                    return;
+                }
+
+                filteredDistricts.forEach(d =>
+                    $('#district').append(`<option value="${d.id}">${d.districtName}</option>`)
+                );
+                $('#district').prop('disabled', false).niceSelect('destroy');
+                $('#ward').prop('disabled', true);
+
+                updateAddressDetail();  // Cập nhật AddressDetail khi chọn tỉnh
+            });
+
+            // Khi chọn quận
+            $('#district').on('change', function () {
+                const districtId = parseInt($(this).val());
+
+                const filteredWards = allWards.filter(w => w.districtId === districtId);
+
+                $('#ward').html('<option value="">-- Chọn phường/xã --</option>');
+
+                if (!districtId || filteredWards.length === 0) {
+                    $('#ward').prop('disabled', true);
+                    updateAddressDetail();  // Cập nhật AddressDetail khi không có quận
+                    return;
+                }
+
+                filteredWards.forEach(w =>
+                    $('#ward').append(`<option value="${w.id}">${w.wardName}</option>`)
+                );
+                $('#ward').prop('disabled', false).niceSelect('destroy');
+
+                updateAddressDetail();  // Cập nhật AddressDetail khi chọn quận
+            });
+
+            // Khi chọn xã
+            $('#ward').on('change', function () {
+                updateAddressDetail();  // Cập nhật AddressDetail khi chọn xã
+            });
+
+            // Khi người dùng nhập vào địa chỉ chi tiết
+            $('input[name="AddressDetailUser"]').on('input', function () {
+                updateAddressDetail();  // Cập nhật AddressDetail khi thay đổi địa chỉ chi tiết
+            });
+
+            // Cập nhật trường AddressDetail
+            function updateAddressDetail() {
+                const province = $('#province option:selected').text();
+                const district = $('#district option:selected').text();
+                const ward = $('#ward option:selected').text();
+                const addressDetail = $('input[name="AddressDetailUser"]').val();
+
+                // Tạo một địa chỉ đầy đủ
+                const fullAddress = `${addressDetail}, ${ward}, ${district}, ${province}`;
+
+                // Cập nhật giá trị cho input hidden AddressDetail
+                $('#AddressDetail').val(fullAddress);
+            }
+        });
+
+
+
+
+    </script>
+}

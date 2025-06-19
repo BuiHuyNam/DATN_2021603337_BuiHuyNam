@@ -1,0 +1,68 @@
+﻿@model NE.Application.Dtos.OrderDto.OrderViewDto
+@{
+    Layout = null;
+
+    int totalAmount = 0; // khai báo biến tổng tiền
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hóa đơn</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h2>HÓA ĐƠN BÁN HÀNG</h2>
+    <p>Mã hóa đơn: @Model.Id</p>
+    <p>Khách hàng: @Model.FullName</p> 
+    <p>Số điện thoại: @Model.PhoneNumber</p>
+     <p>Ngày: @Model.CreatedDate.ToString("dd/MM/yyyy")</p> 
+     <p>Địa chỉ giao hàng: @Model.AddressDetail </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.OrderDetails)
+            {
+                var lineTotal = item.Quantity * item.Price;
+                totalAmount += (int)lineTotal;
+                <tr>
+                    <td>@item.Product.ProductName</td> 
+                    <td>@item.Quantity</td>
+                    <td>@item.Price.ToString("N0")</td>
+                    <td>@((item.Quantity * item.Price).ToString("N0"))</td> 
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <h4>Tạm tính: @totalAmount.ToString("N0") VNĐ</h4>
+    <h4>Khuyến mãi: @((totalAmount - Model.TotalMoney).ToString("N0")) VNĐ</h4>
+     <h3>Tổng cộng: @Model.TotalMoney.ToString("N0") VNĐ</h3> 
+</body>
+</html>
